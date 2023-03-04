@@ -1,4 +1,4 @@
-<div class="page">
+<div>
   <div class="hero">
     <h1>Affordable and Scalable Software Solutions for Small Businesses.</h1>
     <p>
@@ -14,17 +14,16 @@
 </div>
 
 <style>
-  .page {
-    max-width: 80%;
-    margin: 0 auto 0 auto;
-  }
+  
   .hero {
     text-align: center;
   }
+
   h1 {
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     font-size: 64px;
     font-weight: bold;
     letter-spacing: 2%;
   }
+
 </style>
