@@ -1,15 +1,157 @@
+<script>
+  import * as THREE from 'three';
+
+  import { onMount } from 'svelte'
+  import spriteDot from '$lib/assets/FoundTech Logo.svg'
+
+  onMount(async () => {
+
+    var SEPARATION = 100,
+      AMOUNTX = 100,
+      AMOUNTY = 70;
+  
+    var parentContainer = document.querySelector(".hero-container-bg")
+    var container
+    var camera, scene, renderer;
+  
+    var particles,
+      particle,
+      count = 0;
+  
+    var mouseX = 85,
+      mouseY = -342;
+  
+    var windowHalfX = window.innerWidth / 2;
+    var windowHalfY = window.innerHeight / 2;
+  
+    init();
+    animate();
+  
+    function init() {
+      container = document.createElement("div");
+      parentContainer.prepend(container);
+  
+      camera = new THREE.PerspectiveCamera(
+        120,
+        window.innerWidth / window.innerHeight,
+        1,
+        10000
+      );
+      camera.position.z = 1000;
+  
+      scene = new THREE.Scene();
+  
+      particles = new Array();
+
+  
+      var map = new THREE.TextureLoader().load(spriteDot)
+      var material = new THREE.SpriteMaterial({ map, color: 0xe1e1e1 })
+  
+      var i = 0;
+  
+      for (var ix = 0; ix < AMOUNTX; ix++) {
+        for (var iy = 0; iy < AMOUNTY; iy++) {
+          particle = particles[i++] = new THREE.Sprite(material);
+          particle.position.x = ix * SEPARATION - (AMOUNTX * SEPARATION) / 2;
+          particle.position.z = iy * SEPARATION - (AMOUNTY * SEPARATION) / 2;
+          scene.add(particle);
+        }
+      }
+  
+      renderer = new THREE.WebGLRenderer({ alpha: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      container.appendChild(renderer.domElement);
+  
+      // document.addEventListener("mousemove", onDocumentMouseMove, false);
+      // document.addEventListener("touchstart", onDocumentTouchStart, false);
+      // document.addEventListener("touchmove", onDocumentTouchMove, false);
+  
+      window.addEventListener("resize", onWindowResize, false);
+    }
+  
+    function onWindowResize() {
+      windowHalfX = window.innerWidth / 2;
+      windowHalfY = window.innerHeight / 2;
+  
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+  
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+  
+    //
+  
+    // function onDocumentMouseMove(event) {
+    //   mouseX = event.clientX - windowHalfX;
+    //   mouseY = event.clientY - windowHalfY;
+    // }
+  
+    // function onDocumentTouchStart(event) {
+    //   if (event.touches.length === 1) {
+    //     event.preventDefault();
+  
+    //     mouseX = event.touches[0].pageX - windowHalfX;
+    //     mouseY = event.touches[0].pageY - windowHalfY;
+    //   }
+    // }
+  
+    // function onDocumentTouchMove(event) {
+    //   if (event.touches.length === 1) {
+    //     event.preventDefault();
+  
+    //     mouseX = event.touches[0].pageX - windowHalfX;
+    //     mouseY = event.touches[0].pageY - windowHalfY;
+    //   }
+    // }
+  
+    //
+  
+    function animate() {
+      requestAnimationFrame(animate);
+  
+      render();
+    }
+  
+    function render() {
+      camera.position.x += (mouseX - camera.position.x) * 0.05;
+      camera.position.y += (-mouseY - camera.position.y) * 0.05;
+      camera.lookAt(scene.position);
+  
+      var i = 0;
+  
+      for (var ix = 0; ix < AMOUNTX; ix++) {
+        for (var iy = 0; iy < AMOUNTY; iy++) {
+          particle = particles[i++];
+          particle.position.y =
+            Math.sin((ix + count) * 0.3) * 50 + Math.sin((iy + count) * 0.5) * 50;
+          particle.scale.x = particle.scale.y =
+            (Math.sin((ix + count) * 0.3) + 1) * 2 +
+            (Math.sin((iy + count) * 0.5) + 1) * 2;
+        }
+      }
+  
+      renderer.render(scene, camera);
+  
+      count += 0.1;
+    }
+  })
+</script>
+
 <div>
   <section class="hero-container">
+    <div class="hero-container-bg"></div>
     <div class="hero-content">
       <h1>Affordable and Scalable Software Solutions for Small Businesses.</h1>
       <p>
-        We understand that running a small business can be challenging, especially when 
-        it comes to managing the day-to-day operations. Thats why we offer a range of 
-        user-friendly software tools to help streamline your business processes so you 
-        can build on a solid fountation.
+        We understand that running a small business can be challenging,
+        especially when it comes to managing the day-to-day operations. Thats
+        why we offer a range of user-friendly software tools to help streamline
+        your business processes so you can build on a solid fountation.
       </p>
       <button>Our Services</button>
-      <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+      <p>
+        Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
+      </p>
     </div>
   </section>
 
@@ -20,17 +162,17 @@
         <div>
           <div class="circle"><h1>1</h1></div>
           <h2>Application Development</h2>
-          <div class="card-graphic"></div>
+          <div class="card-graphic" />
         </div>
         <div>
           <div class="circle"><h1>2</h1></div>
           <h2>Software Integration</h2>
-          <div class="card-graphic"></div>
+          <div class="card-graphic" />
         </div>
         <div>
           <div class="circle"><h1>3</h1></div>
           <h2>Maintenance & Support</h2>
-          <div class="card-graphic"></div>
+          <div class="card-graphic" />
         </div>
       </div>
     </div>
@@ -41,19 +183,24 @@
       <div class="callout-ad">
         <h3>Introducing</h3>
         <h1>FullVue</h1>
-        <p>A full suite of features to tackle all of your small business needs.</p>
+        <p>
+          A full suite of features to tackle all of your small business needs.
+        </p>
         <button>Check It Out</button>
       </div>
       <div class="callout-screenshots">
         <div class="screenshot-back">
-          <div class="screenshot-front"></div>
+          <div class="screenshot-front" />
         </div>
       </div>
     </div>
   </section>
 
   <section class="quote-container">
-    <p>“Never argue with stupid people, they will drag you down to their level and then beat you with experience.”</p>
+    <p>
+      “Never argue with stupid people, they will drag you down to their level
+      and then beat you with experience.”
+    </p>
     <h3>- Mark Twain</h3>
   </section>
 
@@ -61,20 +208,21 @@
     <div>
       <h2>Our Approach</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta nesciunt, 
-        minus vitae blanditiis provident corrupti, suscipit nihil sapiente amet 
-        assumenda fugit unde rem non libero ut. Inventore deleniti at aliquam nesciunt 
-        maiores facere voluptas odio laboriosam eligendi. Tempore doloremque vitae rem 
-        iure corrupti aliquam sed. Eum distinctio, quos ea repellat repudiandae 
-        necessitatibus dignissimos unde quae quam deleniti? Rem, repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta
+        nesciunt, minus vitae blanditiis provident corrupti, suscipit nihil
+        sapiente amet assumenda fugit unde rem non libero ut. Inventore deleniti
+        at aliquam nesciunt maiores facere voluptas odio laboriosam eligendi.
+        Tempore doloremque vitae rem iure corrupti aliquam sed. Eum distinctio,
+        quos ea repellat repudiandae necessitatibus dignissimos unde quae quam
+        deleniti? Rem, repellat.
       </p>
       <button>About Us</button>
     </div>
     <div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div />
+      <div />
+      <div />
+      <div />
     </div>
   </section>
 
@@ -82,30 +230,29 @@
     <div>
       <h1>Software that is built to last.</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos 
-        cupiditate natus. Ex nostrum dolorem vero odio, atque, repellat ad, nam qui 
-        nobis inventore temporibus repellendus consequatur officiis beatae iste.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos
+        cupiditate natus. Ex nostrum dolorem vero odio, atque, repellat ad, nam
+        qui nobis inventore temporibus repellendus consequatur officiis beatae
+        iste.
       </p>
       <button>Reach Out Today</button>
     </div>
   </section>
-
 </div>
 
 <style>
-
   h1 {
     font-size: 64px;
     font-weight: bold;
     letter-spacing: 2%;
   }
-  
+
   h2 {
     font-size: 48px;
     font-weight: bold;
     letter-spacing: 2%;
   }
-  
+
   h3 {
     font-size: 36px;
     font-weight: bold;
@@ -119,6 +266,11 @@
     height: calc(100vh - 68px);
     height: calc(100svh - 68px);
     background-color: #c0c0c0;
+    position: relative;
+  }
+
+  .hero-container-bg {
+    position: absolute;
   }
 
   .hero-content {
@@ -132,7 +284,7 @@
   }
 
   .preview-cards div h2 {
-    margin-left: .5em;
+    margin-left: 0.5em;
     font-size: 36px;
   }
 
@@ -167,7 +319,7 @@
   }
 
   .cards div h2 {
-    margin: .5em 1em .5em 2em;
+    margin: 0.5em 1em 0.5em 2em;
   }
 
   .cards div .card-graphic {
@@ -207,9 +359,9 @@
 
   .callout-ad h1 {
     font-size: 110px;
-    margin: .25em 0 .25em 0;
+    margin: 0.25em 0 0.25em 0;
   }
-  
+
   .callout-ad p {
     margin: 0 0 1.5em 0;
     font-size: 28px;
@@ -255,9 +407,9 @@
     flex-direction: column;
     justify-content: center;
     color: white;
-    padding-left: 30%
+    padding-left: 30%;
   }
-  
+
   @media (min-width: 768px) {
     .preview-cards {
       width: 100%;
@@ -266,19 +418,18 @@
     .cards div {
       width: calc(33.33333% - 3.5%);
     }
-    
+
     .preview-cards div h2 {
       margin-left: 1em;
       font-size: 48px;
     }
-    
+
     .cards div h2 {
       font-size: 32px;
-      margin: .5em 1em .5em 1.5em;
+      margin: 0.5em 1em 0.5em 1.5em;
     }
-    
   }
-  
+
   @media (min-width: 1300px) {
     .preview-cards {
       width: 95%;
@@ -287,6 +438,5 @@
     .cards div h2 {
       font-size: 48px;
     }
-
   }
 </style>
