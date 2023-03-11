@@ -1,4 +1,4 @@
-<nav class="desktop-nav flex-container">
+<nav class="desktop-nav">
   <div class="home"><a class="test" href="/"><img class="logo" src={logo} alt="FoundTech Logo"/></a></div>
   <div class="menu-button"><a href="/services">Services</a></div>
   <div class="menu-button"><a href="/fullvue">FullVue</a></div>
@@ -6,7 +6,7 @@
   <div class="menu-button"><a href="/contacts">Contacts</a></div>
 </nav>
 
-<nav class="mobile-nav flex-container">
+<nav class="mobile-nav">
   <input type="checkbox" class="nav-toggle" />
   <div class="static-logo">
     <img class="logo" src={logo} alt="FoundTech Logo" />
@@ -35,18 +35,9 @@
 </script>
 
 <style>
-
-  main {
-    width: 80%;
-    margin: 0 auto 0 auto;
-  }
-
+  
   footer {
     height: 100px;
-  }
-
-  .flex-container {
-    display: flex;
   }
 
   .static-logo {
@@ -72,11 +63,15 @@
   }
   
   .desktop-nav {
+    display: flex;
     display: none;
+    margin: 7px 7px 0 7px;
   }
 
   .mobile-nav {
+    display: flex;
     position: relative;
+    margin: 7px 7px 0 7px;
   }
   
   .oc-nav-container {
