@@ -34,7 +34,7 @@
       camera = new THREE.PerspectiveCamera(
         100,
         document.body.clientWidth / window.innerHeight,
-        350,
+        1,
         3000
       );
       camera.position.z = 1000;
