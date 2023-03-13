@@ -45,7 +45,7 @@
 
   
       var map = new THREE.TextureLoader().load(spriteDot)
-      var material = new THREE.SpriteMaterial({ map, color: 0xe1e1e1 })
+      var material = new THREE.SpriteMaterial({ map })
   
       var i = 0;
   
@@ -139,7 +139,7 @@
 
 <div>
   <section class="hero-container">
-    <div class="hero-container-bg"></div>
+    <div class="hero-container-bg" style="overflow: hidden"></div>
     <div class="hero-content">
       <h1>Affordable and Scalable Software Solutions for Small Businesses.</h1>
       <p>
@@ -268,12 +268,12 @@
     background-color: #000000;
     position: relative;
   }
-
+  
   .hero-container-bg {
     position: absolute;
     z-index: 18;
   }
-
+  
   .hero-content {
     color: white;
     width: 75%;
