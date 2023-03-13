@@ -2,13 +2,13 @@
   import * as THREE from 'three';
 
   import { onMount } from 'svelte'
-  import spriteDot from '$lib/assets/FoundTech Logo.svg'
+  import spriteDot from '$lib/assets/Dot.png'
 
   onMount(async () => {
 
-    var SEPARATION = 100,
-      AMOUNTX = 100,
-      AMOUNTY = 70;
+    var SEPARATION = 150,
+      AMOUNTX = 150,
+      AMOUNTY = 105;
   
     var parentContainer = document.querySelector(".hero-container-bg")
     var container
@@ -32,10 +32,10 @@
       parentContainer.prepend(container);
   
       camera = new THREE.PerspectiveCamera(
-        120,
+        100,
         window.innerWidth / window.innerHeight,
-        1,
-        10000
+        350,
+        3000
       );
       camera.position.z = 1000;
   
@@ -123,16 +123,16 @@
         for (var iy = 0; iy < AMOUNTY; iy++) {
           particle = particles[i++];
           particle.position.y =
-            Math.sin((ix + count) * 0.3) * 50 + Math.sin((iy + count) * 0.5) * 50;
+            Math.sin((ix + count) * 0.3) * 150 + Math.sin((iy + count) * 0.5) * 150;
           particle.scale.x = particle.scale.y =
-            (Math.sin((ix + count) * 0.3) + 1) * 2 +
-            (Math.sin((iy + count) * 0.5) + 1) * 2;
+            (Math.sin((ix + count) * 0.3) + 1) * 8 +
+            (Math.sin((iy + count) * 0.5) + 1) * 8;
         }
       }
   
       renderer.render(scene, camera);
   
-      count += 0.1;
+      count += 0.05;
     }
   })
 </script>
@@ -265,17 +265,21 @@
     justify-content: center;
     height: calc(100vh - 68px);
     height: calc(100svh - 68px);
-    background-color: #c0c0c0;
+    background-color: #000000;
     position: relative;
   }
 
   .hero-container-bg {
     position: absolute;
+    z-index: 18;
   }
 
   .hero-content {
+    color: white;
     width: 75%;
     text-align: center;
+    position: relative;
+    z-index: 21;
   }
 
   .preview-cards {
@@ -384,7 +388,7 @@
     width: 82%;
     height: 85%;
     position: relative;
-    left: 180px;
+    left: 20%;
     display: flex;
     align-items: flex-end;
     border-radius: 35px 35px 0 0;
@@ -395,7 +399,7 @@
     width: 65%;
     height: 65%;
     position: relative;
-    left: -190px;
+    left: -20%;
     border-radius: 35px 35px 0 0;
   }
 
@@ -408,6 +412,7 @@
     justify-content: center;
     color: white;
     padding-left: 30%;
+    box-sizing: border-box;
   }
 
   @media (min-width: 768px) {
