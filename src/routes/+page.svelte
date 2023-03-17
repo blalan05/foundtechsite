@@ -7,8 +7,8 @@
   onMount(async () => {
 
     var SEPARATION = 150,
-      AMOUNTX = 150,
-      AMOUNTY = 105;
+      AMOUNTX = 72,
+      AMOUNTY = 12;
   
     var parentContainer = document.querySelector(".hero-container-bg")
     var container
