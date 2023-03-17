@@ -162,17 +162,17 @@
         <div>
           <div class="circle"><h1>1</h1></div>
           <h2>Application Development</h2>
-          <div class="card-graphic" />
+          <div class="card-graphic"></div>
         </div>
         <div>
           <div class="circle"><h1>2</h1></div>
           <h2>Software Integration</h2>
-          <div class="card-graphic" />
+          <div class="card-graphic"></div>
         </div>
         <div>
           <div class="circle"><h1>3</h1></div>
           <h2>Maintenance & Support</h2>
-          <div class="card-graphic" />
+          <div class="card-graphic"></div>
         </div>
       </div>
     </div>
@@ -190,7 +190,7 @@
       </div>
       <div class="callout-screenshots">
         <div class="screenshot-back">
-          <div class="screenshot-front" />
+          <div class="screenshot-front"></div>
         </div>
       </div>
     </div>
@@ -204,8 +204,8 @@
     <h3>- Mark Twain</h3>
   </section>
 
-  <section>
-    <div>
+  <section class="approach-container">
+    <div class="approach">
       <h2>Our Approach</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta
@@ -218,16 +218,40 @@
       </p>
       <button>About Us</button>
     </div>
-    <div>
-      <div />
-      <div />
-      <div />
-      <div />
+    <div class="pillars">
+      <div>
+        <div class="circle">1</div>
+        <div class="pillar-text">
+          <h3>pillar</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius eum nesciunt nobis nostrum quam aperiam repellendus temporibus inventore iste.</p>
+        </div>
+      </div>
+      <div>
+        <div class="circle">2</div>
+        <div class="pillar-text">
+          <h3>pillar</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius eum nesciunt nobis nostrum quam aperiam repellendus temporibus inventore iste.</p>
+        </div>
+      </div>
+      <div>
+        <div class="circle">3</div>
+        <div class="pillar-text">
+          <h3>pillar</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius eum nesciunt nobis nostrum quam aperiam repellendus temporibus inventore iste.</p>
+        </div>
+      </div>
+      <div>
+        <div class="circle">4</div>
+        <div class="pillar-text">
+          <h3>pillar</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius eum nesciunt nobis nostrum quam aperiam repellendus temporibus inventore iste.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section>
-    <div>
+  <section class="call-to-action-section">
+    <div class="call-to-action">
       <h1>Software that is built to last.</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos
@@ -280,25 +304,30 @@
     text-align: center;
     position: relative;
     z-index: 21;
+    text-shadow: 1px 1px 2px gray;
   }
 
   .preview-cards {
     width: 95%;
     margin: 0 auto;
+    position: relative;
+    background-color: white;
+    z-index: 40;
   }
 
   .preview-cards div h2 {
     margin-left: 0.5em;
     font-size: 36px;
   }
-
+  
   .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 3.5%;
+    row-gap: 30px;
   }
-
+  
   .cards div {
     display: flex;
     flex-direction: column;
@@ -307,19 +336,19 @@
     background-color: #c0c0c0;
     border-radius: 20px;
   }
-
+  
   .cards div .circle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     margin: 30px 0 0 60px;
     border-radius: 50%;
     border: solid;
     border-width: 15px;
     border-color: lightblue;
-    background-color: blue;
+    background-color: aqua;
   }
 
   .cards div h2 {
@@ -327,7 +356,7 @@
   }
 
   .cards div .card-graphic {
-    background-color: green;
+    background-color: aqua;
     margin-left: 50px;
     border-radius: 20px 0 20px 0;
     width: calc(100% - 50px);
@@ -336,24 +365,25 @@
   .fullvue-callout-container {
     display: flex;
     width: 100%;
-    height: 105vh;
     align-items: center;
     justify-content: center;
   }
 
   .fullvue-callout {
     display: flex;
+    flex-direction: column;
     width: 95%;
-    height: 105vh;
     align-items: center;
     justify-content: center;
   }
 
   .callout-ad {
-    width: 35%;
-    margin: auto 5%;
-    position: relative;
-    top: -5%;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .callout-ad h3 {
@@ -378,9 +408,9 @@
 
   .callout-screenshots {
     display: flex;
-    width: 65%;
-    height: 105vh;
+    height: 75vh;
     align-items: flex-end;
+    width: 95%;
   }
 
   .callout-screenshots .screenshot-back {
@@ -415,6 +445,78 @@
     box-sizing: border-box;
   }
 
+  .approach-container {
+    display: flex;
+    width: 95%;
+    height: 110vh;
+  }
+
+  .approach {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    margin: 0 5% 0 5%;
+    row-gap: 6%;
+  }
+
+  .approach button {
+    width: 30%;
+    height: 70px;
+    margin-top: 3%;
+  }
+
+  .pillars {
+    display: flex;
+    flex-direction: column;
+    row-gap:  5%;
+    width: 55%;
+    justify-content: center;
+  }
+
+  .pillars div {
+    display: flex;
+    gap: 10%;
+  }
+
+  .pillars div .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border-width: 15px;
+    border-color: lightblue;
+    border-style: solid;
+    background-color: aqua;
+  }
+
+  .pillars div .pillar-text {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+  }
+
+  .call-to-action-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .call-to-action {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10%;
+  }
+
   @media (min-width: 768px) {
     .preview-cards {
       width: 100%;
@@ -432,6 +534,31 @@
     .cards div h2 {
       font-size: 32px;
       margin: 0.5em 1em 0.5em 1.5em;
+    }
+
+    .fullvue-callout-container {
+      height: 105vh;
+    }
+
+    .fullvue-callout {
+      flex-direction: row;
+      height: 105vh;
+    }
+
+    .callout-ad {
+      display: block;
+      width: 35%;
+      margin: auto 5%;
+      position: relative;
+      text-align: left;
+      top: -5%;
+    }
+
+    .callout-screenshots {
+      display: flex;
+      width: 65%;
+      height: 105vh;
+      align-items: flex-end;
     }
   }
 
