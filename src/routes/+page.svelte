@@ -1,5 +1,5 @@
 <script>
-  import * as THREE from 'three';
+  import { PerspectiveCamera, TextureLoader, SpriteMaterial, WebGLRenderer, Sprite, Scene } from 'three';
 
   import { onMount } from 'svelte'
   import spriteDot from '$lib/assets/Dot.png'
@@ -31,7 +31,7 @@
       container = document.createElement("div");
       parentContainer.prepend(container);
   
-      camera = new THREE.PerspectiveCamera(
+      camera = new PerspectiveCamera(
         100,
         document.body.clientWidth / window.innerHeight,
         1,
@@ -39,26 +39,26 @@
       );
       camera.position.z = 1000;
   
-      scene = new THREE.Scene();
+      scene = new Scene();
   
       particles = new Array();
 
   
-      var map = new THREE.TextureLoader().load(spriteDot)
-      var material = new THREE.SpriteMaterial({ map })
+      var map = new TextureLoader().load(spriteDot)
+      var material = new SpriteMaterial({ map })
   
       var i = 0;
   
       for (var ix = 0; ix < AMOUNTX; ix++) {
         for (var iy = 0; iy < AMOUNTY; iy++) {
-          particle = particles[i++] = new THREE.Sprite(material);
+          particle = particles[i++] = new Sprite(material);
           particle.position.x = ix * SEPARATION - (AMOUNTX * SEPARATION) / 2;
           particle.position.z = iy * SEPARATION - (AMOUNTY * SEPARATION) / 2;
           scene.add(particle);
         }
       }
   
-      renderer = new THREE.WebGLRenderer({ alpha: true });
+      renderer = new WebGLRenderer({ alpha: true });
       renderer.setSize(document.body.clientWidth, window.innerHeight);
       container.appendChild(renderer.domElement);
   
