@@ -114,7 +114,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-style: solid;
   }
 
   .feature {
@@ -123,7 +122,6 @@
     align-items: center;
     justify-content: center;
     gap: 10%;
-    border-style: solid;
     margin-bottom: 10%;
   }
 
@@ -141,7 +139,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 10%;
-    border-style: solid;
   }
 
   .circle {
@@ -159,7 +156,42 @@
     display: flex;
     flex-direction: column;
     gap: 10%;
-    border-style: solid;
+  }
+
+  .pricing-section {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pricing {
+    background-color: #c0c0c0;
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .call-to-action-section {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .call-to-action {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
 
