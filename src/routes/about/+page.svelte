@@ -31,18 +31,63 @@
   </section>
 
   <section class="pillars-section">
-    <h1>The pillars upon which we are built.</h1>
-    <div class="pillar">
-      <div class="circle"></div>
-      <h1>pillar</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
+    <div class="pillars-title">
+      <h1>The pillars upon which we are built.</h1>
+    </div>
+    
+    <div class="pillars">
+      <div class="pillar">
+        <div class="circle"></div>
+        <h1>pillar</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
+      </div>
+      <div class="pillar">
+        <div class="circle"></div>
+        <h1>pillar</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
+      </div>
+      <div class="pillar">
+        <div class="circle"></div>
+        <h1>pillar</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
+      </div>
+      <div class="pillar">
+        <div class="circle"></div>
+        <h1>pillar</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
+      </div>
+      <div class="pillar">
+        <div class="circle"></div>
+        <h1>pillar</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
+      </div>
+      <div class="pillar">
+        <div class="circle"></div>
+        <h1>pillar</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
+      </div>
+      <div class="pillar">
+        <div class="circle"></div>
+        <h1>pillar</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
+      </div>
+      <div class="pillar">
+        <div class="circle"></div>
+        <h1>pillar</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
+      </div>
     </div>
   </section>
 
   <section class="bio-section">
-    <div class="bio"></div>
-    <div class="bio"></div>
-    <div class="bio"></div>
+    <div class="bio-title">
+      <h1>Meet the team</h1>
+    </div>
+    <div class="bios">
+      <div class="bio"></div>
+      <div class="bio"></div>
+      <div class="bio"></div>
+    </div>
   </section>
 
   <section class="call-to-action-section">
@@ -121,5 +166,97 @@
     align-items: center;
     text-align: center;
     margin: 0 10%;
+  }
+
+  .pillars-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pillars-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+
+  .pillars {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle {
+    height: 110px;
+    width: 110px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 15px;
+    border-color: lightblue;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pillar {
+    width: 21.25%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+  }
+
+  .bio-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bio-title {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+
+  .bios{
+    width: 95%;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+
+  .bio {
+    width: 30%;
+    height: 700px;
+    border-radius: 30px;
+    background-color: aqua;
+  }
+
+  .call-to-action-section {
+    height: 650px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
   }
 </style>
