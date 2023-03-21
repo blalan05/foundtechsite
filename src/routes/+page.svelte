@@ -13,11 +13,11 @@
     var parentContainer = document.querySelector(".hero-container-bg")
     var container
     var camera, scene, renderer;
-  
+    
     var particles,
-      particle,
-      count = 0;
-  
+    particle,
+    count = 0;
+    
     var mouseX = 85,
       mouseY = -342;
   
