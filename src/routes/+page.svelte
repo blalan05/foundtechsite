@@ -33,7 +33,7 @@
   
       camera = new PerspectiveCamera(
         100,
-        document.body.clientWidth / window.innerHeight,
+        document.body.clientWidth / (window.innerHeight - 68),
         1,
         3000
       );
@@ -59,7 +59,7 @@
       }
   
       renderer = new WebGLRenderer({ alpha: true });
-      renderer.setSize(document.body.clientWidth, window.innerHeight);
+      renderer.setSize(document.body.clientWidth, (window.innerHeight - 68));
       container.appendChild(renderer.domElement);
   
       // document.addEventListener("mousemove", onDocumentMouseMove, false);
@@ -72,11 +72,10 @@
     function onWindowResize() {
       windowHalfX = document.body.clientWidth / 2;
       windowHalfY = document.body.clientHeight / 2;
-  
-      camera.aspect = document.body.clientWidth / window.innerHeight;
+      camera.aspect = document.body.clientWidth / (window.innerHeight - 68);
       camera.updateProjectionMatrix();
   
-      renderer.setSize(document.body.clientWidth, window.innerHeight);
+      renderer.setSize(document.body.clientWidth, (window.innerHeight - 68));
     }
   
     //

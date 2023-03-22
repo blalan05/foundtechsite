@@ -18,34 +18,24 @@
   </div>
 
 </nav>
-<!--
-<nav class="desktop-nav">
-  <div class="home"><a class="test" href="/"><img class="logo" src={logo} alt="FoundTech Logo"/></a></div>
-  <div class="menu-button"><a href="/services">Services</a></div>
-  <div class="menu-button"><a href="/fullvue">FullVue</a></div>
-  <div class="menu-button"><a href="/about">About</a></div>
-  <div class="menu-button"><a href="/contacts">Contacts</a></div>
-</nav>
--->
 
 <nav class="mobile-nav">
-
-  <button class="nav-btn" aria-controls="primary-navigation" aria-expanded="false">
-    <svg class="hamburger" viewBox="0 0 100 100" width="35">
-      <rect class="line top" 
-            width="80" height="10"
-            x="10" y="20" rx="5">
-      </rect>
-      <rect class="line middle" 
-            width="80" height="10"
-            x="10" y="45"  rx="5">
-      </rect>
-      <rect class="line bottom" 
-            width="80" height="10"
-            x="10" y="70" rx="5">
-      </rect>
-    </svg>
-  </button>
+  <button class="nav-btn" class:open={isOpen} on:click={() => isOpen = !isOpen} aria-controls="primary-navigation" aria-expanded="false">
+      <svg class="hamburger" viewBox="0 0 100 100" width="35" height="39">
+        <rect class="line top" 
+              width="80" height="10"
+              x="10" y="20" rx="5">
+        </rect>
+        <rect class="line middle" 
+              width="80" height="10"
+              x="10" y="45"  rx="5">
+        </rect>
+        <rect class="line bottom" 
+              width="80" height="10"
+              x="10" y="70" rx="5">
+        </rect>
+      </svg>
+    </button>
 
   <div class="static-logo">
     <img class="logo" src={logo} alt="FoundTech Logo" />
@@ -78,6 +68,8 @@
 
 <script>
   import logo from '$lib/assets/FoundTech Logo.svg'
+
+  let isOpen = false
 </script>
 
 <style>
@@ -176,10 +168,10 @@
       y 300ms ease-in 300ms,
       rotate 300ms ease-in,
       opacity 0ms 300ms;
-    transform-origin: center;
+    transform-origin: 50% 50%;
   }
   
-  .nav-btn:hover .line {
+  .nav-btn.open .line {
     transition:
       y 300ms ease-in,
       rotate 300ms ease-in 300ms,
@@ -187,19 +179,19 @@
   }
 
 
-  .nav-btn:hover :is(.top, .bottom) {
+  .nav-btn.open :is(.top, .bottom) {
     y: 45;
   }
 
-  .nav-btn:hover .top {
+  .nav-btn.open .top {
     rotate: 45deg;
   }
 
-  .nav-btn:hover .middle {
+  .nav-btn.open .middle {
     opacity: 0;
   }
 
-  .nav-btn:hover .bottom {
+  .nav-btn.open .bottom {
     rotate: 135deg;
   }
 
