@@ -18,19 +18,10 @@
   </div>
 
 </nav>
-<!--
-<nav class="desktop-nav">
-  <div class="home"><a class="test" href="/"><img class="logo" src={logo} alt="FoundTech Logo"/></a></div>
-  <div class="menu-button"><a href="/services">Services</a></div>
-  <div class="menu-button"><a href="/fullvue">FullVue</a></div>
-  <div class="menu-button"><a href="/about">About</a></div>
-  <div class="menu-button"><a href="/contacts">Contacts</a></div>
-</nav>
--->
 
 <nav class="mobile-nav">
 
-  <button class="nav-btn" aria-controls="primary-navigation" aria-expanded="false">
+  <button class="nav-btn" class:open={isOpen} on:click={openCloseMenu}>
     <svg class="hamburger" viewBox="0 0 100 100" width="35">
       <rect class="line top" 
             width="80" height="10"
@@ -78,6 +69,17 @@
 
 <script>
   import logo from '$lib/assets/FoundTech Logo.svg'
+
+  let isOpen = false;
+
+  function openCloseMenu() {
+    if (isOpen === false) {
+      isOpen = true;
+    } else {
+      isOpen = false;
+    }
+  }
+
 </script>
 
 <style>
@@ -165,6 +167,7 @@
   }
   
   .nav-btn {
+    z-index: 999;
     background: transparent;
     margin: 0;
     padding: 0;
@@ -179,7 +182,7 @@
     transform-origin: center;
   }
   
-  .nav-btn:hover .line {
+  .nav-btn.open .line {
     transition:
       y 300ms ease-in,
       rotate 300ms ease-in 300ms,
@@ -187,24 +190,20 @@
   }
 
 
-  .nav-btn:hover :is(.top, .bottom) {
+  .nav-btn.open :is(.top, .bottom) {
     y: 45;
   }
 
-  .nav-btn:hover .top {
+  .nav-btn.open .top {
     rotate: 45deg;
   }
 
-  .nav-btn:hover .middle {
+  .nav-btn.open .middle {
     opacity: 0;
   }
 
-  .nav-btn:hover .bottom {
+  .nav-btn.open .bottom {
     rotate: 135deg;
-  }
-
-  .nav-btn[aria-expanded="true"] .top {
-
   }
   
   @media (min-width: 768px) {
