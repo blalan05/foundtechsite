@@ -29,11 +29,29 @@
 -->
 
 <nav class="mobile-nav">
-  <input type="checkbox" class="nav-toggle" />
+
+  <button class="nav-btn" aria-controls="primary-navigation" aria-expanded="false">
+    <svg class="hamburger" viewBox="0 0 100 100" width="35">
+      <rect class="line top" 
+            width="80" height="10"
+            x="10" y="20" rx="5">
+      </rect>
+      <rect class="line middle" 
+            width="80" height="10"
+            x="10" y="45"  rx="5">
+      </rect>
+      <rect class="line bottom" 
+            width="80" height="10"
+            x="10" y="70" rx="5">
+      </rect>
+    </svg>
+  </button>
+
   <div class="static-logo">
     <img class="logo" src={logo} alt="FoundTech Logo" />
   </div>
-  <div class=oc-nav-container>
+
+  <div class="oc-nav-container" style="display: none">
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/fullvue">FullVue</a></li>
@@ -41,6 +59,11 @@
       <li><a href="/contact">Contacts</a></li>
     </ul>
   </div>
+
+  <div class="call-to-action-btn">
+    <button>Contact Us</button>
+  </div>
+
 </nav>
 
 <div>
@@ -62,7 +85,7 @@
   footer {
     height: 100px;
   }
-
+  
   .static-logo {
     max-width: 250px;
     margin: 7px;
@@ -70,20 +93,15 @@
   .logo {
     width: 100%;
   }
-
+  
   .logo-no-link {
     width: 15%;
   }
-
-  .home {
-    width: 15%;
-    align-self: center;
-  }
-
+  
 /*
-  .menu-button {
-    width: 10%;
-    font-size: 30px;
+.menu-button {
+  width: 10%;
+  font-size: 30px;
     text-align: center;
     border-style: solid;
   }
@@ -96,7 +114,7 @@
     width: 100%;
     border-style: solid;
   }
-
+  
   .desktop-nav .dt-nav-container ul {
     display: flex;
     justify-content: center;
@@ -105,8 +123,12 @@
   }
 
   .desktop-nav .dt-nav-container li {
-    display: inline;
+    display: inline-block;
     font-size: 26px;
+  }
+  
+  .desktop-nav .dt-nav-container li a {
+    text-decoration: none;
   }
 
   .desktop-nav .call-to-action-btn {
@@ -114,7 +136,7 @@
     justify-content: flex-end;
     flex-grow: 1;
   }
-
+  
   .desktop-nav .call-to-action-btn button {
     height: 45px;
     width: 150px;
@@ -125,7 +147,9 @@
   .mobile-nav {
     display: flex;
     position: relative;
-    margin: 7px 7px 0 7px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5% 0 5%;
   }
   
   .oc-nav-container {
@@ -139,16 +163,50 @@
   .oc-nav-container li a {
     color: white;
   }
-
-  .nav-toggle:checked {
-    left: 0;
+  
+  .nav-btn {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+  }
+  
+  .nav-btn .line {
+    transition:
+      y 300ms ease-in 300ms,
+      rotate 300ms ease-in,
+      opacity 0ms 300ms;
+    transform-origin: center;
+  }
+  
+  .nav-btn:hover .line {
+    transition:
+      y 300ms ease-in,
+      rotate 300ms ease-in 300ms,
+      opacity 0ms 300ms;
   }
 
-  .test {
-    align-self: center;
-    text-align: center;
+
+  .nav-btn:hover :is(.top, .bottom) {
+    y: 45;
   }
 
+  .nav-btn:hover .top {
+    rotate: 45deg;
+  }
+
+  .nav-btn:hover .middle {
+    opacity: 0;
+  }
+
+  .nav-btn:hover .bottom {
+    rotate: 135deg;
+  }
+
+  .nav-btn[aria-expanded="true"] .top {
+
+  }
+  
   @media (min-width: 768px) {
     .desktop-nav {
       display: flex;
@@ -157,6 +215,6 @@
     .mobile-nav {
       display: none;
     }
-
+    
   }
 </style>
