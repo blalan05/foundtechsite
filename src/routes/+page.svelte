@@ -294,7 +294,7 @@
   
   .hero-container-bg {
     position: absolute;
-    z-index: 18;
+    z-index: 15;
   }
   
   .hero-content {

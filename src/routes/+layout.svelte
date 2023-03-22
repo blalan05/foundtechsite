@@ -157,6 +157,7 @@
   }
   
   .nav-btn {
+    z-index: 999;
     background: transparent;
     margin: 0;
     padding: 0;
@@ -193,10 +194,6 @@
 
   .nav-btn.open .bottom {
     rotate: 135deg;
-  }
-
-  .nav-btn[aria-expanded="true"] .top {
-
   }
   
   @media (min-width: 768px) {
