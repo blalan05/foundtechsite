@@ -19,39 +19,41 @@
 
 </nav>
 
-<nav class="mobile-nav">
-  <button class="nav-btn" class:open={isOpen} on:click={() => isOpen = !isOpen} aria-controls="primary-navigation" aria-expanded="false">
-      <svg class="hamburger" viewBox="0 0 100 100" width="35" height="39">
-        <rect class="line top" 
-              width="80" height="10"
-              x="10" y="20" rx="5">
-        </rect>
-        <rect class="line middle" 
-              width="80" height="10"
-              x="10" y="45"  rx="5">
-        </rect>
-        <rect class="line bottom" 
-              width="80" height="10"
-              x="10" y="70" rx="5">
-        </rect>
-      </svg>
-    </button>
+<nav>
+  <div class="mobile-nav">
+    <button class="nav-btn" class:open={isOpen} on:click={() => isOpen = !isOpen} aria-controls="primary-navigation">
+        <svg class="hamburger" viewBox="0 0 100 100" width="35" height="39">
+          <rect class="line top" 
+                width="80" height="10"
+                x="10" y="20" rx="5">
+          </rect>
+          <rect class="line middle" 
+                width="80" height="10"
+                x="10" y="45"  rx="5">
+          </rect>
+          <rect class="line bottom" 
+                width="80" height="10"
+                x="10" y="70" rx="5">
+          </rect>
+        </svg>
+      </button>
 
-  <div class="static-logo">
-    <img class="logo" src={logo} alt="FoundTech Logo" />
+    <div class="static-logo">
+      <img class="logo" src={logo} alt="FoundTech Logo" />
+    </div>
+
+    <div class="call-to-action-btn">
+      <button>Contact Us</button>
+    </div>
   </div>
 
-  <div class="oc-nav-container" style="display: none">
+  <div class="oc-nav-container" class:open={isOpen}>
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/fullvue">FullVue</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/contact">Contacts</a></li>
     </ul>
-  </div>
-
-  <div class="call-to-action-btn">
-    <button>Contact Us</button>
   </div>
 
 </nav>
@@ -142,22 +144,31 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 5% 0 5%;
+    z-index: 200;
   }
   
   .oc-nav-container {
-    position: absolute;
-    left: 420px;
-    width: 25%;
-    max-width: 420px;
-    background: black;
+    display: none;
+  }
+  
+  .oc-nav-container.open {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 5% 0 5%;
+    position: fixed;
+    font-size: 24px;
+    background-color: white;
+    z-index: 500;
+    flex-direction: column;
+    height: auto;
+    color: black;
   }
 
   .oc-nav-container li a {
-    color: white;
+    color: black;
   }
   
   .nav-btn {
-    z-index: 999;
     background: transparent;
     margin: 0;
     padding: 0;
