@@ -106,7 +106,6 @@
     align-items: center;
     gap: 10%;
     width: 100%;
-    border-style: solid;
   }
   
   .desktop-nav .dt-nav-container ul {

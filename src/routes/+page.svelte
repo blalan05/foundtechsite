@@ -2,7 +2,7 @@
   import { PerspectiveCamera, TextureLoader, SpriteMaterial, WebGLRenderer, Sprite, Scene } from 'three';
 
   import { onMount } from 'svelte'
-  import spriteDot from '$lib/assets/Dot.png'
+  import spriteDot from '$lib/assets/DotBlack.png'
 
   onMount(async () => {
 
@@ -288,7 +288,7 @@
     justify-content: center;
     height: calc(100vh - 68px);
     height: calc(100svh - 68px);
-    background-color: #000000;
+    background-color: #ffffff;
     position: relative;
   }
   
@@ -298,7 +298,7 @@
   }
   
   .hero-content {
-    color: white;
+    color: black;
     width: 75%;
     text-align: center;
     position: relative;
@@ -315,7 +315,7 @@
   }
 
   .preview-cards div h2 {
-    margin-left: 0.5em;
+    margin: 0 0 1em 0.5em;
     font-size: 36px;
   }
   
@@ -331,8 +331,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: calc(100vh - 150px);
-    background-color: #c0c0c0;
+    height: 600px;
+    background-color: #468a00;
     border-radius: 20px;
   }
   
@@ -346,16 +346,18 @@
     border-radius: 50%;
     border: solid;
     border-width: 15px;
-    border-color: lightblue;
-    background-color: aqua;
+    color: #8dc6e7;
+    border-color: #8dc6e7;
+    background-color: #2c5aa0;
   }
 
   .cards div h2 {
     margin: 0.5em 1em 0.5em 2em;
+    color: white;
   }
 
   .cards div .card-graphic {
-    background-color: aqua;
+    background-color: #8dc6e7;
     margin-left: 50px;
     border-radius: 20px 0 20px 0;
     width: calc(100% - 50px);
@@ -446,17 +448,21 @@
 
   .approach-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 95%;
-    height: 110vh;
+    height: 170vh;
   }
 
   .approach {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 45%;
-    margin: 0 5% 0 5%;
+    align-items: center;
+    width: 80%;
+    margin: 10% 5% 10% 5%;
     row-gap: 6%;
+    height: 60%;
   }
 
   .approach button {
@@ -469,8 +475,9 @@
     display: flex;
     flex-direction: column;
     row-gap:  5%;
-    width: 55%;
+    width: 90%;
     justify-content: center;
+    height: 90%;
   }
 
   .pillars div {
@@ -482,6 +489,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 125px;
     width: 125px;
     height: 125px;
     border-radius: 50%;
@@ -568,6 +576,27 @@
 
     .cards div h2 {
       font-size: 48px;
+    }
+
+    .approach-container {
+      flex-direction: row;
+      height: 110vh;
+    }
+
+    .approach {
+      justify-content: center;
+      align-items: flex-start;
+      width: 45%;
+      margin: 0 5% 0 5%;
+      row-gap: 6%;
+    }
+
+    .pillars {
+      display: flex;
+      flex-direction: column;
+      row-gap:  5%;
+      width: 55%;
+      justify-content: center;
     }
   }
 </style>
