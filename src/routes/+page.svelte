@@ -298,12 +298,32 @@
   }
   
   .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 7%;
     color: black;
     width: 75%;
     text-align: center;
     position: relative;
     z-index: 21;
     text-shadow: 1px 1px 2px gray;
+  }
+
+  button {
+    padding: 25px 35px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #468a00;
+    border-radius: 7px;
+    border-style: none;
+  }
+
+  button:hover {
+    background-image: linear-gradient(to right, #468a00, #2c5aa0)
   }
 
   .preview-cards {
@@ -402,11 +422,6 @@
     font-size: 28px;
   }
 
-  .callout-ad button {
-    width: 45%;
-    height: 75px;
-  }
-
   .callout-screenshots {
     display: flex;
     height: 75vh;
@@ -463,12 +478,6 @@
     margin: 10% 5% 10% 5%;
     row-gap: 6%;
     height: 60%;
-  }
-
-  .approach button {
-    width: 30%;
-    height: 70px;
-    margin-top: 3%;
   }
 
   .pillars {

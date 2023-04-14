@@ -173,13 +173,17 @@
     padding: 0;
     border-style: none;
   }
+
+  .hamburger {
+    transform-origin: center;
+    transform-box: view-box;
+  }
   
   .nav-btn .line {
     transition:
       y 300ms ease-in 300ms,
       rotate 300ms ease-in,
       opacity 0ms 300ms;
-    transform-origin: 50% 50%;
   }
   
   .nav-btn.open .line {
