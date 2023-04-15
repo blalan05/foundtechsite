@@ -185,7 +185,7 @@
         <p>
           A full suite of features to tackle all of your small business needs.
         </p>
-        <button>Check It Out</button>
+        <a href="/fullvue"><button>Check It Out</button></a>
       </div>
       <div class="callout-screenshots">
         <div class="screenshot-back">
@@ -215,7 +215,7 @@
         quos ea repellat repudiandae necessitatibus dignissimos unde quae quam
         deleniti? Rem, repellat.
       </p>
-      <button>About Us</button>
+      <a href="/about"><button>About Us</button></a>
     </div>
     <div class="pillars">
       <div>
@@ -320,6 +320,7 @@
     background-color: #468a00;
     border-radius: 7px;
     border-style: none;
+    transition: background-image 10s;
   }
 
   button:hover {
@@ -345,6 +346,7 @@
     justify-content: center;
     gap: 3.5%;
     row-gap: 30px;
+    z-index: 60;
   }
   
   .cards div {
@@ -388,6 +390,10 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(white, #2c5aa0);
+    background-size: 100% 120%;
+    background-position-y: bottom;
+    z-index: 50;
   }
 
   .fullvue-callout {
@@ -401,10 +407,11 @@
   .callout-ad {
     display: flex;
     flex-direction: column;
-    height: 75vh;
+    height: 400px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
   }
 
   .callout-ad h3 {
@@ -450,8 +457,10 @@
   }
 
   .quote-container {
-    background-color: black;
-    height: 500px;
+    background-image: url("$lib/assets/quote_background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -459,6 +468,9 @@
     color: white;
     padding-left: 30%;
     box-sizing: border-box;
+    box-shadow: 0 25px 50px 0 #777777;
+    position: relative;
+    top: -1px;
   }
 
   .approach-container {

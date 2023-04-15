@@ -1,7 +1,7 @@
 <nav class="desktop-nav">
 
   <div class="static-logo">
-    <img class="logo" src="{logo}" alt="FoundTech Logo">
+    <a href="/"><img class="logo" src="{logo}" alt="FoundTech Logo"></a>
   </div>
 
   <div class="dt-nav-container">
@@ -14,7 +14,7 @@
   </div>
 
   <div class="call-to-action-btn">
-    <button>Contact Us</button>
+    <a href="/contact"><button>Contact Us</button></a>
   </div>
 
 </nav>
@@ -43,7 +43,7 @@
     </div>
 
     <div class="call-to-action-btn">
-      <button>Contact Us</button>
+      <a href="/contact"><button>Contact Us</button></a>
     </div>
   </div>
 
@@ -82,7 +82,7 @@
   
   .static-logo {
     max-width: 250px;
-    margin: 7px;
+    margin: 7px 7px 7px 80px;
   }
   .logo {
     width: 100%;
@@ -91,15 +91,6 @@
   .logo-no-link {
     width: 15%;
   }
-  
-/*
-.menu-button {
-  width: 10%;
-  font-size: 30px;
-    text-align: center;
-    border-style: solid;
-  }
-*/
 
   .desktop-nav {
     display: none;
@@ -128,13 +119,6 @@
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
-  }
-  
-  .desktop-nav .call-to-action-btn button {
-    height: 45px;
-    width: 150px;
-    border-radius: 7px;
-    margin-right: 14px;
   }
 
   .mobile-nav {
@@ -209,10 +193,33 @@
   .nav-btn.open .bottom {
     rotate: 135deg;
   }
+
+  button {
+    padding: 10px 15px;
+    border-radius: 7px;
+    border-style: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #2c5aa0;
+  }
+
+  button:hover {
+    background-image: linear-gradient(to right, #2c5aa0, #468a00)
+  }
   
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     .desktop-nav {
       display: flex;
+    }
+
+    button {
+      padding: 15px 20px;
+      margin-right: 14px;
+    }
+
+    .static-logo {
+      margin: 7px;
     }
 
     .mobile-nav {
