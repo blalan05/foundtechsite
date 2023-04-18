@@ -437,7 +437,7 @@
   }
 
   .callout-screenshots .screenshot-back {
-    background-color: #c0c0c0;
+    background-color: #468a00;
     width: 82%;
     height: 85%;
     position: relative;
@@ -448,7 +448,7 @@
   }
 
   .callout-screenshots .screenshot-front {
-    background-color: aqua;
+    background-color: #8dc6e7;
     width: 65%;
     height: 65%;
     position: relative;
@@ -513,11 +513,12 @@
     min-width: 125px;
     width: 125px;
     height: 125px;
+    color: #8dc6e7;
     border-radius: 50%;
     border-width: 15px;
-    border-color: lightblue;
+    border-color: #8dc6e7;
     border-style: solid;
-    background-color: aqua;
+    background-color: #2c5aa0;
   }
 
   .pillars div .pillar-text {

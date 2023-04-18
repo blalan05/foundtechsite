@@ -72,6 +72,10 @@
     align-items: center;
     height: 360vh;
     width: 100%;
+    background-image: url('$lib/assets/golfdots.png');
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    background-position: center 30%;
   }
 
   .intro {
@@ -91,6 +95,7 @@
     box-shadow: 15px 20px 60px 20px #777777;
     border-style: solid;
     border-width: 10px;
+    background-color: #c0c0c0;
   }
 
   .endorsements {
@@ -183,6 +188,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('$lib/assets/golfdots.png');
+    background-repeat: no-repeat;
+    background-position: center top;
   }
 
   .call-to-action {
