@@ -72,11 +72,11 @@
 
   <div class="links">
     <ul>
-      <a href="/"><li>Home</li></a>
-      <a href="/about"><li>About</li></a>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
       <li>Privacy Policy</li>
-      <a href="/fullvue"><li>FullVue</li></a>
-      <a href="/contact"><li>Contact</li></a>
+      <li><a href="/fullvue">FullVue</a></li>
+      <li><a href="/contact">Contact</a></li>
       <li>Terms of Service</li>
     </ul>
   </div> 
@@ -93,26 +93,28 @@
 <style>
   
   footer {
-    height: 200px;
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15%;
     background-image: linear-gradient(white, #8dc6e7);
   }
 
   footer .links {
-    width: 40%;
+    width: 90%
   }
 
   footer .links ul {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 40% 0%;
+    gap: 33% 0%;
   }
 
   footer .links li {
     display: inline;
+    font-size: 14px;
     color: #2c5aa0;
   }
 
@@ -129,9 +131,10 @@
   }
   
   .logo-no-link {
-    width: 15%;
-    margin-left: 5%;
-    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 10px;
   }
 
   .desktop-nav {

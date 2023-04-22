@@ -140,7 +140,7 @@
   <section class="hero-container">
     <div class="hero-container-bg" style="overflow: hidden"></div>
     <div class="hero-content">
-      <h1>Affordable and Scalable Software Solutions for Small Businesses.</h1>
+      <h2>Affordable and Scalable Software Solutions for Small Businesses.</h2>
       <p>
         We understand that running a small business can be challenging,
         especially when it comes to managing the day-to-day operations. Thats
@@ -148,9 +148,6 @@
         your business processes so you can build on a solid fountation.
       </p>
       <button>Our Services</button>
-      <p>
-        Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-      </p>
     </div>
   </section>
 
@@ -275,7 +272,7 @@
   }
 
   h2 {
-    font-size: 48px;
+    font-size: 33px;
     font-weight: bold;
     letter-spacing: 2%;
   }
@@ -558,6 +555,10 @@
   }
 
   @media (min-width: 768px) {
+    h2 {
+      font-size: 64px;
+    }
+
     .preview-cards {
       width: 100%;
     }
