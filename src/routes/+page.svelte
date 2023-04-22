@@ -142,10 +142,7 @@
     <div class="hero-content">
       <h2>Affordable and Scalable Software Solutions for Small Businesses.</h2>
       <p>
-        We understand that running a small business can be challenging,
-        especially when it comes to managing the day-to-day operations. Thats
-        why we offer a range of user-friendly software tools to help streamline
-        your business processes so you can build on a solid fountation.
+        Running a small business can be challenging. That's why we offer a range of user-friendly software tools to help.
       </p>
       <button>Our Services</button>
     </div>
@@ -157,17 +154,17 @@
         <div><h2>Maximize your efficency and profitability</h2></div>
         <div class="cards">
           <div>
-            <div class="circle"><h1>1</h1></div>
+            <div class="circle">1</div>
             <h2>Application Development</h2>
             <div class="card-graphic"></div>
           </div>
           <div>
-            <div class="circle"><h1>2</h1></div>
+            <div class="circle">2</div>
             <h2>Software Integration</h2>
             <div class="card-graphic"></div>
           </div>
           <div>
-            <div class="circle"><h1>3</h1></div>
+            <div class="circle">3</div>
             <h2>Maintenance & Support</h2>
             <div class="card-graphic"></div>
           </div>
@@ -195,11 +192,6 @@
   </section>
 
   <section class="quote-container">
-    <p>
-      “Never argue with stupid people, they will drag you down to their level
-      and then beat you with experience.”
-    </p>
-    <h3>- Mark Twain</h3>
   </section>
 
   <section class="approach-cta-bg">
@@ -254,7 +246,7 @@
         <h1>Software that is built to last.</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos
-          cupiditate natus. Ex nostrum dolorem vero odio, atque, repellat ad, nam
+          2upiditate natus. Ex nostrum dolorem2vero odio, atque, repellat ad, nam
           qui nobis inventore temporibus repellendus consequatur officiis beatae
           iste.
         </p>
@@ -329,7 +321,8 @@
 
   .cards-callout-bg {
     background-image: url("$lib/assets/Hoempage-2.png");
-    background-size: 102% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position-y: bottom;
   }
 
@@ -364,15 +357,16 @@
   }
   
   .cards div .circle {
+    font-size: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 110px;
-    height: 110px;
+    width: 3rem;
+    height: 4rem;
     margin: 30px 0 0 60px;
     border-radius: 50%;
     border: solid;
-    border-width: 15px;
+    border-width: 0.4rem;
     color: #8dc6e7;
     border-color: #8dc6e7;
     background-color: #2c5aa0;
@@ -461,7 +455,7 @@
     background-image: url("$lib/assets/quote_background.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 300px;
+    height: 6rem;
     width: 100%;
     display: flex;
     flex-direction: column;
