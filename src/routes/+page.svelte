@@ -154,42 +154,44 @@
     </div>
   </section>
 
-  <section class="preview-cards-container">
-    <div class="preview-cards">
-      <div><h2>Maximize your efficency and profitability</h2></div>
-      <div class="cards">
-        <div>
-          <div class="circle"><h1>1</h1></div>
-          <h2>Application Development</h2>
-          <div class="card-graphic"></div>
-        </div>
-        <div>
-          <div class="circle"><h1>2</h1></div>
-          <h2>Software Integration</h2>
-          <div class="card-graphic"></div>
-        </div>
-        <div>
-          <div class="circle"><h1>3</h1></div>
-          <h2>Maintenance & Support</h2>
-          <div class="card-graphic"></div>
+  <section class="cards-callout-bg">
+    <div class="preview-cards-container">
+      <div class="preview-cards">
+        <div><h2>Maximize your efficency and profitability</h2></div>
+        <div class="cards">
+          <div>
+            <div class="circle"><h1>1</h1></div>
+            <h2>Application Development</h2>
+            <div class="card-graphic"></div>
+          </div>
+          <div>
+            <div class="circle"><h1>2</h1></div>
+            <h2>Software Integration</h2>
+            <div class="card-graphic"></div>
+          </div>
+          <div>
+            <div class="circle"><h1>3</h1></div>
+            <h2>Maintenance & Support</h2>
+            <div class="card-graphic"></div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <section class="fullvue-callout-container">
-    <div class="fullvue-callout">
-      <div class="callout-ad">
-        <h3>Introducing</h3>
-        <h1>FullVue</h1>
-        <p>
-          A full suite of features to tackle all of your small business needs.
-        </p>
-        <a href="/fullvue"><button>Check It Out</button></a>
-      </div>
-      <div class="callout-screenshots">
-        <div class="screenshot-back">
-          <div class="screenshot-front"></div>
+    <div class="fullvue-callout-container">
+      <div class="fullvue-callout">
+        <div class="callout-ad">
+          <h3>Introducing</h3>
+          <h1>FullVue</h1>
+          <p>
+            A full suite of features to tackle all of your small business needs.
+          </p>
+          <a href="/fullvue"><button>Check It Out</button></a>
+        </div>
+        <div class="callout-screenshots">
+          <div class="screenshot-back">
+            <div class="screenshot-front"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -203,62 +205,64 @@
     <h3>- Mark Twain</h3>
   </section>
 
-  <section class="approach-container">
-    <div class="approach">
-      <h2>Our Approach</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta
-        nesciunt, minus vitae blanditiis provident corrupti, suscipit nihil
-        sapiente amet assumenda fugit unde rem non libero ut. Inventore deleniti
-        at aliquam nesciunt maiores facere voluptas odio laboriosam eligendi.
-        Tempore doloremque vitae rem iure corrupti aliquam sed. Eum distinctio,
-        quos ea repellat repudiandae necessitatibus dignissimos unde quae quam
-        deleniti? Rem, repellat.
-      </p>
-      <a href="/about"><button>About Us</button></a>
+  <section class="approach-cta-bg">
+    <div class="approach-container">
+      <div class="approach">
+        <h2>Our Approach</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta
+          nesciunt, minus vitae blanditiis provident corrupti, suscipit nihil
+          sapiente amet assumenda fugit unde rem non libero ut. Inventore deleniti
+          at aliquam nesciunt maiores facere voluptas odio laboriosam eligendi.
+          Tempore doloremque vitae rem iure corrupti aliquam sed. Eum distinctio,
+          quos ea repellat repudiandae necessitatibus dignissimos unde quae quam
+          deleniti? Rem, repellat.
+        </p>
+        <a href="/about"><button>About Us</button></a>
+      </div>
+      <div class="pillars">
+        <div>
+          <div class="circle">1</div>
+          <div class="pillar-text">
+            <h3>pillar</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius eum nesciunt nobis nostrum quam aperiam repellendus temporibus inventore iste.</p>
+          </div>
+        </div>
+        <div>
+          <div class="circle">2</div>
+          <div class="pillar-text">
+            <h3>pillar</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius eum nesciunt nobis nostrum quam aperiam repellendus temporibus inventore iste.</p>
+          </div>
+        </div>
+        <div>
+          <div class="circle">3</div>
+          <div class="pillar-text">
+            <h3>pillar</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius eum nesciunt nobis nostrum quam aperiam repellendus temporibus inventore iste.</p>
+          </div>
+        </div>
+        <div>
+          <div class="circle">4</div>
+          <div class="pillar-text">
+            <h3>pillar</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius eum nesciunt nobis nostrum quam aperiam repellendus temporibus inventore iste.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="pillars">
-      <div>
-        <div class="circle">1</div>
-        <div class="pillar-text">
-          <h3>pillar</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius eum nesciunt nobis nostrum quam aperiam repellendus temporibus inventore iste.</p>
-        </div>
-      </div>
-      <div>
-        <div class="circle">2</div>
-        <div class="pillar-text">
-          <h3>pillar</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius eum nesciunt nobis nostrum quam aperiam repellendus temporibus inventore iste.</p>
-        </div>
-      </div>
-      <div>
-        <div class="circle">3</div>
-        <div class="pillar-text">
-          <h3>pillar</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius eum nesciunt nobis nostrum quam aperiam repellendus temporibus inventore iste.</p>
-        </div>
-      </div>
-      <div>
-        <div class="circle">4</div>
-        <div class="pillar-text">
-          <h3>pillar</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius eum nesciunt nobis nostrum quam aperiam repellendus temporibus inventore iste.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="call-to-action-section">
-    <div class="call-to-action">
-      <h1>Software that is built to last.</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos
-        cupiditate natus. Ex nostrum dolorem vero odio, atque, repellat ad, nam
-        qui nobis inventore temporibus repellendus consequatur officiis beatae
-        iste.
-      </p>
-      <button>Reach Out Today</button>
+    <div class="call-to-action-section">
+      <div class="call-to-action">
+        <h1>Software that is built to last.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos
+          cupiditate natus. Ex nostrum dolorem vero odio, atque, repellat ad, nam
+          qui nobis inventore temporibus repellendus consequatur officiis beatae
+          iste.
+        </p>
+        <button>Reach Out Today</button>
+      </div>
     </div>
   </section>
 </div>
@@ -309,7 +313,6 @@
     text-align: center;
     position: relative;
     z-index: 21;
-    text-shadow: 1px 1px 2px gray;
   }
 
   button {
@@ -327,11 +330,16 @@
     background-image: linear-gradient(to right, #468a00, #2c5aa0)
   }
 
+  .cards-callout-bg {
+    background-image: url("$lib/assets/Hoempage-2.png");
+    background-size: 102% 100%;
+    background-position-y: bottom;
+  }
+
   .preview-cards {
     width: 95%;
     margin: 0 auto;
     position: relative;
-    background-color: white;
     z-index: 40;
   }
 
@@ -390,10 +398,6 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(white, #2c5aa0);
-    background-size: 100% 120%;
-    background-position-y: bottom;
-    z-index: 50;
   }
 
   .fullvue-callout {
@@ -471,6 +475,13 @@
     box-shadow: 0 25px 50px 0 #777777;
     position: relative;
     top: -1px;
+  }
+
+  .approach-cta-bg {
+    background-image: url("$lib/assets/Homepage-4.png");
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
   }
 
   .approach-container {

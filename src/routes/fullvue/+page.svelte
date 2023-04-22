@@ -1,7 +1,7 @@
 <div>
   <section class="intro-section">
     <div class="intro">
-      <h1>Intellegent, end-to-end business management software</h1>
+      <h2>Intellegent, end-to-end business management software</h2>
       <button>Book A FullVue Demo</button>
     </div>
     <div class="screenshot"></div>
@@ -66,30 +66,55 @@
 
 <style>
 
+  :root {
+    --blue: #2c5aa0;
+    --lightblue: #8dc6e7;
+    --green: #468a00;
+  }
+
+  h1 {
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 2%;
+  }
+
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2%;
+  }
+
+  h3 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2%;
+  }
+
   .intro-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 360vh;
+    height: 2000px;
     width: 100%;
-    background-image: url('$lib/assets/golfdots.png');
+    background-image: url('$lib/assets/FullVue-bg-1.png');
     background-repeat: no-repeat;
-    background-size: 100% 60%;
-    background-position: center 30%;
+    background-size: 100% 80%;
+    background-position: center bottom;
   }
 
   .intro {
+    height: 900px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 28%;
-    width: 60%;
+    gap: 30px;
   }
 
   .screenshot {
-    height: 28%;
+    height: 900px;
     width: 70%;
     border-radius: 30px;
     box-shadow: 15px 20px 60px 20px #777777;
@@ -99,7 +124,7 @@
   }
 
   .endorsements {
-    display: flex;
+    display: none;
     height: 44%;
     width: 92%;
     gap: 4%;
@@ -149,17 +174,34 @@
   .circle {
     height: 115px;
     width: 115px;
-    background-color: aqua;
+    min-height: 115px;
+    background-color: var(--blue);
     border-radius: 50%;
     border-style: solid;
     border-width: 15px;
-    border-color: lightblue;
+    border-color: var(--lightblue);
+  }
+
+  button {
+    padding: 25px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--green);
+    border-radius: 7px;
+    border-style: none;
+    transition: background-image 10s;
+  }
+
+  button:hover {
+    background-image: linear-gradient(to right, var(--green), var(--blue))
   }
 
   .text {
     height: 60vh;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 10%;
   }
 
@@ -188,9 +230,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('$lib/assets/golfdots.png');
+    background-image: url('$lib/assets/FullVue-bg-2.png');
+    background-size: 1920px;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center bottom;
   }
 
   .call-to-action {
@@ -200,6 +243,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 10%;
+    height: 40%;
+  }
+
+  @media (min-width: 768px) {
+
   }
 
 

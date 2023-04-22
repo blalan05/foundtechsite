@@ -65,11 +65,27 @@
 </div>
 
 <footer>
-  <div class="logo-no-link"><img class="logo" src={logo} alt="FoundTech Logo"/></div>
+  <div class="logo-no-link">
+    <img class="logo" src={logo} alt="FoundTech Logo"/>
+    <p>Copyright Foundational Technologies { yearDate }, all rights reserved.</p>
+  </div>
+
+  <div class="links">
+    <ul>
+      <a href="/"><li>Home</li></a>
+      <a href="/about"><li>About</li></a>
+      <li>Privacy Policy</li>
+      <a href="/fullvue"><li>FullVue</li></a>
+      <a href="/contact"><li>Contact</li></a>
+      <li>Terms of Service</li>
+    </ul>
+  </div> 
 </footer>
 
 <script>
   import logo from '$lib/assets/FoundTech Logo.svg'
+
+  const yearDate = (new Date()).getFullYear()
 
   let isOpen = false
 </script>
@@ -77,7 +93,31 @@
 <style>
   
   footer {
-    height: 100px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(white, #8dc6e7);
+  }
+
+  footer .links {
+    width: 40%;
+  }
+
+  footer .links ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40% 0%;
+  }
+
+  footer .links li {
+    display: inline;
+    color: #2c5aa0;
+  }
+
+  footer .links ul a {
+    text-decoration: none;
   }
   
   .static-logo {
@@ -90,6 +130,8 @@
   
   .logo-no-link {
     width: 15%;
+    margin-left: 5%;
+    font-size: 8px;
   }
 
   .desktop-nav {
