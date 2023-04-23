@@ -21,11 +21,11 @@
 
 <nav class:open="{isOpen}">
   <div class="mobile-nav">
-    <div class="nav-btn" class:open="{isOpen}" on:click="{toggleNav}">
+    <button class="nav-btn" class:open="{isOpen}" on:click="{toggleNav}" on:keypress={keyboardToggle}>
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
 
     <div class="static-logo">
       <img class="logo" src={logo} alt="FoundTech Logo" />
@@ -85,6 +85,13 @@
   let isOpen = false
 
   const toggleNav = () => isOpen = !isOpen
+
+  const keyboardToggle = (event) => {
+    console.log(event.key)
+    if (event.key == 'Enter' || event.key == 'Space') {
+      isOpen = !isOpen
+    } 
+  }
 </script>
 
 <style>
@@ -104,7 +111,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
-    background-image: linear-gradient(white, #8dc6e7);
+    background-image: linear-gradient(white, var(--lightblue));
   }
 
   footer .links {
@@ -121,7 +128,7 @@
   footer .links li {
     display: inline;
     font-size: 14px;
-    color: #2c5aa0;
+    color: var(--blue);
   }
 
   footer .links ul a {
@@ -197,7 +204,7 @@
     text-align: center;
     justify-content: space-evenly;
     font-size: 24px;
-    background-image: linear-gradient(to bottom, white, #8dc6e7);
+    background-image: linear-gradient(to bottom, white, var(--lightblue));
     box-shadow: 6px 6px 7px 0 #777777;
     z-index: 500;
     flex-direction: column;
@@ -214,13 +221,15 @@
   .oc-nav-container li a {
     display: inline-block;
     width: 100%;
-    color: #2c5aa0;
+    color: var(--blue);
     padding: 0.3em;
     opacity: 1;
     text-decoration: none;
   }
   
   .nav-btn {
+    background-color: transparent;
+    border-style: none;
     width: 36px;
     height: 32px;
     position: relative;
@@ -229,7 +238,7 @@
   }
 
   .nav-btn span {
-    background-color: #2c5aa0;
+    background-color: var(--blue);
     position: absolute;
     border-radius: 2px;
     transition: .3s cubic-bezier(.8, .5, .2, 1.4);
@@ -262,33 +271,23 @@
     top: 8px;
   }
 
-
-  .call-to-action-btn, button {
+.call-to-action-btn {
     padding: 10px 15px;
     border-radius: 7px;
     border-style: none;
     color: white;
     font-size: 16px;
     font-weight: bold;
-    background-color: #2c5aa0;
+    background-color: var(--blue);
   }
 
   .call-to-action-btn {
     padding: 6px 8px;
   }
-
-  button:hover {
-    background-image: linear-gradient(to right, #2c5aa0, #468a00)
-  }
   
   @media (min-width: 1000px) {
     .desktop-nav {
       display: flex;
-    }
-
-    button {
-      padding: 15px 20px;
-      margin-right: 14px;
     }
 
     .static-logo {
