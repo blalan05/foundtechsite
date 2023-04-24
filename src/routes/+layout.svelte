@@ -86,7 +86,7 @@
 
   const toggleNav = () => isOpen = !isOpen
 
-  const keyboardToggle = (event) => {
+  const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     console.log(event.key)
     if (event.key == 'Enter' || event.key == 'Space') {
       isOpen = !isOpen

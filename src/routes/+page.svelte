@@ -1,4 +1,5 @@
 <script>
+  // @ts-ignore
   import { PerspectiveCamera, TextureLoader, SpriteMaterial, WebGLRenderer, Sprite, Scene } from 'three';
 
   import { onMount } from 'svelte'
@@ -12,8 +13,10 @@
   
     var parentContainer = document.querySelector(".hero-container-bg")
     var container
+    // @ts-ignore
     var camera, scene, renderer;
     
+    // @ts-ignore
     var particles,
     particle,
     count = 0;
@@ -29,6 +32,7 @@
   
     function init() {
       container = document.createElement("div");
+      // @ts-ignore
       parentContainer.prepend(container);
   
       camera = new PerspectiveCamera(
@@ -72,9 +76,12 @@
     function onWindowResize() {
       windowHalfX = document.body.clientWidth / 2;
       windowHalfY = document.body.clientHeight / 2;
+      // @ts-ignore
       camera.aspect = document.body.clientWidth / (window.innerHeight - 68);
+      // @ts-ignore
       camera.updateProjectionMatrix();
   
+      // @ts-ignore
       renderer.setSize(document.body.clientWidth, (window.innerHeight - 68));
     }
   
@@ -112,14 +119,18 @@
     }
   
     function render() {
+      // @ts-ignore
       camera.position.x += (mouseX - camera.position.x) * 0.05;
+      // @ts-ignore
       camera.position.y += (-mouseY - camera.position.y) * 0.05;
+      // @ts-ignore
       camera.lookAt(scene.position);
   
       var i = 0;
   
       for (var ix = 0; ix < AMOUNTX; ix++) {
         for (var iy = 0; iy < AMOUNTY; iy++) {
+          // @ts-ignore
           particle = particles[i++];
           particle.position.y =
             Math.sin((ix + count) * 0.3) * 150 + Math.sin((iy + count) * 0.5) * 150;
@@ -129,6 +140,7 @@
         }
       }
   
+      // @ts-ignore
       renderer.render(scene, camera);
   
       count += 0.05;
@@ -140,9 +152,9 @@
   <section class="hero-container">
     <div class="hero-container-bg" style="overflow: hidden"></div>
     <div class="hero-content">
-      <h2>Affordable and Scalable Software Solutions for Small Businesses.</h2>
+      <h2>Affordable and intuitive software tools, reinforcing the foundations of your business.</h2>
       <p>
-        Running a small business can be challenging. That's why we offer a range of user-friendly software tools to help.
+        FoundTech recognizes the challenges small businesses face, we build tools that help you track operations, manage production, and make more informed decisions for your company.
       </p>
       <button>Our Services</button>
     </div>
@@ -178,7 +190,7 @@
           <h2>Introducing</h2>
           <h1>FullVue</h1>
           <p>
-            A full suite of features to tackle all of your small business needs.
+            Your toolbox for effective small business management.
           </p>
           <a href="/fullvue">Check It Out</a>
         </div>
@@ -292,13 +304,14 @@
     height: 100%;
     gap: 7%;
     color: black;
-    width: 75%;
+    width: 90%;
     text-align: center;
     position: relative;
     z-index: 21;
   }
 
   .hero-content p {
+    width: 75%;
     font-size: 1.2em;
   }
 
@@ -441,8 +454,10 @@
 
   .callout-screenshots .screenshot-front {
     background-color: var(--lightblue);
-    width: 65%;
-    height: 65%;
+    background-image: url('$lib/assets/jobSingle.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     position: relative;
     left: -20%;
     border-radius: 35px 35px 0 0;
