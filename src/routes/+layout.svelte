@@ -13,7 +13,7 @@
     </ul>
   </div>
 
-  <div class="call-to-action-btn">
+  <div class="call-to-action-btn-dt">
     <a href="/contact">Contact Us</a>
   </div>
 
@@ -33,7 +33,11 @@
 
     <div class="call-to-action-btn">
       <a href="/contact">
-        <span class="hideDesktop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="white" d="M0 64H512v80L256 320 0 144V64zM0 448V182.8L237.9 346.4 256 358.8l18.1-12.5L512 182.8V448H0z"/></svg>
+        <span class="hideDesktop">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon">
+            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path fill="white" d="M0 64H512v80L256 320 0 144V64zM0 448V182.8L237.9 346.4 256 358.8l18.1-12.5L512 182.8V448H0z"/>
+          </svg>
         </span>
         <span class="hideMobile">
           Contact Us
@@ -271,7 +275,7 @@
     top: 8px;
   }
 
-.call-to-action-btn {
+  .call-to-action-btn {
     padding: 10px 15px;
     border-radius: 7px;
     border-style: none;
@@ -283,6 +287,21 @@
 
   .call-to-action-btn {
     padding: 6px 8px;
+  }
+
+  .call-to-action-btn-dt {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    margin: auto 1.5em auto auto;
+    color: white;
+    background-color: var(--blue);
+  }
+  
+  .call-to-action-btn-dt a {
+    text-decoration: none;
+    color: white;
   }
   
   @media (min-width: 1000px) {

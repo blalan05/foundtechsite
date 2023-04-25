@@ -249,7 +249,7 @@
 
     <div class="call-to-action-section">
       <div class="call-to-action">
-        <h2>Create clarity and increase effectiveness with FullVue</h2>
+        <h2>Streamline your processes with software designed for small businsesses. </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos
           cupiditate natus. Ex nostrum dolorem vero odio, atque, repellat ad, nam
@@ -366,7 +366,7 @@
   .cards .card-bg {
     display: flex;
     width: 100%;
-    height: 8em;
+    height: 15em;
     background-color: var(--green);
     border-radius: 20px;
     font-size: 2em;
@@ -377,6 +377,7 @@
     display: flex;
     box-sizing: border-box;
     width: 2.4em;
+    min-width: 2.4em;
     height: 2.4em;
     align-items: center;
     justify-content: center;
@@ -398,7 +399,7 @@
   .cards .card-bg .card-graphic {
     background-size: cover;
     position: absolute;
-    height: 5em;
+    height: 11em;
     bottom: 0;
     margin-left: 50px;
     border-radius: 20px 0 20px 0;
@@ -556,8 +557,14 @@
       width: 100%;
     }
 
-    .cards div {
-      width: calc(33.33333% - 3.5%);
+    .cards .card-bg {
+      width: calc(33.33333% - 2em);
+      height: 18em;
+      flex-direction: column;
+    }
+
+    .cards .card-bg .card-graphic {
+      height: 12em;
     }
 
     .preview-cards div h2 {
