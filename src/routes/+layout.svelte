@@ -1,6 +1,6 @@
 <nav class="desktop-nav">
 
-  <div class="static-logo">
+  <div class="nav-logo-container">
     <a href="/"><img class="logo" src="{logo}" alt="FoundTech Logo"></a>
   </div>
 
@@ -27,7 +27,7 @@
       <span></span>
     </button>
 
-    <div class="static-logo">
+    <div class="nav-logo-container">
       <img class="logo" src={logo} alt="FoundTech Logo" />
     </div>
 
@@ -64,12 +64,12 @@
 </div>
 
 <footer>
-  <div class="logo-no-link">
+  <div class="footer-logo-container">
     <img class="logo" src={logo} alt="FoundTech Logo"/>
     <p>Copyright Foundational Technologies { yearDate }, all rights reserved.</p>
   </div>
 
-  <div class="links">
+  <div class="footer-links-container">
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
@@ -118,45 +118,49 @@
     background-image: linear-gradient(white, var(--lightblue));
   }
 
-  footer .links {
-    width: 90%
+  footer .footer-links-container {
+    width: 90%;
   }
 
-  footer .links ul {
+  footer .footer-links-container ul {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 39% 0%;
   }
 
-  footer .links li {
+  footer .footer-links-container li {
     display: inline;
     font-size: 14px;
     color: var(--blue);
   }
 
-  footer .links ul a {
+  footer .footer-links-container ul a {
+    color: var(--blue);
     text-decoration: none;
   }
   
-  .static-logo {
+  .nav-logo-container {
     max-width: 250px;
     margin: 7px 7px;
   }
+
   .logo {
     width: 100%;
   }
   
-  .logo-no-link {
+  .footer-logo-container {
     display: flex;
     flex-direction: column;
     width: 90%;
     font-size: 10px;
     margin-bottom: 0.4rem;
+    align-items: center;
   }
-  .logo-no-link img {
+  .footer-logo-container img {
     margin: 0.8rem;
     width: 67%;
+    max-width: 30em;
   }
 
   .desktop-nav {
@@ -180,12 +184,6 @@
   
   .desktop-nav .dt-nav-container li a {
     text-decoration: none;
-  }
-
-  .desktop-nav .call-to-action-btn {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
   }
 
   .mobile-nav {
@@ -298,6 +296,10 @@
     color: white;
     background-color: var(--blue);
   }
+
+  .call-to-action-btn-dt:hover {
+    background-image: linear-gradient(to right, var(--blue), var(--green))
+  }
   
   .call-to-action-btn-dt a {
     text-decoration: none;
@@ -309,12 +311,25 @@
       display: flex;
     }
 
-    .static-logo {
-      margin: 7px;
-    }
-
     .mobile-nav {
       display: none;
+    }
+
+    footer {
+      flex-direction: row;
+      height: 10em;
+    }
+
+    .footer-logo-container {
+      align-items: flex-start;
+    }
+
+    .footer-logo-container img {
+      width: 30em;
+    }
+
+    .footer-logo-container p {
+      padding-left: 1.5em;
     }
     
   }
