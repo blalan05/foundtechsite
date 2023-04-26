@@ -492,13 +492,17 @@
 
   .approach {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     width: 80%;
-    margin: 10% 5% 10% 5%;
-    row-gap: 6%;
-    height: 60%;
+    height: 30em;
+    margin: auto;
+  }
+
+  .approach * {
+    padding: 1em 0;
   }
 
   .pillars {
@@ -512,16 +516,18 @@
 
   .pillars div {
     display: flex;
-    gap: 10%;
+    flex-direction: column;
+    align-items: center;
+    margin: .5em 0;
   }
 
   .pillars div .circle {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 4em;
-    width: 4em;
-    height: 4em;
+    min-width: 6em;
+    width: 6em;
+    height: 6em;
     color: var(--lightblue);
     border-radius: 50%;
     border-width: 0.5em;
@@ -534,11 +540,17 @@
     display: flex;
     width: 75%;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pillar-text * {
+    margin: .5em 0;
   }
 
   .call-to-action-section {
     display: flex;
-    height: 100vh;
+    height: 55em;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -616,23 +628,42 @@
 
     .approach-container {
       flex-direction: row;
-      height: 110vh;
+      height: 55em;
     }
 
     .approach {
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
+      text-align: left;
       width: 45%;
-      margin: 0 5% 0 5%;
-      row-gap: 6%;
+      height: 55%;
+      margin: 0 5%;
+      padding: 0 2em;
     }
 
     .pillars {
-      display: flex;
-      flex-direction: column;
-      row-gap:  5%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: 1fr;
+      height: 70%;
+      gap: 0;
       width: 55%;
-      justify-content: center;
+    }
+
+    .pillars div {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 0 2em 0 0;
+    }
+
+    .pillars div .pillar-text {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .pillar-text * {
+      margin: 0 0 .5em 0;
     }
   }
 </style>
