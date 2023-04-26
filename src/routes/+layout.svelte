@@ -322,6 +322,7 @@
 
     .footer-logo-container {
       align-items: flex-start;
+      margin-left: 5em;
     }
 
     .footer-logo-container img {

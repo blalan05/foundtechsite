@@ -416,12 +416,16 @@
   }
 
   .fullvue-callout {
-    padding: 0.6em;
+    padding: 0.6em 0.6em 0 0.6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .callout-ad {
+    display: flex;
+    flex-direction: column;
     height: 400px;
-    padding-top: 2em;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -437,14 +441,14 @@
 
   .callout-screenshots {
     display: flex;
-    height: 40px;
+    height: 25em;
     align-items: flex-end;
     width: 95%;
   }
 
   .callout-screenshots .screenshot-back {
     background-color: var(--green);
-    width: 82%;
+    width: 75%;
     height: 85%;
     position: relative;
     left: 20%;
@@ -454,11 +458,10 @@
   }
 
   .callout-screenshots .screenshot-front {
-    background-color: var(--lightblue);
-    background-image: url('$lib/assets/jobSingle.png');
+    background-image: url('$lib/assets/JobSingle.png');
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
     position: relative;
     left: -20%;
     border-radius: 35px 35px 0 0;
@@ -578,12 +581,12 @@
     }
 
     .fullvue-callout-container {
-      height: 105vh;
+      height: 50em;
     }
 
     .fullvue-callout {
       flex-direction: row;
-      height: 105vh;
+      height: 100%;
     }
 
     .callout-ad {
@@ -592,13 +595,12 @@
       margin: auto 5%;
       position: relative;
       text-align: left;
-      top: -5%;
     }
 
     .callout-screenshots {
       display: flex;
       width: 65%;
-      height: 105vh;
+      height: 100%;
       align-items: flex-end;
     }
   }
