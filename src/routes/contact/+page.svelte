@@ -31,9 +31,9 @@
     <div class="form-container">
       <form on:submit|preventDefault="{handleSubmit}">
         <input type="text" name="businessEmail" bind:value={businessEmail}>
-        <input type="text" name="phoneNumber" value="Phone Number*">
-        <input type="text" name="firstName" value="First Name*">
-        <input type="text" name="lastName" value="Last Name*">
+        <input type="text" name="phoneNumber" bind:value={phoneNumber}>
+        <input type="text" name="firstName" bind:value={firstName}>
+        <input type="text" name="lastName" bind:value={lastName}>
         <input class="submit-btn" type="submit" value="ButtFarts">
       </form>
     </div>
@@ -58,5 +58,6 @@
 
   .submit-btn {
     width: 35%;
+    margin: auto;
   }
 </style>

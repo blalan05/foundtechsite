@@ -48,17 +48,17 @@
 
   <div class="oc-nav-container" class:open="{isOpen}">
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/fullvue">FullVue</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/">Home</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/fullvue">FullVue</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/about">About</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/contact">Contact</a></li>
     </ul>
   </div>
 
 </nav>
 
 <div>
-  <main>
+  <main on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}>
     <slot></slot>
   </main>
 </div>
@@ -88,7 +88,15 @@
 
   let isOpen = false
 
-  const toggleNav = () => isOpen = !isOpen
+  const toggleNav = () => { isOpen = !isOpen }
+
+  window.onresize = () => { if (window.innerWidth >= 1000) isOpen = false }
+
+  const closeOnKeyPress = (/** @type {{ key: string; }} */ event) => {
+    if (isOpen && (event.key == 'Enter' || event.key == 'Space')) {
+      isOpen = false
+    }
+  }
 
   const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     console.log(event.key)
