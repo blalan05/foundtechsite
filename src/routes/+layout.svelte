@@ -83,6 +83,7 @@
 
 <script>
   import logo from '$lib/assets/FoundTech Logo.svg'
+  import { onMount } from 'svelte';
 
   const yearDate = (new Date()).getFullYear()
 
@@ -90,7 +91,10 @@
 
   const toggleNav = () => { isOpen = !isOpen }
 
-  window.onresize = () => { if (window.innerWidth >= 1000) isOpen = false }
+  onMount(() => {		
+		window.addEventListener('resize', () => { if (window.innerWidth >= 1000) isOpen = false });
+	});
+
 
   const closeOnKeyPress = (/** @type {{ key: string; }} */ event) => {
     if (isOpen && (event.key == 'Enter' || event.key == 'Space')) {
