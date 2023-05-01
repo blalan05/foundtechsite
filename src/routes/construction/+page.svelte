@@ -1,3 +1,7 @@
+<head:svelte>
+  <title>FoundTech | Under Construction</title>
+</head:svelte>
+
 <div>
   <section class="under-construction-container">
     <div class="under-construction-content">

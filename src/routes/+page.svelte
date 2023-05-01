@@ -3,7 +3,7 @@
   import { PerspectiveCamera, TextureLoader, SpriteMaterial, WebGLRenderer, Sprite, Scene } from 'three';
 
   import { onMount } from 'svelte'
-  import spriteDot from '$lib/assets/DotBlack.png'
+  import spriteDot from '$lib/assets/DotBlack.webp'
 
   onMount(async () => {
 
@@ -148,6 +148,10 @@
   })
 </script>
 
+<svelte:head>
+  <title>FoundTech | Home</title>
+</svelte:head>
+
 <div>
   <section class="hero-container">
     <div class="hero-container-bg" style="overflow: hidden"></div>
@@ -207,6 +211,24 @@
           <p>
             Your ERP toolbox for effective small business management.
           </p>
+          <ul style="display: inline-block; padding-right: 36px">
+            <li>Job Management
+              <ul style="padding-left: 1em;">
+                <li>Track Time and Materials</li>
+                <li>Simplified Road Specific Layout</li>
+                <li>Quickly Observe Cost Vs. List</li>
+              </ul>
+            </li>
+          </ul>
+          <ul style="display: inline-block;">
+            <li>Sales Leads and Quotes building
+              <ul style="padding-left: 1em;">
+                <li>Track sales communications</li>
+                <li>Build Quotes and track Quotes easily</li>
+                <li>Learn how to Quote better</li>
+              </ul>
+            </li>
+          </ul>
           <a href="/construction" style="display: none;">Check It Out</a>
         </div>
         <div class="callout-screenshots">
@@ -351,7 +373,7 @@
   }
 
   .cards-callout-bg {
-    background-image: url("$lib/assets/Homepage-2-fixed.png");
+    background-image: url("$lib/assets/Homepage-2-fixed.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -462,7 +484,7 @@
   }
 
   .cards .card-bg .card-graphic.app-dev {
-    background-image: url('$lib/assets/app-dev-light.png');
+    background-image: url('$lib/assets/app-dev-light.webp');
   }
 
   .fullvue-callout-container {
@@ -494,6 +516,21 @@
     font-size: 28px;
   }
 
+  .callout-ad ul {
+    font-size: 22px;
+    list-style-type: circle;
+  }
+  
+  .callout-ad ul li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .calout-ad ul li ul {
+    font-size: 16px;
+    list-style-type: disc;
+  }
+
   .callout-screenshots {
     display: flex;
     height: 25em;
@@ -502,7 +539,8 @@
   }
 
   .callout-screenshots .screenshot-back {
-    background-color: var(--green);
+    background-image: url('$lib/assets/JobsDashboard.webp');
+    background-size: cover;
     width: 75%;
     height: 85%;
     position: relative;
@@ -513,7 +551,7 @@
   }
 
   .callout-screenshots .screenshot-front {
-    background-image: url('$lib/assets/JobSingle.png');
+    background-image: url('$lib/assets/JobSingle.webp');
     background-size: cover;
     width: 75%;
     height: 75%;
@@ -523,16 +561,16 @@
   }
 
   .quote-container {
-    background-image: url("$lib/assets/quote_background.png");
+    background-image: url("$lib/assets/quote_background.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 4.5em;
+    height: 8em;
     width: 100%;
     box-shadow: 0 25px 50px 0 #777777;
   }
 
   .approach-cta-bg {
-    background-image: url("$lib/assets/Homepage-4.png");
+    background-image: url("$lib/assets/Homepage-4.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -658,7 +696,7 @@
 
     .callout-ad {
       display: block;
-      width: 35%;
+      width: 40%;
       margin: auto 5%;
       position: relative;
       text-align: left;
@@ -683,7 +721,7 @@
 
     .approach-container {
       flex-direction: row;
-      height: 55em;
+      height: 18em;
     }
 
     .approach {
@@ -701,7 +739,7 @@
       grid-template-columns: 1fr;
       grid-auto-rows: 1fr;
       height: 70%;
-      gap: 0;
+      gap: 2em;
       width: 55%;
     }
 

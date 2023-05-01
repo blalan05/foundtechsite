@@ -1,7 +1,10 @@
+<Analytics />
+
 <nav class="desktop-nav">
 
-  <div class="nav-logo-container">
-    <a href="/"><img class="logo" src="{logo}" alt="FoundTech Logo"></a>
+  <div class="nav-logo-container" style="position: relative">
+    <a href="/"><img class="logo" src="{logo}" alt="Foundational Technologies LLC (FoundTech)"></a>
+    <h1 style="font-size: 6px; z-index: -1; display: inline; position: absolute; left: 0; top: 0; color: white;">Foundational Technologies LLC (FoundTech)</h1>
   </div>
 
   <div class="dt-nav-container">
@@ -65,7 +68,7 @@
 
 <footer>
   <div class="footer-logo-container">
-    <img class="logo" src={logo} alt="FoundTech Logo"/>
+    <img class="logo" src={logo} alt="Foundational Technologies LLC (FoundTech)" />
     <p>Copyright Foundational Technologies { yearDate }, all rights reserved.</p>
   </div>
 
@@ -83,6 +86,7 @@
 
 <script>
   import logo from '$lib/assets/FoundTech Logo.svg'
+  import Analytics from '$lib/analytics.svelte';
   import { onMount } from 'svelte';
 
   const yearDate = (new Date()).getFullYear()
