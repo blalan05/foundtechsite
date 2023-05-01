@@ -190,7 +190,7 @@
           <h2>Introducing</h2>
           <h1>FullVue</h1>
           <p>
-            Your toolbox for effective small business management.
+            Your ERP toolbox for effective small business management.
           </p>
           <a href="/fullvue">Check It Out</a>
         </div>
@@ -211,7 +211,7 @@
       <div class="approach">
         <h2>Driving Principles</h2>
         <p>
-          FoundTech aims to create affordable and approachable turnkey software solutions for small businesses so you can sustainably grow your company. These driving principles guide and motivate our team to deliver the tools you need for success:
+          FoundTech aims to create affordable and intuitive software solutions which allows small businesses to grow sustainably. These driving principles guide how we interact with and serve our customers and eachother:
         </p>
         <a href="/about">About Us</a>
       </div>
@@ -251,10 +251,7 @@
       <div class="call-to-action">
         <h2>Streamline your processes with software designed for small businsesses. </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos
-          cupiditate natus. Ex nostrum dolorem vero odio, atque, repellat ad, nam
-          qui nobis inventore temporibus repellendus consequatur officiis beatae
-          iste.
+          Start building a more efficient operation with intuitive software tools geared toward overcoming the hurdles that small businesses face.
         </p>
         <button>Reach Out Today</button>
       </div>
