@@ -3,7 +3,7 @@
 <nav class="desktop-nav">
 
   <div class="nav-logo-container" style="position: relative">
-    <a href="/"><img class="logo" src="{logo}" alt="Foundational Technologies LLC (FoundTech)"></a>
+    <a href="/"><img class="logo" src="{logo}" alt="Foundational Technologies LLC (FoundTech)" width="250px" height="50px"></a>
     <h1 style="font-size: 6px; z-index: -1; display: inline; position: absolute; left: 0; top: 0; color: white;">Foundational Technologies LLC (FoundTech)</h1>
   </div>
 
