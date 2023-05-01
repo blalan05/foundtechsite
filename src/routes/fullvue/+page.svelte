@@ -96,7 +96,7 @@
     align-items: center;
     height: 2000px;
     width: 100%;
-    background-image: url('$lib/assets/FullVue-bg-1.png');
+    background-image: url('$lib/assets/FullVue-bg-1.webp');
     background-repeat: no-repeat;
     background-size: 100% 80%;
     background-position: center bottom;
@@ -230,7 +230,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('$lib/assets/FullVue-bg-2.png');
+    background-image: url('$lib/assets/FullVue-bg-2.webp');
     background-size: 1920px;
     background-repeat: no-repeat;
     background-position: center bottom;
