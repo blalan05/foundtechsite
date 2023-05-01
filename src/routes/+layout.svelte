@@ -7,14 +7,14 @@
   <div class="dt-nav-container">
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/fullvue">FullVue</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="/construction">FullVue</a></li>
+      <li><a href="/construction">About</a></li>
+      <li><a href="/construction">Contact</a></li>
     </ul>
   </div>
 
   <div class="call-to-action-btn-dt">
-    <a href="/contact">Contact Us</a>
+    <a href="/construction">Contact Us</a>
   </div>
 
 </nav>
@@ -49,9 +49,9 @@
   <div class="oc-nav-container" class:open="{isOpen}">
     <ul>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/">Home</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/fullvue">FullVue</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/about">About</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/contact">Contact</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/construction">FullVue</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/construction">About</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/construction">Contact</a></li>
     </ul>
   </div>
 
@@ -72,11 +72,11 @@
   <div class="footer-links-container">
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li>Privacy Policy</li>
-      <li><a href="/fullvue">FullVue</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li>Terms of Service</li>
+      <li><a href="/construction">About</a></li>
+      <li><a href="/construction">Privacy Policy</a></li>
+      <li><a href="/construction">FullVue</a></li>
+      <li><a href="/construction">Contact</a></li>
+      <li><a href="/construction">Terms of Service</a></li>
     </ul>
   </div> 
 </footer>
