@@ -156,7 +156,7 @@
       <p>
         FoundTech recognizes the challenges small businesses face, we build tools that help you track operations, manage production, and make more informed decisions for your company.
       </p>
-      <button>Our Services</button>
+      <button style="display: none;">Our Services</button>
     </div>
   </section>
 
@@ -207,7 +207,7 @@
           <p>
             Your ERP toolbox for effective small business management.
           </p>
-          <a href="/fullvue">Check It Out</a>
+          <a href="/construction" style="display: none;">Check It Out</a>
         </div>
         <div class="callout-screenshots">
           <div class="screenshot-back">
@@ -228,7 +228,7 @@
         <p>
           FoundTech aims to create affordable and intuitive software solutions which allows small businesses to grow sustainably. These driving principles guide how we interact with and serve our customers and eachother:
         </p>
-        <a href="/about">About Us</a>
+        <a href="/construction" style="display: none;">About Us</a>
       </div>
       <div class="pillars">
         <div>
@@ -276,7 +276,7 @@
         <p>
           Start building a more efficient operation with intuitive software tools geared toward overcoming the hurdles that small businesses face.
         </p>
-        <button>Reach Out Today</button>
+        <button style="display: none;">Reach Out Today</button>
       </div>
     </div>
   </section>
@@ -351,8 +351,8 @@
   }
 
   .cards-callout-bg {
-    background-image: url("$lib/assets/Hoempage-2.png");
-    background-size: cover;
+    background-image: url("$lib/assets/Homepage-2-fixed.png");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position-y: bottom;
   }
