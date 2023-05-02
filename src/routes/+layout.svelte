@@ -12,12 +12,12 @@
       <li><a href="/">Home</a></li>
       <li><a href="/construction">FullVue</a></li>
       <li><a href="/construction">About</a></li>
-      <li><a href="/construction">Contact</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
   </div>
 
   <div class="call-to-action-btn-dt">
-    <a href="/construction">Contact Us</a>
+    <a href="/contact">Contact Us</a>
   </div>
 
 </nav>
@@ -54,7 +54,7 @@
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/">Home</a></li>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/construction">FullVue</a></li>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/construction">About</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/construction">Contact</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/contact">Contact</a></li>
     </ul>
   </div>
 
@@ -78,7 +78,7 @@
       <li><a href="/construction">About</a></li>
       <li><a href="/privacy-policy">Privacy Policy</a></li>
       <li><a href="/construction">FullVue</a></li>
-      <li><a href="/construction">Contact</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
   </div> 
 </footer>
