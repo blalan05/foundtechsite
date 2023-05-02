@@ -76,10 +76,9 @@
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/construction">About</a></li>
-      <li><a href="/construction">Privacy Policy</a></li>
+      <li><a href="/privacy-policy">Privacy Policy</a></li>
       <li><a href="/construction">FullVue</a></li>
       <li><a href="/construction">Contact</a></li>
-      <li><a href="/construction">Terms of Service</a></li>
     </ul>
   </div> 
 </footer>
