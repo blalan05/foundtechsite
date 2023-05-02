@@ -31,7 +31,7 @@
     </button>
 
     <div class="nav-logo-container">
-      <img class="logo" src={logo} alt="FoundTech Logo" />
+      <img class="logo" src={logo} alt="Foundational Technologies LLC (FoundTech)" width="250" height="50"/>
     </div>
 
     <div class="call-to-action-btn">
@@ -163,6 +163,8 @@
 
   .logo {
     width: 100%;
+    width: 250px;
+    height: 50px;
   }
   
   .footer-logo-container {
