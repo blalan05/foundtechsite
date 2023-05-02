@@ -221,7 +221,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     text-align: center;
     justify-content: space-evenly;
     font-size: 24px;
-    background-image: linear-gradient(to bottom, white, var(--lightblue));
+    background-color: white;
     box-shadow: 6px 6px 7px 0 #777777;
     z-index: 500;
     flex-direction: column;
