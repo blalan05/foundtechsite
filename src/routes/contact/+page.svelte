@@ -1,7 +1,3 @@
-<script>
-  export const prerender = true
-</script>
-
 <div>
   <section class="contact-section">
     <div class="hero-container">
