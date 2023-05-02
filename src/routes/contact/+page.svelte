@@ -11,6 +11,7 @@
 
     <div class="form-container">
       <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
         <input type="email" class="email" name="businessEmail" placeholder="Email*">
         <input type="tel" class="phone-number" name="phoneNumber" placeholder="Phone Number*">
         <input type="text" class="first-name" name="firstName" placeholder="First Name*">
