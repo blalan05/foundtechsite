@@ -82,37 +82,35 @@
     </ul>
   </div> 
 </footer>
-
 <script>
-  import logo from '$lib/assets/FoundTech Logo.svg'
-  import Analytics from '$lib/analytics.svelte';
-  import { onMount } from 'svelte';
+import logo from '$lib/assets/FoundTech Logo.svg'
+import Analytics from '$lib/analytics.svelte';
+import { onMount } from 'svelte';
 
-  const yearDate = (new Date()).getFullYear()
+const yearDate = (new Date()).getFullYear()
 
-  let isOpen = false
+let isOpen = false
 
-  const toggleNav = () => { isOpen = !isOpen }
+const toggleNav = () => { isOpen = !isOpen }
 
-  onMount(() => {		
-		window.addEventListener('resize', () => { if (window.innerWidth >= 1000) isOpen = false });
-	});
+onMount(() => {		
+  window.addEventListener('resize', () => { if (window.innerWidth >= 1000) isOpen = false });
+});
 
 
-  const closeOnKeyPress = (/** @type {{ key: string; }} */ event) => {
-    if (isOpen && (event.key == 'Enter' || event.key == 'Space')) {
-      isOpen = false
-    }
+const closeOnKeyPress = (/** @type {{ key: string; }} */ event) => {
+  if (isOpen && (event.key == 'Enter' || event.key == 'Space')) {
+    isOpen = false
   }
+}
 
-  const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
-    console.log(event.key)
-    if (event.key == 'Enter' || event.key == 'Space') {
-      isOpen = !isOpen
-    } 
-  }
+const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
+  console.log(event.key)
+  if (event.key == 'Enter' || event.key == 'Space') {
+    isOpen = !isOpen
+  } 
+}
 </script>
-
 <style>
   .hideMobile {
     display: none;
