@@ -187,7 +187,7 @@
               </svg>
             </div>
             <h3>Software Integration</h3>
-            <div class="card-graphic"></div>
+            <div class="card-graphic soft-int"></div>
           </div>
           <div class="card-bg">
             <div class="circle">
@@ -197,7 +197,7 @@
               </svg>
             </div>
             <h3>Maintenance & Support</h3>
-            <div class="card-graphic"></div>
+            <div class="card-graphic maint-sup"></div>
           </div>
         </div>
       </div>
@@ -488,6 +488,12 @@
 
   .cards .card-bg .card-graphic.app-dev {
     background-image: url('$lib/assets/app-dev-light.webp');
+  }
+  .cards .card-bg .card-graphic.soft-int {
+    background-image: url('$lib/assets/software-integration.webp');
+  }
+  .cards .card-bg .card-graphic.maint-sup {
+    background-image: url('$lib/assets/support.webp');
   }
 
   .fullvue-callout-container {
