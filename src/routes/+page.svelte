@@ -211,18 +211,16 @@
           <p>
             Your ERP toolbox for effective small business management.
           </p>
-          <ul style="display: inline-block; padding-right: 36px">
+          <ul class="tool-list">
             <li>Job Management
-              <ul style="padding-left: 1em;">
+              <ul>
                 <li>Track Time and Materials</li>
                 <li>Simplified Road Specific Layout</li>
                 <li>Quickly Observe Cost Vs. List</li>
               </ul>
             </li>
-          </ul>
-          <ul style="display: inline-block;">
             <li>Sales Leads and Quotes building
-              <ul style="padding-left: 1em;">
+              <ul>
                 <li>Track sales communications</li>
                 <li>Build Quotes and track Quotes easily</li>
                 <li>Learn how to Quote better</li>
@@ -526,19 +524,21 @@
     font-size: 28px;
   }
 
-  .callout-ad ul {
-    font-size: 22px;
+  .tool-list {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 2em;
+    text-align: left;
     list-style-type: circle;
-  }
-  
-  .callout-ad ul li {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    font-size: 1.5em;
   }
 
-  .calout-ad ul li ul {
-    font-size: 16px;
+  .tool-list ul{
     list-style-type: disc;
+    font-size: 1rem;
+    padding: .4em 0 .4em 1em;
   }
 
   .callout-screenshots {
