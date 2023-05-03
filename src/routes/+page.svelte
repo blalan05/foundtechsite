@@ -494,6 +494,8 @@
   }
   .cards .card-bg .card-graphic.maint-sup {
     background-image: url('$lib/assets/Software-Maintenance-and-Support.webp');
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .fullvue-callout-container {
