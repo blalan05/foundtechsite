@@ -329,8 +329,10 @@
     justify-content: center;
     height: calc(100vh - 68px);
     height: calc(100svh - 68px);
-    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, var(--lightblue), white);
     position: relative;
+    border-top-style: solid;
+    border-top-color: var(--green);
   }
   
   .hero-container-bg {
@@ -444,10 +446,11 @@
     display: flex;
     width: 100%;
     height: 15em;
-    background-color: var(--green);
+    background-color: #468a00bb;
     border-radius: 20px;
     font-size: 2em;
     position: relative;
+    box-shadow: 4px 4px 4px 4px #999999;
   }
   
   .cards .card-bg .circle {
@@ -711,6 +714,14 @@
   }
 
   @media (min-width: 1300px) {
+    .hero-content h2 {
+      font-size: 40px;
+    }
+
+    .hero-content p {
+      font-size: 28px;
+    }
+
     .preview-cards {
       width: 95%;
     }
@@ -719,9 +730,15 @@
       font-size: 48px;
     }
 
+    .approach-cta-bg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .approach-container {
       flex-direction: row;
-      height: 18em;
+      height: 60em;
     }
 
     .approach {
@@ -757,6 +774,24 @@
 
     .pillar-text * {
       margin: 0 0 .5em 0;
+    }
+
+    .call-to-action-section {
+      height: 45em;
+      align-items: flex-start;
+    }
+    
+    .call-to-action {
+      height: 75%;
+      gap: 5%;
+    }
+
+    .call-to-action h2 {
+      font-size: 40px;
+    }
+
+    .call-to-action p {
+      font-size: 28px;
     }
   }
 </style>
