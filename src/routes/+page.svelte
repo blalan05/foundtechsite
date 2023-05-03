@@ -493,7 +493,7 @@
     background-image: url('$lib/assets/software-integration.webp');
   }
   .cards .card-bg .card-graphic.maint-sup {
-    background-image: url('$lib/assets/support.webp');
+    background-image: url('$lib/assets/Software-Maintenance-and-Support.webp');
   }
 
   .fullvue-callout-container {
