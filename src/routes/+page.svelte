@@ -505,7 +505,6 @@
   .callout-ad {
     display: flex;
     flex-direction: column;
-    height: 400px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -561,6 +560,7 @@
     position: relative;
     left: -20%;
     border-radius: 35px 35px 0 0;
+    box-shadow: 4px 0px 6px -2px var(--blue);
   }
 
   .quote-container {
