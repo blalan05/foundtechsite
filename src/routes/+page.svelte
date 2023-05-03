@@ -150,6 +150,8 @@
 
 <svelte:head>
   <title>FoundTech | Home</title>
+  <meta name="keywords" content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies">
+  <meta name="description" content="Foundational Technologies LLC offers a cloud-based ERP app to help improve profitability and grow small businesses. Scale your business with FullVue.">
 </svelte:head>
 
 <div>
@@ -246,7 +248,7 @@
       <div class="approach">
         <h2>Driving Principles</h2>
         <p>
-          FoundTech aims to create affordable and intuitive software solutions which allows small businesses to grow sustainably. These driving principles guide how we interact with and serve our customers and eachother:
+          FoundTech aims to create affordable and intuitive software solutions which allows small businesses to grow sustainably. These driving principles guide how we interact with and serve our customers and each other.
         </p>
         <a href="/construction" style="display: none;">About Us</a>
       </div>
