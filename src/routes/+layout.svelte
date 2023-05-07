@@ -133,6 +133,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
 
   footer .footer-links-container {
     width: 90%;
+    padding: 2rem 0 1rem 0;
   }
 
   footer .footer-links-container ul {

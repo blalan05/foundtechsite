@@ -2,7 +2,7 @@
   <section class="intro-section">
     <div class="intro">
       <h2>Intellegent, end-to-end business management software</h2>
-      <button>Book A FullVue Demo</button>
+      <a href="/contact">Book A FullVue Demo</a>
     </div>
     <div class="screenshot"></div>
     <div class="endorsements">
@@ -26,7 +26,7 @@
             ipsum rerum aspernatur quis voluptatibus! Velit optio veniam laborum. 
             Repudiandae.
           </p>  
-          <button>Get A Quote</button>
+          <a href="/contact">Get A Quote</a>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
             ipsum rerum aspernatur quis voluptatibus! Velit optio veniam laborum. 
             Repudiandae.
           </p>
-          <button>Get A Quote</button>
+          <a href="/contact">Get A Quote</a>
         </div>
       </div>
     </div>
@@ -52,14 +52,14 @@
 
   <section class="pricing-section">
     <div class="pricing">
-      <h1>PRICING</h1>
+      <h2>PRICING</h2>
     </div>
   </section>
 
   <section class="call-to-action-section">
     <div class="call-to-action">
-      <h1>FullVue does the hard work for you.</h1>
-      <button>Book A Demo</button>
+      <h2>FullVue does the hard work for you.</h2>
+      <a class="cta-btn" href="/contact">Book A Demo</a>
     </div>
   </section>
 </div>
@@ -79,7 +79,7 @@
   }
 
   h2 {
-    font-size: 48px;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 2%;
   }
@@ -98,7 +98,7 @@
     background-image: url('$lib/assets/FullVue-bg-1.webp'), linear-gradient(to bottom, white, #2c5aa088, white);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: 1800px 1800px;
+    background-size: 1800px 1800px, cover;
     background-position: center 19rem, center center;
     z-index: 10;
   }
@@ -114,10 +114,11 @@
     gap: 2rem;
   }
 
+  /*
   .intro h2 {
     font-size: 2rem;
   }
-
+  */
   .screenshot {
     height: 40rem;
     width: 90%;
@@ -153,37 +154,35 @@
   }
 
   .feature {
-    width: 80%;
+    width: 100%;
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     gap: 10%;
     margin: 3rem 0;
   }
 
-  .feature:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
   .feature-image {
-    width: 45%;
-    height: 70vh;
+    margin-top: 4rem;
+    width: 80%;
+    aspect-ratio: 7/8;
     background-color: #c0c0c0;
     border-radius: 30px;
     box-shadow: 10px 15px 45px 10px #777777;
   }
 
   .feature-text {
-    width: 55%;
+    width: 80%;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    text-align: center;
   }
 
   .circle {
-    height: 115px;
     width: 115px;
-    min-height: 115px;
-    margin: 1rem 0;
+    aspect-ratio: 1/1;
     background-color: var(--blue);
     border-radius: 50%;
     border-style: solid;
@@ -206,10 +205,27 @@
     background-image: linear-gradient(to right, var(--green), var(--blue))
   }
 
+  a {
+    padding: .5rem 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--green);
+    border-radius: .5rem;
+    border-style: none;
+    transition: background-image 10s;
+  }
+
+  a:hover {
+    background-image: linear-gradient(to right, var(--green), var(--blue))
+  }
+
   .text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .text h2, p, button {
@@ -234,17 +250,20 @@
     align-items: center;
   }
 
+  /* aspect-ratio: 960/329;*/
+
   .call-to-action-section {
-    height: 80vh;
     width: 100%;
-    background-color: black;
+    aspect-ratio: 3/2;
+    max-height: 649px;
+    background-color: #212121;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url('$lib/assets/FullVue-bg-2.webp');
     background-size: 1920px;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center;
   }
 
   .call-to-action {
@@ -254,9 +273,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 10%;
-    height: 40%;
+    width: 75%;
   }
+
 
   @media (min-width: 768px) {
     /*
@@ -315,66 +334,41 @@
       flex-direction: column;
       align-items: center;
     }
+    */
+    
 
     .feature {
       width: 80%;
       display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
       gap: 10%;
       margin-bottom: 10%;
     }
 
+    .feature:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    
     .feature-image {
       width: 45%;
-      height: 70vh;
-      background-color: #c0c0c0;
-      border-radius: 30px;
-      box-shadow: 10px 15px 45px 10px #777777;
     }
 
     .feature-text {
       width: 55%;
-      height: 70vh;
-      display: flex;
-      flex-direction: column;
-      row-gap: 10%;
-    }
-
-    .circle {
-      height: 115px;
-      width: 115px;
-      min-height: 115px;
-      background-color: var(--blue);
-      border-radius: 50%;
-      border-style: solid;
-      border-width: 15px;
-      border-color: var(--lightblue);
-    }
-
-    button {
-      padding: 25px 35px;
-      font-size: 20px;
-      font-weight: bold;
-      color: white;
-      background-color: var(--green);
-      border-radius: 7px;
-      border-style: none;
-      transition: background-image 10s;
-    }
-
-    button:hover {
-      background-image: linear-gradient(to right, var(--green), var(--blue))
-    }
-
-    .text {
-      height: 60vh;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 10%;
     }
 
+    .text {
+      display: flex;
+      align-items: flex-start;
+      text-align: left;
+    }
+    /*
+   
     .pricing-section {
       width: 100%;
       height: 110vh;

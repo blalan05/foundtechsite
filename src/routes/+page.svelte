@@ -3,7 +3,7 @@
   import { PerspectiveCamera, TextureLoader, SpriteMaterial, WebGLRenderer, Sprite, Scene } from 'three';
 
   import { onMount } from 'svelte'
-  import spriteDot from '$lib/assets/DotBlack.webp'
+  import spriteDot from '$lib/assets/Dot.webp'
 
   onMount(async () => {
 
@@ -329,9 +329,9 @@
     justify-content: center;
     height: calc(100vh - 68px);
     height: calc(100svh - 68px);
-    background-image: linear-gradient(to bottom, var(--lightblue), white);
+    background-image: linear-gradient(to bottom, white, var(--lightblue), white);
     position: relative;
-    border-top-style: solid;
+    border-top-style: none;
     border-top-color: var(--green);
   }
   
