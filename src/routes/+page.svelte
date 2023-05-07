@@ -158,9 +158,9 @@
   <section class="hero-container">
     <div class="hero-container-bg" style="overflow: hidden"></div>
     <div class="hero-content">
-      <h2>Affordable and intuitive software tools, reinforcing the foundations of your business.</h2>
+      <h2>Affordable and intuitive software tools reinforcing the foundations of your business.</h2>
       <p>
-        FoundTech recognizes the challenges small businesses face, we build tools that help you track operations, manage production, and make more informed decisions for your company.
+        FoundTech recognizes the challenges small businesses face; we build tools that help you track operations, manage production, and make more informed decisions for your company.
       </p>
       <button style="display: none;">Our Services</button>
     </div>
@@ -217,15 +217,15 @@
             <li>Job Management
               <ul>
                 <li>Track Time and Materials</li>
-                <li>Simplified Road Specific Layout</li>
+                <li>Analyze all Job Costs</li>
                 <li>Quickly Observe Cost Vs. List</li>
               </ul>
             </li>
-            <li>Sales Leads and Quotes building
+            <li>Sales Leads and Quotes Building
               <ul>
-                <li>Track sales communications</li>
-                <li>Build Quotes and track Quotes easily</li>
-                <li>Learn how to Quote better</li>
+                <li>Track Sales Communications</li>
+                <li>Build Quotes and Track Quotes Easily</li>
+                <li>Submit Improved Quotes</li>
               </ul>
             </li>
           </ul>
@@ -248,7 +248,7 @@
       <div class="approach">
         <h2>Driving Principles</h2>
         <p>
-          FoundTech aims to create affordable and intuitive software solutions which allows small businesses to grow sustainably. These driving principles guide how we interact with and serve our customers and each other.
+          FoundTech aims to create affordable and intuitive software solutions which allow small businesses to grow sustainably. These driving principles guide how we interact with and serve our customers and each other.
         </p>
         <a href="/construction" style="display: none;">About Us</a>
       </div>
@@ -262,7 +262,7 @@
           </div>
           <div class="pillar-text">
             <h3>Integrity</h3>
-            <p>We value transparency, honesty, and truthfulness in every aspect of our operations.  We are intentional about always being straightforward in what we say and do.</p>
+            <p>We value transparency, honesty, and truthfulness in every aspect of our operations. We are intentional about always being straightforward in what we say and do.</p>
           </div>
         </div>
         <div>
@@ -286,7 +286,7 @@
           </div>
           <div class="pillar-text">
             <h3>Continuous Improvement</h3>
-            <p>We constantly learn new ways to improve our methods, products, and customer experience. Our dedication to iterating on ideas equips us to adapt to rapidly changing conditions.</p>
+            <p>We are constantly learning new ways to improve our methods, products, and customer experience. Our dedication to iterating on ideas equips us to adapt to rapidly changing conditions.</p>
           </div>
         </div>
       </div>
@@ -294,9 +294,9 @@
 
     <div class="call-to-action-section">
       <div class="call-to-action">
-        <h2>Streamline your processes with software designed for small businsesses. </h2>
+        <h2>Streamline your processes with software designed for small businesses. </h2>
         <p>
-          Start building a more efficient operation with intuitive software tools geared toward overcoming the hurdles that small businesses face.
+          Start building a more efficient operation with intuitive software tools geared toward overcoming the hurdles that small businesses face today.
         </p>
         <button style="display: none;">Reach Out Today</button>
       </div>
