@@ -262,7 +262,7 @@
           </div>
           <div class="pillar-text">
             <h3>Integrity</h3>
-            <p>We value transparency, honesty, and truthfulness in every aspect of our operations. We are intentional about always being straightforward in what we say and do.</p>
+            <p>We value transparency and honesty in every aspect of our operations. We are intentional about instilling clarity in what we say and do.</p>
           </div>
         </div>
         <div>
@@ -286,7 +286,7 @@
           </div>
           <div class="pillar-text">
             <h3>Continuous Improvement</h3>
-            <p>We are constantly learning new ways to improve our methods, products, and customer experience. Our dedication to iterating on ideas equips us to adapt to rapidly changing conditions.</p>
+            <p>We are constantly exploring new ways to improve our methods, products, and customer experience. Our dedication to iterating on ideas equips us to adapt to rapidly changing conditions.</p>
           </div>
         </div>
       </div>
