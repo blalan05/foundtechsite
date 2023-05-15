@@ -328,6 +328,7 @@
       width: 70%;
     }
     /*
+    
     .endorsements {
       display: none;
       height: 44%;
@@ -336,14 +337,14 @@
       justify-content: center;
       align-items: center;
     }
-
+    
     .endorsement {
       height: 65%;
       width: 50%;
       background-color: #c0c0c0;
       border-radius: 30px;
     }
-
+    
     .features-section {
       width: 100%;
       display: flex;
@@ -352,6 +353,9 @@
     }
     */
     
+    .screenshot {
+      width: 70%
+    }
 
     .feature {
       width: 80%;

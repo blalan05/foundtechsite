@@ -38,9 +38,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, var(--lightblue), white);
-    border-top-style: solid;
-    border-top-color: var(--green);
+    background-image: linear-gradient(to bottom, white, var(--lightblue), white 35%);
   }
 
   .hero-container {
@@ -130,6 +128,10 @@
   }
 
   @media (min-width: 768px) {
+    .contact-section {
+      background-image: linear-gradient(to bottom, white 5%, var(--lightblue), white 50%);
+    }
+
     form {
       max-width: 900px;
       grid-template-columns: repeat(2, 1fr);
