@@ -1,7 +1,7 @@
 <div>
   <section class="intro-section">
     <div class="intro">
-      <h2>Intellegent, end-to-end business management software</h2>
+      <h2>Build smarter management pipelines with ERP software for small businesses.</h2>
       <a href="/contact">Book A FullVue Demo</a>
     </div>
     <div class="screenshot"></div>
@@ -13,19 +13,45 @@
 
   <section class="features-section">
     <div class="feature">
-      <div class="feature-image"></div>
+      <div class="feature-image core"></div>
       <div class="feature-text">
         <div class="circle"></div>
         <div class="text">
-          <h2>Feature of the Software</h2>
+          <h2>Core Module</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio magnam 
-            quasi molestiae, amet corrupti magni veniam possimus quis sunt tempore 
-            tenetur, deserunt ab voluptates iure necessitatibus similique totam nam 
-            at autem ipsam fugit nemo? Eligendi nemo impedit qui excepturi, maxime 
-            ipsum rerum aspernatur quis voluptatibus! Velit optio veniam laborum. 
-            Repudiandae.
+            The core module is the base software, with it you will be able to record customers, 
+            set up employee profiles, track jobs/projects, and set up basic material lists and 
+            costs that you then be  linked to those jobs.
           </p>  
+          <a href="/contact">Get A Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-image road"></div>
+      <div class="feature-text">
+        <div class="circle"></div>
+        <div class="text">
+          <h2>Road Module</h2>
+          <p>
+            The road module adds additional functionality for field work, 
+            allowing you to track labor and travel for offsite projects.  
+            With it, you can easily account for travel mileage and do bulk time entry for field crews.
+          </p>
+          <a href="/contact">Get A Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-image payroll"></div>
+      <div class="feature-text">
+        <div class="circle"></div>
+        <div class="text">
+          <h2>Payroll Module</h2>
+          <p>
+            Payroll has all the functionality you need to track employee hours.  Manage employee punches and leave, 
+            create employee schedules then export the data to a spreadsheet to pdf.
+          </p>
           <a href="/contact">Get A Quote</a>
         </div>
       </div>
@@ -35,14 +61,11 @@
       <div class="feature-text">
         <div class="circle"></div>
         <div class="text">
-          <h2>Feature of the Software</h2>
+          <h2>Sales Module</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio magnam 
-            quasi molestiae, amet corrupti magni veniam possimus quis sunt tempore 
-            tenetur, deserunt ab voluptates iure necessitatibus similique totam nam 
-            at autem ipsam fugit nemo? Eligendi nemo impedit qui excepturi, maxime 
-            ipsum rerum aspernatur quis voluptatibus! Velit optio veniam laborum. 
-            Repudiandae.
+            Track and record your interactions with your customers and keep everything plotted on a clear timeline 
+            that is visible to the entire team in surveys.  Build and send sales quotes and create jobs from them 
+            once the customer accepts the quote.
           </p>
           <a href="/contact">Get A Quote</a>
         </div>
@@ -58,7 +81,7 @@
 
   <section class="call-to-action-section">
     <div class="call-to-action">
-      <h2>FullVue does the hard work for you.</h2>
+      <h2>Bring visibility and increased efficiency to your management and make more informed decisions.</h2>
       <a class="cta-btn" href="/contact">Book A Demo</a>
     </div>
   </section>
@@ -79,7 +102,7 @@
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 2%;
   }
@@ -125,9 +148,7 @@
     margin-bottom: 20rem;
     border-radius: 3rem;
     box-shadow: 15px 20px 60px 20px #777777;
-    border-style: solid;
-    border-width: 10px;
-    background-color: #c0c0c0;
+    background-image: url("$lib/assets/JobsDashboard.webp")
   }
 
   .endorsements {
@@ -170,6 +191,10 @@
     background-color: #c0c0c0;
     border-radius: 30px;
     box-shadow: 10px 15px 45px 10px #777777;
+  }
+
+  .core {
+    background-image: url('$lib/assets/JobSingle.webp')
   }
 
   .feature-text {
@@ -290,28 +315,20 @@
       background-size: 100% 80%;
       background-position: center bottom;
     }
-
+    */
     .intro {
-      height: 900px;
       width: 60%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      gap: 30px;
     }
 
+    h2 {
+      font-size: 2.5rem;
+    }
+    
     .screenshot {
-      height: 900px;
       width: 70%;
-      border-radius: 30px;
-      box-shadow: 15px 20px 60px 20px #777777;
-      border-style: solid;
-      border-width: 10px;
-      background-color: #c0c0c0;
     }
-
+    /*
+    
     .endorsements {
       display: none;
       height: 44%;
@@ -320,14 +337,14 @@
       justify-content: center;
       align-items: center;
     }
-
+    
     .endorsement {
       height: 65%;
       width: 50%;
       background-color: #c0c0c0;
       border-radius: 30px;
     }
-
+    
     .features-section {
       width: 100%;
       display: flex;
@@ -336,6 +353,9 @@
     }
     */
     
+    .screenshot {
+      width: 70%
+    }
 
     .feature {
       width: 80%;
