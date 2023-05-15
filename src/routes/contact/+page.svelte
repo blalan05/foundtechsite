@@ -32,13 +32,20 @@
 
 <style>
 
+  h2 {
+    font-weight: 600;
+  }
+
   .contact-section {
     height: calc(120vh - 68px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, white, var(--lightblue), white 35%);
+    width: 100%;
+    background-image: url('$lib/assets/Homepage-4.webp'), linear-gradient(to bottom, white, var(--lightblue), white 35%);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .hero-container {
@@ -55,9 +62,6 @@
   .form-container {
     width: 100%;
     padding: 0 0 7em 0;
-    background-image: url("$lib/assets/Homepage-4.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
   }
 
   form {
@@ -86,7 +90,7 @@
     font-size: 1em;
     border-radius: 4px;
     border-style: none;
-    box-shadow: 4px 4px 7px 1px var(--green);
+    box-shadow: 4px 4px 7px 1px var(--lightblue);
   }
 
   .submit-btn-container {
@@ -129,7 +133,16 @@
 
   @media (min-width: 768px) {
     .contact-section {
-      background-image: linear-gradient(to bottom, white 5%, var(--lightblue), white 50%);
+      background-image: url('$lib/assets/Homepage-4.webp'), linear-gradient(to bottom, white 5%, var(--lightblue), white 50%);
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.5rem;
     }
 
     form {
