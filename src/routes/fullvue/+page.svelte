@@ -150,11 +150,6 @@
     gap: 2rem;
   }
 
-  /*
-  .intro h2 {
-    font-size: 2rem;
-  }
-  */
   .screenshot {
     height: 50rem;
     width: 90%;
@@ -257,21 +252,6 @@
     border-color: var(--lightblue);
   }
 
-  button {
-    padding: 25px 35px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    background-color: var(--green);
-    border-radius: 7px;
-    border-style: none;
-    transition: background-image 10s;
-  }
-
-  button:hover {
-    background-image: linear-gradient(to right, var(--green), var(--blue))
-  }
-
   a {
     padding: .5rem 1rem;
     text-decoration: none;
@@ -346,19 +326,7 @@
 
 
   @media (min-width: 768px) {
-    /*
-    .intro-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 2000px;
-      width: 100%;
-      background-image: url('$lib/assets/FullVue-bg-1.webp');
-      background-repeat: no-repeat;
-      background-size: 100% 80%;
-      background-position: center bottom;
-    }
-    */
+    
     .intro {
       width: 60%;
     }
@@ -370,32 +338,7 @@
     .screenshot {
       width: 70%;
     }
-    /*
-    
-    .endorsements {
-      display: none;
-      height: 44%;
-      width: 92%;
-      gap: 4%;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .endorsement {
-      height: 65%;
-      width: 50%;
-      background-color: #c0c0c0;
-      border-radius: 30px;
-    }
-    
-    .features-section {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    */
-    
+   
     .screenshot {
       width: 70%
     }
@@ -434,41 +377,6 @@
     .call-to-action {
       padding: 0;
     }
-
-    /*
-   
-    .pricing-section {
-      width: 100%;
-      height: 110vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .pricing {
-      background-color: #c0c0c0;
-      width: 80%;
-      height: 70%;
-      border-radius: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .call-to-action-section {
-      height: 80vh;
-      width: 100%;
-      background-color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url('$lib/assets/FullVue-bg-2.webp');
-      background-size: 1920px;
-      background-repeat: no-repeat;
-      background-position: center bottom;
-    }
-
-    */
   }
 
 
