@@ -213,7 +213,7 @@
           <p>
             Your ERP toolbox for effective small business management.
           </p>
-          <a href="/fullvue">Learn More</a>
+          <a href="/fullvue">Learn About FullVue!</a>
         </div>
         <div class="callout-screenshots">
           <div class="screenshot-back">
