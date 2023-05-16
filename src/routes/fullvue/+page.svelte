@@ -1,6 +1,13 @@
+<svelte:head>
+  <title>FoundTech | FullVue</title>
+  <meta name="keywords" content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies">
+  <meta name="description" content="Help improve profitability and grow small businesses with FullVue, cloud-based ERP software for less than a dollar a day per user.">
+</svelte:head>
+
 <div>
   <section class="intro-section">
     <div class="intro">
+      <h1>FullVue</h1>
       <h2>Build smarter management pipelines with ERP software for small businesses.</h2>
       <a href="/contact">Book A Demo</a>
     </div>
@@ -67,7 +74,7 @@
       </div>
     </div>
     <div class="feature">
-      <div class="feature-image"></div>
+      <div class="feature-image sales"></div>
       <div class="feature-text">
         <div class="circle">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="sales-icon">
@@ -207,11 +214,17 @@
     background-image: url('$lib/assets/JobSingle.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -179px top;
+    background-position: 41% top;
   }
   
   .core-icon {
     width: 2.7rem;
+  }
+
+  .road {
+    background-image: url('$lib/assets/RoadDialog.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .road-icon {
@@ -220,11 +233,24 @@
     left: .1rem;
   }
 
+  .payroll {
+    background-image: url('$lib/assets/PayrollSingle.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -130px top;
+  }
+
   .payroll-icon {
     width: 3rem;
     position: relative;
     left: .2rem;
     top: -.1rem;
+  }
+
+  .sales {
+    background-image: url('$lib/assets/QuoteSingle.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .sales-icon {
@@ -367,7 +393,7 @@
       flex-direction: column;
       align-items: flex-start;
     }
-
+    
     .text {
       display: flex;
       align-items: flex-start;
