@@ -67,7 +67,7 @@
       </div>
     </div>
     <div class="feature">
-      <div class="feature-image"></div>
+      <div class="feature-image sales"></div>
       <div class="feature-text">
         <div class="circle">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="sales-icon">
@@ -207,11 +207,17 @@
     background-image: url('$lib/assets/JobSingle.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -179px top;
+    background-position: 41% top;
   }
   
   .core-icon {
     width: 2.7rem;
+  }
+
+  .road {
+    background-image: url('$lib/assets/RoadDialog.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .road-icon {
@@ -220,11 +226,24 @@
     left: .1rem;
   }
 
+  .payroll {
+    background-image: url('$lib/assets/PayrollSingle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -130px top;
+  }
+
   .payroll-icon {
     width: 3rem;
     position: relative;
     left: .2rem;
     top: -.1rem;
+  }
+
+  .sales {
+    background-image: url('$lib/assets/QuoteSingle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .sales-icon {
@@ -367,7 +386,7 @@
       flex-direction: column;
       align-items: flex-start;
     }
-
+    
     .text {
       display: flex;
       align-items: flex-start;
