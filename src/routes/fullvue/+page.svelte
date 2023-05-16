@@ -1,6 +1,13 @@
+<svelte:head>
+  <title>FoundTech | FullVue</title>
+  <meta name="keywords" content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies">
+  <meta name="description" content="Help improve profitability and grow small businesses with FullVue, cloud-based ERP software for less than a dollar a day per user.">
+</svelte:head>
+
 <div>
   <section class="intro-section">
     <div class="intro">
+      <h1>FullVue</h1>
       <h2>Build smarter management pipelines with ERP software for small businesses.</h2>
       <a href="/contact">Book A Demo</a>
     </div>
@@ -215,7 +222,7 @@
   }
 
   .road {
-    background-image: url('$lib/assets/RoadDialog.png');
+    background-image: url('$lib/assets/RoadDialog.webp');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -227,7 +234,7 @@
   }
 
   .payroll {
-    background-image: url('$lib/assets/PayrollSingle.png');
+    background-image: url('$lib/assets/PayrollSingle.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -130px top;
@@ -241,7 +248,7 @@
   }
 
   .sales {
-    background-image: url('$lib/assets/QuoteSingle.png');
+    background-image: url('$lib/assets/QuoteSingle.webp');
     background-repeat: no-repeat;
     background-size: cover;
   }

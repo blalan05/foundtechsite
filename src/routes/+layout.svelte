@@ -10,7 +10,7 @@
   <div class="dt-nav-container">
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/construction">FullVue</a></li>
+      <li><a href="/fullvue">FullVue</a></li>
       <li><a href="/construction">About</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
@@ -52,7 +52,7 @@
   <div class="oc-nav-container" class:open="{isOpen}">
     <ul>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/">Home</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/construction">FullVue</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/fullvue">FullVue</a></li>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/construction">About</a></li>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/contact">Contact</a></li>
     </ul>
@@ -77,7 +77,7 @@
       <li><a href="/">Home</a></li>
       <li><a href="/construction">About</a></li>
       <li><a href="/privacy-policy">Privacy Policy</a></li>
-      <li><a href="/construction">FullVue</a></li>
+      <li><a href="/fullvue">FullVue</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
   </div> 

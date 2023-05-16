@@ -162,7 +162,7 @@
       <p>
         FoundTech recognizes the challenges small businesses face; we build tools that help you track operations, manage production, and make more informed decisions for your company.
       </p>
-      <button style="display: none;">Our Services</button>
+      <a href="/fullvue">Our Product</a>
     </div>
   </section>
 
@@ -213,23 +213,7 @@
           <p>
             Your ERP toolbox for effective small business management.
           </p>
-          <ul class="tool-list">
-            <li>Job Management
-              <ul>
-                <li>Track Time and Materials</li>
-                <li>Analyze all Job Costs</li>
-                <li>Quickly Observe Cost Vs. List</li>
-              </ul>
-            </li>
-            <li>Sales Leads and Quotes Building
-              <ul>
-                <li>Track Sales Communications</li>
-                <li>Build Quotes and Track Quotes Easily</li>
-                <li>Submit Improved Quotes</li>
-              </ul>
-            </li>
-          </ul>
-          <a href="/construction" style="display: none;">Check It Out</a>
+          <a href="/fullvue">Learn More</a>
         </div>
         <div class="callout-screenshots">
           <div class="screenshot-back">
@@ -298,7 +282,7 @@
         <p>
           Start building a more efficient operation with intuitive software tools geared toward overcoming the hurdles that small businesses face today.
         </p>
-        <button style="display: none;">Reach Out Today</button>
+        <a href="/contact">Reach Out Today</a>
       </div>
     </div>
   </section>
@@ -359,9 +343,10 @@
     font-size: 1.2em;
   }
 
-  button {
-    padding: 0.65em;
-    font-size: 1.5em;
+  a {
+    padding: 0.5em;
+    font-size: 1.25em;
+    text-decoration: none;
     font-weight: bold;
     color: white;
     background-color: var(--green);
@@ -370,7 +355,7 @@
     transition: background-image 10s;
   }
 
-  button:hover {
+  a:hover {
     background-image: linear-gradient(to right, var(--green), var(--blue))
   }
 
@@ -526,23 +511,6 @@
     font-size: 28px;
   }
 
-  .tool-list {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    padding-left: 2em;
-    text-align: left;
-    list-style-type: circle;
-    font-size: 1.5em;
-  }
-
-  .tool-list ul{
-    list-style-type: disc;
-    font-size: 1rem;
-    padding: .4em 0 .4em 1em;
-  }
-
   .callout-screenshots {
     display: flex;
     height: 25em;
@@ -672,6 +640,7 @@
     align-items: center;
     row-gap: 10%;
   }
+
 
   @media (min-width: 768px) {
     .preview-cards {
