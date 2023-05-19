@@ -1,7 +1,7 @@
 <div>
   <section class="intro-section">
     <div class="intro-top">
-      <h1>We're here to support small businesses</h1>
+      <h2>We're here to support small businesses</h2>
     </div>
     <div class="intro-bottom">
       <div class="images">
@@ -9,7 +9,7 @@
         <div class="back"></div>
       </div>
       <div class="mission">
-        <h1>Why we started</h1>
+        <h3>Why we started</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quaerat 
           id aspernatur nostrum. Tempora atque velit harum, quasi placeat corrupti 
@@ -17,7 +17,7 @@
           libero. Optio eius culpa vel nihil sed, doloribus, ex, aperiam rem quasi 
           hic rerum possimus non beatae quas dolor!
         </p>
-        <h1>Where we're going</h1>
+        <h3>Where we're going</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quaerat 
           id aspernatur nostrum. Tempora atque velit harum, quasi placeat corrupti 
@@ -32,48 +32,38 @@
 
   <section class="pillars-section">
     <div class="pillars-title">
-      <h1>The pillars upon which we are built.</h1>
+      <h2>The pillars upon which we are built.</h2>
     </div>
     
     <div class="pillars">
       <div class="pillar">
         <div class="circle"></div>
-        <h1>pillar</h1>
+        <h3>pillar</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
       </div>
       <div class="pillar">
         <div class="circle"></div>
-        <h1>pillar</h1>
+        <h3>pillar</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
       </div>
       <div class="pillar">
         <div class="circle"></div>
-        <h1>pillar</h1>
+        <h3>pillar</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
       </div>
       <div class="pillar">
         <div class="circle"></div>
-        <h1>pillar</h1>
+        <h3>pillar</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
       </div>
       <div class="pillar">
         <div class="circle"></div>
-        <h1>pillar</h1>
+        <h3>pillar</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
       </div>
       <div class="pillar">
         <div class="circle"></div>
-        <h1>pillar</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
-      </div>
-      <div class="pillar">
-        <div class="circle"></div>
-        <h1>pillar</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
-      </div>
-      <div class="pillar">
-        <div class="circle"></div>
-        <h1>pillar</h1>
+        <h3>pillar</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita!</p>
       </div>
     </div>
@@ -81,17 +71,16 @@
 
   <section class="bio-section">
     <div class="bio-title">
-      <h1>Meet the team</h1>
+      <h3>Meet the team</h3>
     </div>
     <div class="bios">
-      <div class="bio"></div>
       <div class="bio"></div>
       <div class="bio"></div>
     </div>
   </section>
 
   <section class="call-to-action-section">
-    <h1>Lets lay the foundation for your small business success!</h1>
+    <h2>Lets lay the foundation for your small business success!</h2>
     <button>Reach Out Today</button>
   </section>
 </div>
@@ -117,55 +106,48 @@
 
   .intro-bottom {
     width: 100%;
-    height: 160vh;
     background-color: #212121;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .images {
-    width: 50%;
-    height: 100%;
-  }
-
-  .mission {
-    border-style: solid;
-    border-color: white;
-    width: 50%;
-    height: 100%;
+    width: 95%;
   }
 
   .front {
     width: 65%;
-    height: 45%;
+    aspect-ratio: 2/3;
     background-color: #c0c0c0;
     border-radius: 30px;
     position: relative;
-    top: -7%;
-    left: 40%;
+    left: 35%;
     z-index: 20;
+    margin-top: -10%;
   }
 
   .back {
     width: 90%;
-    height: 65%;
+    aspect-ratio: 4/5;
     background-color: aqua;
     border-radius: 30px;
     position: relative;
     left: -2%;
-    top: -20%;
+    margin-top: -10%;
     z-index: 10;
   }
 
   .mission {
     color: white;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 10%;
+    margin: 2rem 0;
   }
 
   .pillars-section {
@@ -180,7 +162,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    text-align: center;
+    margin-top: 4rem;
   }
 
   .pillars {
@@ -193,27 +176,30 @@
   }
 
   .circle {
-    height: 110px;
     width: 110px;
+    aspect-ratio: 1/1;
     border-style: solid;
     border-radius: 50%;
     border-width: 15px;
-    border-color: lightblue;
-    background-color: aqua;
+    border-color: var(--lightblue);
+    background-color: var(--blue);
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .pillar {
-    width: 21.25%;
-    height: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 5%;
+    margin: 3rem 0;
+  }
+
+  .pillar h3 {
+    margin: 3rem 0;
   }
 
   .bio-section {
@@ -233,30 +219,49 @@
   }
 
   .bios{
-    width: 95%;
+    width: 100%;
     display: flex;
-    gap: 5%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 5rem;
   }
 
   .bio {
-    width: 30%;
-    height: 700px;
+    width: 90%;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    aspect-ratio: 2/3;
     border-radius: 30px;
-    background-color: aqua;
+    background-color: var(--green);
   }
 
   .call-to-action-section {
-    height: 650px;
     width: 100%;
+    aspect-ratio: 3/2;
+    max-height: 650px;
     color: white;
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 7%;
+  }
+
+  @media (min-width: 768px) {
+    .pillar {
+      width: 30%;
+    }
+
+    .bios {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .bio {
+      margin: 0 1rem;
+    }
   }
 </style>
