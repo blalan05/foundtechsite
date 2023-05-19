@@ -117,6 +117,11 @@
 
   h1 {
     font-size: 64px;
+    background-image: linear-gradient(to right, var(--green), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     font-weight: bold;
     letter-spacing: 2%;
   }
@@ -282,7 +287,7 @@
     padding: .5rem 1rem;
     text-decoration: none;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
     color: white;
     background-color: var(--green);
@@ -301,7 +306,7 @@
     align-items: center;
   }
 
-  .text h2, p, button {
+  .text h2, p {
     margin: 1rem 0;
   }
 
