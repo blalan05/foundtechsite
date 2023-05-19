@@ -306,7 +306,7 @@
     align-items: center;
   }
 
-  .text h2, p, button {
+  .text h2, p {
     margin: 1rem 0;
   }
 

@@ -158,7 +158,7 @@
   <section class="hero-container">
     <div class="hero-container-bg" style="overflow: hidden"></div>
     <div class="hero-content">
-      <h2>Affordable and intuitive software tools reinforcing the foundations of your business.</h2>
+      <h2><span>Affordable and intuitive</span> software tools reinforcing the foundations of your business.</h2>
       <p>
         FoundTech recognizes the challenges small businesses face; we build tools that help you track operations, manage production, and make more informed decisions for your company.
       </p>
@@ -278,7 +278,7 @@
 
     <div class="call-to-action-section">
       <div class="call-to-action">
-        <h2>Streamline your processes with software designed for small businesses. </h2>
+        <h2>Streamline your processes with software designed for <span>small businesses</span>. </h2>
         <p>
           Start building a more efficient operation with intuitive software tools geared toward overcoming the hurdles that small businesses face today.
         </p>
@@ -289,6 +289,14 @@
 </div>
 
 <style>
+  span {
+    background-image: linear-gradient(to right, var(--green), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+
   h1 {
     font-size: 64px;
     font-weight: bold;
@@ -599,9 +607,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 6em;
     width: 6em;
-    height: 6em;
+    aspect-ratio: 1/1;
     color: var(--lightblue);
     border-radius: 50%;
     border-width: 0.5em;
