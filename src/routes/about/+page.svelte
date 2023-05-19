@@ -121,11 +121,12 @@
     position: absolute;
     background-image: url('$lib/assets/Homepage-4.webp');
     background-repeat: no-repeat;
+    background-size: cover;
     z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
-    height: 90vh;
+    height: 110vh;
   }
 
   .intro-top {
