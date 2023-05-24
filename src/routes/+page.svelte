@@ -483,10 +483,10 @@
     background-image: url('$lib/assets/app-dev-light.webp');
   }
   .cards .card-bg .card-graphic.soft-int {
-    background-image: url('$lib/assets/software-integration.webp');
+    background-image: url('$lib/assets/integration-edited.webp');
   }
   .cards .card-bg .card-graphic.maint-sup {
-    background-image: url('$lib/assets/Software-Maintenance-and-Support.webp');
+    background-image: url('$lib/assets/support-edited.webp');
     background-position: center;
     background-repeat: no-repeat;
   }

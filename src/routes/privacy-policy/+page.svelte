@@ -1,6 +1,6 @@
 <div>
   <h2>FoundTech Privacy Policy</h2>
-  <p>Updated: April 5th, 2023</p>
+  <p>Updated: May 24th, 2023</p>
 
   <h3>Personal Data we Collect</h3>
 
@@ -194,13 +194,6 @@
   policy indicates the last revision, which is also the effective date of those changes. We give you
   access to archived versions of this policy, so you can review the changes.</p>
   
-  <h3>Contacting Us</h3>
-  
-  <p>If you have are any question regarding this Privacy Policy, or any enquiry about your personal
-  data,please reach out to the FoundTech Helpdesk or or by mail:</p>
-  <p>FoundTech - Data Protection</p>
-  <p>1020 Hartzheim Dr.</p>
-  <p>Appleton, WI 54913</p>
 </div>
 <style>
   div {
