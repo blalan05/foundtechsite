@@ -352,7 +352,7 @@
   }
 
   a {
-    padding: 0.5em;
+    padding: 1rem 1.5rem;
     font-size: 1.25em;
     text-decoration: none;
     font-weight: bold;
@@ -382,9 +382,9 @@
   }
 
   .preview-cards h2 {
-    font-size: 2em;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 0.8em;
+    margin-bottom: 5rem;
   }
 
   .maint-icon {
@@ -460,12 +460,12 @@
     color: var(--lightblue);
     border-color: var(--lightblue);
     background-color: var(--blue);
-    margin: 0.4em 0 0 0.4em;
+    margin: 1.5rem 0 0 1.5rem;
   }
 
   .cards .card-bg h3 {
     display: inline-block;
-    margin: 0.5em 1em 0.5em 2em;
+    margin: 1.5em 1em 0.5em 2em;
     color: white;
   }
 
@@ -510,8 +510,8 @@
     justify-content: center;
     text-align: center;
     color: white;
-    text-shadow: 2px 4px 1em var(--blue);
   }
+  /* text-shadow: 2px 4px 1em var(--blue); */
   
 
   .callout-ad p {

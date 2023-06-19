@@ -284,7 +284,7 @@
   }
 
   a {
-    padding: .5rem 1rem;
+    padding: 1rem 1.5rem;
     text-decoration: none;
     margin-top: 1rem;
     font-size: 1.25rem;
