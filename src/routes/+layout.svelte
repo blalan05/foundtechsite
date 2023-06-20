@@ -184,6 +184,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     align-items: center;
     gap: 10%;
     width: 100%;
+    padding: 1rem;
   }
   
   .desktop-nav .dt-nav-container ul {
@@ -195,11 +196,73 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
 
   .desktop-nav .dt-nav-container li {
     display: inline-block;
-    font-size: 26px;
+    font-size: 20px;
+  }
+
+  /* start */
+
+  .desktop-nav ul li a {
+    display: block;
+    padding: .5rem;
+    position: relative;
+  }
+
+  .desktop-nav ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+
+  .desktop-nav ul li a {
+    transition: all 2s;
+  }
+
+  .desktop-nav ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+  .desktop-nav ul li a:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  .desktop-nav ul li a:hover:after {
+    z-index: -10;
+    animation: select 1s forwards;
+    -webkit-animation: select 1s forwards;
+    -moz-animation: select 1s forwards;
+    opacity: 1;
+  }
+
+  @keyframes select {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+    50% {
+      width: 100%;
+      height: 1px;
+    }
+    100% {
+      border-top-left-radius: .5rem;
+      border-top-right-radius: .5rem;
+      width: 100%;
+      height: 100%;
+      background: var(--blue);
+    }
   }
   
   .desktop-nav .dt-nav-container li a {
     text-decoration: none;
+    color: var(--blue);
   }
 
   .mobile-nav {
@@ -314,7 +377,43 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
   }
 
   .call-to-action-btn-dt:hover {
-    background-image: linear-gradient(to right, var(--blue), var(--green))
+    animation: button .2s forwards;
+  }
+
+  @keyframes button {
+    0% {
+      background: var(--blue);
+    }
+    10% {
+      background-image: linear-gradient(to right, var(--blue) 90%, var(--green));
+    }
+    20% {
+      background-image: linear-gradient(to right, var(--blue) 80%, var(--green));
+    }
+    30% {
+      background-image: linear-gradient(to right, var(--blue) 70%, var(--green));
+    }
+    40% {
+      background-image: linear-gradient(to right, var(--blue) 60%, var(--green));
+    }
+    50% {
+      background-image: linear-gradient(to right, var(--blue) 50%, var(--green));
+    }
+    60% {
+      background-image: linear-gradient(to right, var(--blue) 40%, var(--green));
+    }
+    70% {
+      background-image: linear-gradient(to right, var(--blue) 30%, var(--green));
+    }
+    80% {
+      background-image: linear-gradient(to right, var(--blue) 20%, var(--green));
+    }
+    90% {
+      background-image: linear-gradient(to right, var(--blue) 10%, var(--green));
+    }
+    100% {
+      background-image: linear-gradient(to right, var(--blue), var(--green));
+    }
   }
   
   .call-to-action-btn-dt a {
