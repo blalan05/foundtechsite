@@ -374,10 +374,47 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     margin: auto 1.5em auto auto;
     color: white;
     background-color: var(--blue);
+    animation: reverse .2s;
   }
 
   .call-to-action-btn-dt:hover {
     animation: button .2s forwards;
+  }
+
+  @keyframes reverse {
+    0% {
+      background-image: linear-gradient(to right, var(--blue), var(--green));
+    }
+    10% {
+      background-image: linear-gradient(to right, var(--blue) 10%, var(--green));
+    }
+    20% {
+      background-image: linear-gradient(to right, var(--blue) 20%, var(--green));
+    }
+    30% {
+      background-image: linear-gradient(to right, var(--blue) 30%, var(--green));
+    }
+    40% {
+      background-image: linear-gradient(to right, var(--blue) 40%, var(--green));
+    }
+    50% {
+      background-image: linear-gradient(to right, var(--blue) 50%, var(--green));
+    }
+    60% {
+      background-image: linear-gradient(to right, var(--blue) 60%, var(--green));
+    }
+    70% {
+      background-image: linear-gradient(to right, var(--blue) 70%, var(--green));
+    }
+    80% {
+      background-image: linear-gradient(to right, var(--blue) 80%, var(--green));
+    }
+    90% {
+      background-image: linear-gradient(to right, var(--blue) 90%, var(--green));
+    }
+    100% {
+      background: var(--blue);
+    }
   }
 
   @keyframes button {

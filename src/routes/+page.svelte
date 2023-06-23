@@ -360,11 +360,40 @@
     background-color: var(--green);
     border-radius: 7px;
     border-style: none;
-    transition: background-image 10s;
+    animation: reverse .2s;
   }
 
   a:hover {
-    background-image: linear-gradient(to right, var(--green), var(--blue))
+    background-image: linear-gradient(to right, var(--green), var(--blue));
+    animation: button .2s forwards;
+  }
+
+  @keyframes reverse {
+    0% {background-image: linear-gradient(to right, var(--green), var(--blue));}
+    10% {background-image: linear-gradient(to right, var(--green) 10%, var(--blue));}
+    20% {background-image: linear-gradient(to right, var(--green) 20%, var(--blue));}
+    30% {background-image: linear-gradient(to right, var(--green) 30%, var(--blue));}
+    40% {background-image: linear-gradient(to right, var(--green) 40%, var(--blue));}
+    50% {background-image: linear-gradient(to right, var(--green) 50%, var(--blue));}
+    60% {background-image: linear-gradient(to right, var(--green) 60%, var(--blue));}
+    70% {background-image: linear-gradient(to right, var(--green) 70%, var(--blue));}
+    80% {background-image: linear-gradient(to right, var(--green) 80%, var(--blue));}
+    90% {background-image: linear-gradient(to right, var(--green) 90%, var(--blue));}
+    100% {background: var(--green);}
+  }
+
+  @keyframes button {
+    0% {background: var(--green);}
+    10% {background-image: linear-gradient(to right, var(--green) 90%, var(--blue));}
+    20% {background-image: linear-gradient(to right, var(--green) 80%, var(--blue));}
+    30% {background-image: linear-gradient(to right, var(--green) 70%, var(--blue));}
+    40% {background-image: linear-gradient(to right, var(--green) 60%, var(--blue));}
+    50% {background-image: linear-gradient(to right, var(--green) 50%, var(--blue));}
+    60% {background-image: linear-gradient(to right, var(--green) 40%, var(--blue));}
+    70% {background-image: linear-gradient(to right, var(--green) 30%, var(--blue));}
+    80% {background-image: linear-gradient(to right, var(--green) 20%, var(--blue));}
+    90% {background-image: linear-gradient(to right, var(--green) 10%, var(--blue));}
+    100% {background-image: linear-gradient(to right, var(--green), var(--blue));}
   }
 
   .cards-callout-bg {
@@ -486,7 +515,7 @@
     background-image: url('$lib/assets/integration-edited.webp');
   }
   .cards .card-bg .card-graphic.maint-sup {
-    background-image: url('$lib/assets/support-edited.webp');
+    background-image: url('$lib/assets/Software-Maintenance-and-Support.webp');
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -582,9 +611,17 @@
     height: 30em;
     margin: auto;
   }
+  
+  .approach h2 {
+    font-size: 3rem;
+  }
+
+  .approach p {
+    font-size: 1.25rem;
+  }
 
   .approach * {
-    padding: 1em 0;
+    padding: .5em 0;
   }
 
   .pillars {
@@ -615,6 +652,18 @@
     border-color: var(--lightblue);
     border-style: solid;
     background-color: var(--blue);
+  }
+  
+  .pillars div:hover .circle {
+    animation: flip 3s forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes flip {
+    0% {transform: rotateY(0deg);}
+    50% {transform: rotateY(180deg);}
+    100% {transform: rotateY(360deg);}
   }
 
   .pillars div .pillar-text {
@@ -669,8 +718,8 @@
       font-size: 48px;
     }
 
-    .cards div h2 {
-      font-size: 32px;
+    .cards .card-bg h3 {
+      font-size: 24px;
       margin: 0.5em 1em 0.5em 1.5em;
     }
 
@@ -731,10 +780,9 @@
       justify-content: flex-start;
       align-items: flex-start;
       text-align: left;
-      width: 45%;
+      width: 50%;
       height: 55%;
-      margin: 0 5%;
-      padding: 0 2em;
+      padding: 0 5rem;
     }
 
     .pillars {
@@ -743,7 +791,7 @@
       grid-auto-rows: 1fr;
       height: 70%;
       gap: 2em;
-      width: 55%;
+      width: 50%;
     }
 
     .pillars div {
