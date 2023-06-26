@@ -118,7 +118,9 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
   }
 
   .mobile-active {
-    background-image: linear-gradient(to right, var(--green), white, white, white, white, var(--blue))
+    border-left-style: solid;
+    border-width: 10px;
+    border-color: var(--blue);
   }
 
   .hideMobile {
@@ -217,7 +219,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     font-size: 20px;
   }
 
-  /* start */
+  /* nav animation start */
 
   .desktop-nav ul li a {
     display: block;
@@ -314,7 +316,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
   .oc-nav-container.open {
     max-height: 600px;
     height: auto;
-    padding: 1rem 0 1rem 0;
+    padding-top: 1rem;
   }
 
   .oc-nav-container li a {

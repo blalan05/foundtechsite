@@ -526,7 +526,7 @@
   }
 
   .fullvue-callout {
-    padding: 0.6em 0.6em 0 0.6em;
+    padding: 3em 0.6em 0 0.6em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -680,21 +680,21 @@
 
   .call-to-action-section {
     display: flex;
-    height: 55em;
+    height: 40em;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
 
   .call-to-action {
-    width: 60%;
+    width: 75%;
     height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
-    row-gap: 10%;
+    row-gap: 5%;
   }
 
 
@@ -724,6 +724,7 @@
     }
 
     .fullvue-callout-container {
+      padding: 0.6em 0.6em 0 0.6em;
       height: 50em;
     }
 
@@ -745,6 +746,14 @@
       width: 65%;
       height: 100%;
       align-items: flex-end;
+    }
+
+    .call-to-action h2 {
+      font-size: 40px;
+    }
+
+    .call-to-action p {
+      font-size: 28px;
     }
   }
 
@@ -811,7 +820,6 @@
     }
 
     .call-to-action-section {
-      height: 45em;
       align-items: flex-start;
     }
     
