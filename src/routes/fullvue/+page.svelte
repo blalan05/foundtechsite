@@ -147,13 +147,13 @@
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: 1800px 1800px, cover;
-    background-position: center 19rem, center center;
+    background-position: center 12rem, center center;
     z-index: 10;
   }
 
   .intro {
     width: 90%;
-    margin: 19rem;
+    margin: 12rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,7 +165,7 @@
   .screenshot {
     height: 50rem;
     width: 90%;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
     border-radius: 3rem;
     box-shadow: 15px 20px 60px 20px #777777;
     background-image: url("$lib/assets/JobsDashboard.webp");
@@ -284,7 +284,7 @@
   }
 
   a {
-    padding: .5rem 1rem;
+    padding: 1rem 1.5rem;
     text-decoration: none;
     margin-top: 1rem;
     font-size: 1.25rem;
@@ -293,11 +293,40 @@
     background-color: var(--green);
     border-radius: .5rem;
     border-style: none;
-    transition: background-image 10s;
+    animation: reverse .2s;
   }
 
   a:hover {
-    background-image: linear-gradient(to right, var(--green), var(--blue))
+    background-image: linear-gradient(to right, var(--green), var(--blue));
+    animation: button .2s forwards;
+  }
+
+  @keyframes reverse {
+    0% {background-image: linear-gradient(to right, var(--green), var(--blue));}
+    10% {background-image: linear-gradient(to right, var(--green) 10%, var(--blue));}
+    20% {background-image: linear-gradient(to right, var(--green) 20%, var(--blue));}
+    30% {background-image: linear-gradient(to right, var(--green) 30%, var(--blue));}
+    40% {background-image: linear-gradient(to right, var(--green) 40%, var(--blue));}
+    50% {background-image: linear-gradient(to right, var(--green) 50%, var(--blue));}
+    60% {background-image: linear-gradient(to right, var(--green) 60%, var(--blue));}
+    70% {background-image: linear-gradient(to right, var(--green) 70%, var(--blue));}
+    80% {background-image: linear-gradient(to right, var(--green) 80%, var(--blue));}
+    90% {background-image: linear-gradient(to right, var(--green) 90%, var(--blue));}
+    100% {background: var(--green);}
+  }
+
+  @keyframes button {
+    0% {background: var(--green);}
+    10% {background-image: linear-gradient(to right, var(--green) 90%, var(--blue));}
+    20% {background-image: linear-gradient(to right, var(--green) 80%, var(--blue));}
+    30% {background-image: linear-gradient(to right, var(--green) 70%, var(--blue));}
+    40% {background-image: linear-gradient(to right, var(--green) 60%, var(--blue));}
+    50% {background-image: linear-gradient(to right, var(--green) 50%, var(--blue));}
+    60% {background-image: linear-gradient(to right, var(--green) 40%, var(--blue));}
+    70% {background-image: linear-gradient(to right, var(--green) 30%, var(--blue));}
+    80% {background-image: linear-gradient(to right, var(--green) 20%, var(--blue));}
+    90% {background-image: linear-gradient(to right, var(--green) 10%, var(--blue));}
+    100% {background-image: linear-gradient(to right, var(--green), var(--blue));}
   }
 
   .text {
@@ -381,7 +410,7 @@
       align-items: center;
       justify-content: center;
       gap: 10%;
-      margin-bottom: 10%;
+      margin-bottom: 2%;
     }
 
     .feature:nth-child(even) {
@@ -403,6 +432,10 @@
       display: flex;
       align-items: flex-start;
       text-align: left;
+    }
+    
+    .text p {
+      font-size: 1.25rem;
     }
 
     .call-to-action {

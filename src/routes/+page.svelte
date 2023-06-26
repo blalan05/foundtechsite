@@ -352,7 +352,7 @@
   }
 
   a {
-    padding: 0.5em;
+    padding: 1rem 1.5rem;
     font-size: 1.25em;
     text-decoration: none;
     font-weight: bold;
@@ -360,11 +360,40 @@
     background-color: var(--green);
     border-radius: 7px;
     border-style: none;
-    transition: background-image 10s;
+    animation: reverse .2s;
   }
 
   a:hover {
-    background-image: linear-gradient(to right, var(--green), var(--blue))
+    background-image: linear-gradient(to right, var(--green), var(--blue));
+    animation: button .2s forwards;
+  }
+
+  @keyframes reverse {
+    0% {background-image: linear-gradient(to right, var(--green), var(--blue));}
+    10% {background-image: linear-gradient(to right, var(--green) 10%, var(--blue));}
+    20% {background-image: linear-gradient(to right, var(--green) 20%, var(--blue));}
+    30% {background-image: linear-gradient(to right, var(--green) 30%, var(--blue));}
+    40% {background-image: linear-gradient(to right, var(--green) 40%, var(--blue));}
+    50% {background-image: linear-gradient(to right, var(--green) 50%, var(--blue));}
+    60% {background-image: linear-gradient(to right, var(--green) 60%, var(--blue));}
+    70% {background-image: linear-gradient(to right, var(--green) 70%, var(--blue));}
+    80% {background-image: linear-gradient(to right, var(--green) 80%, var(--blue));}
+    90% {background-image: linear-gradient(to right, var(--green) 90%, var(--blue));}
+    100% {background: var(--green);}
+  }
+
+  @keyframes button {
+    0% {background: var(--green);}
+    10% {background-image: linear-gradient(to right, var(--green) 90%, var(--blue));}
+    20% {background-image: linear-gradient(to right, var(--green) 80%, var(--blue));}
+    30% {background-image: linear-gradient(to right, var(--green) 70%, var(--blue));}
+    40% {background-image: linear-gradient(to right, var(--green) 60%, var(--blue));}
+    50% {background-image: linear-gradient(to right, var(--green) 50%, var(--blue));}
+    60% {background-image: linear-gradient(to right, var(--green) 40%, var(--blue));}
+    70% {background-image: linear-gradient(to right, var(--green) 30%, var(--blue));}
+    80% {background-image: linear-gradient(to right, var(--green) 20%, var(--blue));}
+    90% {background-image: linear-gradient(to right, var(--green) 10%, var(--blue));}
+    100% {background-image: linear-gradient(to right, var(--green), var(--blue));}
   }
 
   .cards-callout-bg {
@@ -382,9 +411,9 @@
   }
 
   .preview-cards h2 {
-    font-size: 2em;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 0.8em;
+    margin-bottom: 5rem;
   }
 
   .maint-icon {
@@ -460,12 +489,12 @@
     color: var(--lightblue);
     border-color: var(--lightblue);
     background-color: var(--blue);
-    margin: 0.4em 0 0 0.4em;
+    margin: 1.5rem 0 0 1.5rem;
   }
 
   .cards .card-bg h3 {
     display: inline-block;
-    margin: 0.5em 1em 0.5em 2em;
+    margin: 1.5em 1em 0.5em 2em;
     color: white;
   }
 
@@ -486,7 +515,7 @@
     background-image: url('$lib/assets/integration-edited.webp');
   }
   .cards .card-bg .card-graphic.maint-sup {
-    background-image: url('$lib/assets/support-edited.webp');
+    background-image: url('$lib/assets/Software-Maintenance-and-Support.webp');
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -497,7 +526,7 @@
   }
 
   .fullvue-callout {
-    padding: 0.6em 0.6em 0 0.6em;
+    padding: 3em 0.6em 0 0.6em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -510,8 +539,8 @@
     justify-content: center;
     text-align: center;
     color: white;
-    text-shadow: 2px 4px 1em var(--blue);
   }
+  /* text-shadow: 2px 4px 1em var(--blue); */
   
 
   .callout-ad p {
@@ -582,9 +611,17 @@
     height: 30em;
     margin: auto;
   }
+  
+  .approach h2 {
+    font-size: 3rem;
+  }
+
+  .approach p {
+    font-size: 1.25rem;
+  }
 
   .approach * {
-    padding: 1em 0;
+    padding: .5em 0;
   }
 
   .pillars {
@@ -616,6 +653,18 @@
     border-style: solid;
     background-color: var(--blue);
   }
+  
+  .pillars div:hover .circle {
+    animation: flip 3s forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes flip {
+    0% {transform: rotateY(0deg);}
+    50% {transform: rotateY(180deg);}
+    100% {transform: rotateY(360deg);}
+  }
 
   .pillars div .pillar-text {
     display: flex;
@@ -631,21 +680,21 @@
 
   .call-to-action-section {
     display: flex;
-    height: 55em;
+    height: 40em;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
 
   .call-to-action {
-    width: 60%;
+    width: 75%;
     height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
-    row-gap: 10%;
+    row-gap: 5%;
   }
 
 
@@ -669,12 +718,13 @@
       font-size: 48px;
     }
 
-    .cards div h2 {
-      font-size: 32px;
+    .cards .card-bg h3 {
+      font-size: 24px;
       margin: 0.5em 1em 0.5em 1.5em;
     }
 
     .fullvue-callout-container {
+      padding: 0.6em 0.6em 0 0.6em;
       height: 50em;
     }
 
@@ -696,6 +746,14 @@
       width: 65%;
       height: 100%;
       align-items: flex-end;
+    }
+
+    .call-to-action h2 {
+      font-size: 40px;
+    }
+
+    .call-to-action p {
+      font-size: 28px;
     }
   }
 
@@ -731,10 +789,9 @@
       justify-content: flex-start;
       align-items: flex-start;
       text-align: left;
-      width: 45%;
+      width: 50%;
       height: 55%;
-      margin: 0 5%;
-      padding: 0 2em;
+      padding: 0 5rem;
     }
 
     .pillars {
@@ -743,7 +800,7 @@
       grid-auto-rows: 1fr;
       height: 70%;
       gap: 2em;
-      width: 55%;
+      width: 50%;
     }
 
     .pillars div {
@@ -763,7 +820,6 @@
     }
 
     .call-to-action-section {
-      height: 45em;
       align-items: flex-start;
     }
     
