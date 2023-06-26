@@ -9,10 +9,10 @@
 
   <div class="dt-nav-container">
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/fullvue">FullVue</a></li>
-      <li><a href="/construction">About</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="/" class:dt-active={$page.url.pathname === '/'}>Home</a></li>
+      <li><a href="/fullvue" class:dt-active={$page.url.pathname === '/fullvue'}>FullVue</a></li>
+      <li><a href="/construction" class:dt-active={$page.url.pathname === '/construction'}>About</a></li>
+      <li><a href="/contact" class:dt-active={$page.url.pathname === '/contact'}>Contact</a></li>
     </ul>
   </div>
 
@@ -31,7 +31,7 @@
     </button>
 
     <div class="nav-logo-container">
-      <img class="logo" src={logo} alt="Foundational Technologies LLC (FoundTech)" width="250" height="50"/>
+      <img class="mobile-logo" src={logo} alt="Foundational Technologies LLC (FoundTech)" width="200" height="40"/>
     </div>
 
     <div class="call-to-action-btn">
@@ -51,10 +51,10 @@
 
   <div class="oc-nav-container" class:open="{isOpen}">
     <ul>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/">Home</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/fullvue">FullVue</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/construction">About</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/contact">Contact</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/'}><a href="/">Home</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/fullvue'}><a href="/fullvue">FullVue</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/construction'}><a href="/construction">About</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/contact'}><a href="/contact">Contact</a></li>
     </ul>
   </div>
 
@@ -86,6 +86,7 @@
 import logo from '$lib/assets/FoundTech Logo.svg'
 import Analytics from '$lib/analytics.svelte';
 import { onMount } from 'svelte';
+import { page } from '$app/stores';
 
 const yearDate = (new Date()).getFullYear()
 
@@ -96,7 +97,6 @@ const toggleNav = () => { isOpen = !isOpen }
 onMount(() => {		
   window.addEventListener('resize', () => { if (window.innerWidth >= 1000) isOpen = false });
 });
-
 
 const closeOnKeyPress = (/** @type {{ key: string; }} */ event) => {
   if (isOpen && (event.key == 'Enter' || event.key == 'Space')) {
@@ -112,6 +112,15 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
 }
 </script>
 <style>
+  .dt-active {
+    border-bottom-style: solid;
+    border-width: 1px;
+  }
+
+  .mobile-active {
+    background-image: linear-gradient(to right, var(--green), white, white, white, white, var(--blue))
+  }
+
   .hideMobile {
     display: none;
   }
@@ -164,6 +173,11 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     width: 250px;
     height: 50px;
   }
+
+  .mobile-logo {
+    width: 200px;
+    height: 40px;
+  }
   
   .footer-logo-container {
     display: flex;
@@ -177,6 +191,10 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     margin: 0.8rem;
     width: 67%;
     max-width: 30em;
+  }
+
+  .mobile-nav {
+    padding-top: 1rem;
   }
 
   .desktop-nav {
@@ -296,14 +314,14 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
   .oc-nav-container.open {
     max-height: 600px;
     height: auto;
-    padding: 1rem;
+    padding: 1rem 0 1rem 0;
   }
 
   .oc-nav-container li a {
     display: inline-block;
     width: 100%;
     color: var(--blue);
-    padding: 0.3em;
+    padding: 0.3em 0 0.3em 0;
     opacity: 1;
     text-decoration: none;
   }
