@@ -19,8 +19,8 @@
         <input type="text" class="first-name" name="firstName" placeholder="First Name*">
         <input type="text" class="last-name" name="lastName" placeholder="Last Name*">
         <div class="textarea">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="5"></textarea>
+          <!--<label for="message">Message</label>-->
+          <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
         </div>
         <div class="submit-btn-container">
           <input class="submit-btn" type="submit" value="Submit">
@@ -81,18 +81,17 @@
     width: 80%;
   }
 
-  form input {
-    padding: 1em;
-  }
-
   form input, form textarea {
+    padding: 1em;
     width: 100%;
     font-size: 1em;
     border-radius: 4px;
-    border-style: none;
-    box-shadow: 4px 4px 7px 1px var(--lightblue);
+    border-style: solid;
+    border-width: 1px;
   }
 
+  /* box-shadow: 4px 4px 7px 1px var(--lightblue); */
+  
   .submit-btn-container {
     grid-area: btn-container;
     display: flex;

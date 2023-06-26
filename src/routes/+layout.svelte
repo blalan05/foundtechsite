@@ -9,10 +9,10 @@
 
   <div class="dt-nav-container">
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/fullvue">FullVue</a></li>
-      <li><a href="/construction">About</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="/" class:dt-active={$page.url.pathname === '/'}>Home</a></li>
+      <li><a href="/fullvue" class:dt-active={$page.url.pathname === '/fullvue'}>FullVue</a></li>
+      <li><a href="/construction" class:dt-active={$page.url.pathname === '/construction'}>About</a></li>
+      <li><a href="/contact" class:dt-active={$page.url.pathname === '/contact'}>Contact</a></li>
     </ul>
   </div>
 
@@ -31,7 +31,7 @@
     </button>
 
     <div class="nav-logo-container">
-      <img class="logo" src={logo} alt="Foundational Technologies LLC (FoundTech)" width="250" height="50"/>
+      <img class="mobile-logo" src={logo} alt="Foundational Technologies LLC (FoundTech)" width="200" height="40"/>
     </div>
 
     <div class="call-to-action-btn">
@@ -51,10 +51,10 @@
 
   <div class="oc-nav-container" class:open="{isOpen}">
     <ul>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/">Home</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/fullvue">FullVue</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/construction">About</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="/contact">Contact</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/'}><a href="/">Home</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/fullvue'}><a href="/fullvue">FullVue</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/construction'}><a href="/construction">About</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/contact'}><a href="/contact">Contact</a></li>
     </ul>
   </div>
 
@@ -86,6 +86,7 @@
 import logo from '$lib/assets/FoundTech Logo.svg'
 import Analytics from '$lib/analytics.svelte';
 import { onMount } from 'svelte';
+import { page } from '$app/stores';
 
 const yearDate = (new Date()).getFullYear()
 
@@ -96,7 +97,6 @@ const toggleNav = () => { isOpen = !isOpen }
 onMount(() => {		
   window.addEventListener('resize', () => { if (window.innerWidth >= 1000) isOpen = false });
 });
-
 
 const closeOnKeyPress = (/** @type {{ key: string; }} */ event) => {
   if (isOpen && (event.key == 'Enter' || event.key == 'Space')) {
@@ -112,6 +112,17 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
 }
 </script>
 <style>
+  .dt-active {
+    border-bottom-style: solid;
+    border-width: 1px;
+  }
+
+  .mobile-active {
+    border-left-style: solid;
+    border-width: 10px;
+    border-color: var(--blue);
+  }
+
   .hideMobile {
     display: none;
   }
@@ -164,6 +175,11 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     width: 250px;
     height: 50px;
   }
+
+  .mobile-logo {
+    width: 200px;
+    height: 40px;
+  }
   
   .footer-logo-container {
     display: flex;
@@ -179,11 +195,16 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     max-width: 30em;
   }
 
+  .mobile-nav {
+    padding-top: 1rem;
+  }
+
   .desktop-nav {
     display: none;
     align-items: center;
     gap: 10%;
     width: 100%;
+    padding: 1rem;
   }
   
   .desktop-nav .dt-nav-container ul {
@@ -195,11 +216,73 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
 
   .desktop-nav .dt-nav-container li {
     display: inline-block;
-    font-size: 26px;
+    font-size: 20px;
+  }
+
+  /* nav animation start */
+
+  .desktop-nav ul li a {
+    display: block;
+    padding: .5rem;
+    position: relative;
+  }
+
+  .desktop-nav ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+
+  .desktop-nav ul li a {
+    transition: all 2s;
+  }
+
+  .desktop-nav ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+  .desktop-nav ul li a:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  .desktop-nav ul li a:hover:after {
+    z-index: -10;
+    animation: select 1s forwards;
+    -webkit-animation: select 1s forwards;
+    -moz-animation: select 1s forwards;
+    opacity: 1;
+  }
+
+  @keyframes select {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+    50% {
+      width: 100%;
+      height: 1px;
+    }
+    100% {
+      border-top-left-radius: .5rem;
+      border-top-right-radius: .5rem;
+      width: 100%;
+      height: 100%;
+      background: var(--blue);
+    }
   }
   
   .desktop-nav .dt-nav-container li a {
     text-decoration: none;
+    color: var(--blue);
   }
 
   .mobile-nav {
@@ -233,14 +316,14 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
   .oc-nav-container.open {
     max-height: 600px;
     height: auto;
-    padding: 1rem;
+    padding-top: 1rem;
   }
 
   .oc-nav-container li a {
     display: inline-block;
     width: 100%;
     color: var(--blue);
-    padding: 0.3em;
+    padding: 0.3em 0 0.3em 0;
     opacity: 1;
     text-decoration: none;
   }
@@ -311,10 +394,83 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     margin: auto 1.5em auto auto;
     color: white;
     background-color: var(--blue);
+    animation: reverse .2s;
   }
 
   .call-to-action-btn-dt:hover {
-    background-image: linear-gradient(to right, var(--blue), var(--green))
+    animation: button .2s forwards;
+  }
+
+  @keyframes reverse {
+    0% {
+      background-image: linear-gradient(to right, var(--blue), var(--green));
+    }
+    10% {
+      background-image: linear-gradient(to right, var(--blue) 10%, var(--green));
+    }
+    20% {
+      background-image: linear-gradient(to right, var(--blue) 20%, var(--green));
+    }
+    30% {
+      background-image: linear-gradient(to right, var(--blue) 30%, var(--green));
+    }
+    40% {
+      background-image: linear-gradient(to right, var(--blue) 40%, var(--green));
+    }
+    50% {
+      background-image: linear-gradient(to right, var(--blue) 50%, var(--green));
+    }
+    60% {
+      background-image: linear-gradient(to right, var(--blue) 60%, var(--green));
+    }
+    70% {
+      background-image: linear-gradient(to right, var(--blue) 70%, var(--green));
+    }
+    80% {
+      background-image: linear-gradient(to right, var(--blue) 80%, var(--green));
+    }
+    90% {
+      background-image: linear-gradient(to right, var(--blue) 90%, var(--green));
+    }
+    100% {
+      background: var(--blue);
+    }
+  }
+
+  @keyframes button {
+    0% {
+      background: var(--blue);
+    }
+    10% {
+      background-image: linear-gradient(to right, var(--blue) 90%, var(--green));
+    }
+    20% {
+      background-image: linear-gradient(to right, var(--blue) 80%, var(--green));
+    }
+    30% {
+      background-image: linear-gradient(to right, var(--blue) 70%, var(--green));
+    }
+    40% {
+      background-image: linear-gradient(to right, var(--blue) 60%, var(--green));
+    }
+    50% {
+      background-image: linear-gradient(to right, var(--blue) 50%, var(--green));
+    }
+    60% {
+      background-image: linear-gradient(to right, var(--blue) 40%, var(--green));
+    }
+    70% {
+      background-image: linear-gradient(to right, var(--blue) 30%, var(--green));
+    }
+    80% {
+      background-image: linear-gradient(to right, var(--blue) 20%, var(--green));
+    }
+    90% {
+      background-image: linear-gradient(to right, var(--blue) 10%, var(--green));
+    }
+    100% {
+      background-image: linear-gradient(to right, var(--blue), var(--green));
+    }
   }
   
   .call-to-action-btn-dt a {
