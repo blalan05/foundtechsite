@@ -2,38 +2,34 @@
   <section class="intro-section">
     <div class="hero-bg"></div>
     <div class="intro-top">
-      <h2>We're here to support small businesses</h2>
+      <h2>Our focus is providing value to small businesses through useful and efficent software solutions.</h2>
     </div>
     <div class="intro-bottom">
       <div class="images">
-        <div class="front"></div>
-        <div class="back"></div>
+        <div class="front">
+          <img class="fullvuelogo" src="{fullvuelogo}" alt="FullVue Small Business Toolbox" width="250px" height="50px">
+        </div>
+        <div class="back">
+          <img class="logo" src="{logo}" alt="Foundational Technologies LLC (FoundTech)" width="250px" height="50px">
+        </div>
       </div>
       <div class="mission">
-        <h3>Why we started</h3>
+        <h3>Why we started?</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quaerat 
-          id aspernatur nostrum. Tempora atque velit harum, quasi placeat corrupti 
-          nulla, sapiente aliquam sequi saepe dolorum itaque sint, autem minima nihil 
-          libero. Optio eius culpa vel nihil sed, doloribus, ex, aperiam rem quasi 
-          hic rerum possimus non beatae quas dolor!
+          While throughout our careers, we saw that small business was forgotten when it came to affordable and approachable software.  Our goal is to serve this deficency in the market with intuitive software solutions.
         </p>
-        <h3>Where we're going</h3>
+        <h3>How are we achieving this?</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quaerat 
-          id aspernatur nostrum. Tempora atque velit harum, quasi placeat corrupti 
-          nulla, sapiente aliquam sequi saepe dolorum itaque sint, autem minima nihil 
-          libero. Optio eius culpa vel nihil sed, doloribus, ex, aperiam rem quasi 
-          hic rerum possimus non beatae quas dolor!
+          By building applications with small business needs in mind. From the start of the development cycle we are focused on creating lean and efficent processes that allow us to pass our cost savings to you, our customers.
         </p>
-        <button>Reach Out</button>
+        <a href="/contact">Reach Out</a>
       </div>
     </div>
   </section>
 
   <section class="pillars-section">
     <div class="pillars-title">
-      <h2>The pillars upon which we are built.</h2>
+      <h2>Our Guiding Principles</h2>
     </div>
     
     <div class="pillars">
@@ -101,12 +97,75 @@
   </section>
 
   <section class="call-to-action-section">
-    <h2>Lets lay the foundation for your small business success!</h2>
-    <button>Reach Out Today</button>
+    <h2>Talk to us and find out what makes us different. <br>How can we help your company?</h2>
+    <a href="/contact">Reach Out Today</a>
   </section>
 </div>
 
+<script>
+  import logo from '$lib/assets/FoundTech Logo.svg'
+  import fullvuelogo from '$lib/assets/horizontal-logo-text-tagline-dark.svg'
+</script>
+
 <style>
+
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2%;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2%;
+  }
+
+  a {
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--green);
+    border-radius: .5rem;
+    border-style: none;
+    animation: reverse .2s;
+  }
+
+  a:hover {
+    background-image: linear-gradient(to right, var(--green), var(--blue));
+    animation: button .2s forwards;
+  }
+
+  @keyframes button {
+    0% {background: var(--green);}
+    10% {background-image: linear-gradient(to right, var(--green) 90%, var(--blue));}
+    20% {background-image: linear-gradient(to right, var(--green) 80%, var(--blue));}
+    30% {background-image: linear-gradient(to right, var(--green) 70%, var(--blue));}
+    40% {background-image: linear-gradient(to right, var(--green) 60%, var(--blue));}
+    50% {background-image: linear-gradient(to right, var(--green) 50%, var(--blue));}
+    60% {background-image: linear-gradient(to right, var(--green) 40%, var(--blue));}
+    70% {background-image: linear-gradient(to right, var(--green) 30%, var(--blue));}
+    80% {background-image: linear-gradient(to right, var(--green) 20%, var(--blue));}
+    90% {background-image: linear-gradient(to right, var(--green) 10%, var(--blue));}
+    100% {background-image: linear-gradient(to right, var(--green), var(--blue));}
+  }
+
+  @keyframes reverse {
+    0% {background-image: linear-gradient(to right, var(--green), var(--blue));}
+    10% {background-image: linear-gradient(to right, var(--green) 10%, var(--blue));}
+    20% {background-image: linear-gradient(to right, var(--green) 20%, var(--blue));}
+    30% {background-image: linear-gradient(to right, var(--green) 30%, var(--blue));}
+    40% {background-image: linear-gradient(to right, var(--green) 40%, var(--blue));}
+    50% {background-image: linear-gradient(to right, var(--green) 50%, var(--blue));}
+    60% {background-image: linear-gradient(to right, var(--green) 60%, var(--blue));}
+    70% {background-image: linear-gradient(to right, var(--green) 70%, var(--blue));}
+    80% {background-image: linear-gradient(to right, var(--green) 80%, var(--blue));}
+    90% {background-image: linear-gradient(to right, var(--green) 90%, var(--blue));}
+    100% {background: var(--green);}
+  }
 
   .intro-section {
     width: 100%;
@@ -130,7 +189,7 @@
   }
 
   .intro-top {
-    width: 55%;
+    width: 80%;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -151,37 +210,66 @@
     width: 95%;
   }
 
+  .logo {
+    width: 90%;
+  }
+
+  .fullvuelogo {
+    width: 90%
+  }
+
   .front {
+    display: flex;
+    justify-content: center;
     width: 65%;
-    aspect-ratio: 2/3;
-    background-color: #c0c0c0;
+    aspect-ratio: 2/1;
+    background-color: #e0e0e0;
     border-radius: 30px;
     position: relative;
     left: 35%;
     z-index: 30;
-    margin-top: -10%;
+    margin-top: -5%;
+    box-shadow: 6px 6px 12px var(--blue);
   }
 
   .back {
+    display: flex;
+    justify-content: center;
     width: 90%;
-    aspect-ratio: 4/5;
-    background-color: aqua;
+    aspect-ratio: 2/1;
+    background-color: #f0f0f0;
     border-radius: 30px;
     position: relative;
-    left: -2%;
+    left: 1%;
     margin-top: -10%;
     z-index: 20;
+    box-shadow: 6px 6px 12px var(--blue);
   }
 
   .mission {
     color: white;
-    width: 85%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem 0 5rem 0;
+  }
+
+  .mission h3 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 1rem;
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
+  }
+
+  .mission p {
+    width: 85%;
+    font-size: 24px;
+    margin: 1rem;
+    line-height: 2rem;
   }
 
   .pillars-section {
@@ -194,6 +282,7 @@
 
   .pillars-title {
     display: flex;
+    width: 80%;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -236,6 +325,10 @@
     margin: 3rem 0;
   }
 
+  .pillar p {
+    width: 80%;
+  }
+
   .integrity-icon {
     width: 3em;
     height: 3em;
@@ -264,9 +357,10 @@
     height: 2.7em;
   }
 
+  /**display: flex;  removed for now with display: none;*/
   .bio-section {
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -303,13 +397,21 @@
     aspect-ratio: 3/2;
     max-height: 650px;
     color: white;
-    background-color: black;
+    background-color: #212121;
+    background-image: url('$lib/assets/about-dark-bg-3.webp');
+    background-size: cover;
+    background-position: 50% 70%;
     display: flex;
+    padding: 3rem 0 4rem 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 7%;
+    gap: 3rem;
+  }
+
+  .call-to-action-section h2 {
+    width: 80%;
   }
 
   @media (min-width: 768px) {
@@ -317,18 +419,57 @@
       flex-direction: row;
     }
 
+    .images {
+      width: 50%;
+    }
+
     .front {
-      aspect-ratio: 1/1;
+      width: 65%;
+      aspect-ratio: 2/1;
+      background-color: #e0e0e0;
+      border-radius: 30px;
+      position: relative;
+      left: 35%;
+      z-index: 30;
+      margin-top: -20%;
+      box-shadow: 6px 6px 12px var(--blue);
     }
 
     .back {
-      aspect-ratio: 1/1;
-      margin-top: -20%;
+      width: 90%;
+      aspect-ratio: 2/1;
+      background-color: #f0f0f0;
+      border-radius: 30px;
+      position: relative;
+      left: 1%;
+      margin-top: -10%;
       margin-bottom: 3rem;
+      z-index: 20;
+      box-shadow: 6px 6px 12px var(--blue);
     }
 
     .pillar {
       width: 30%;
+    }
+
+    .pillar:hover .circle {
+      animation: flip 3s forwards;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes flip {
+      0% {transform: rotateY(0deg);}
+      50% {transform: rotateY(180deg);}
+      100% {transform: rotateY(360deg);}
+    }
+
+    .pillars {
+      width: 80%;
+    }
+
+    .pillars-section {
+      margin: 0 0 5rem 0;
     }
 
     .bios {
@@ -338,6 +479,10 @@
 
     .bio {
       margin: 0 1rem;
+    }
+
+    .call-to-action-section {
+      aspect-ratio: 4/1;
     }
   }
 </style>
