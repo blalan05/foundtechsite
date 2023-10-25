@@ -101,7 +101,7 @@
 
   <section class="call-to-action-section">
     <div class="call-to-action">
-      <h2>Bring visibility and increased efficiency to your management and make more informed decisions for less than a dollar a day per user.</h2>
+      <h2>Bring visibility and increased efficiency to your management and make more informed decisions.</h2>
       <a class="cta-btn" href="/contact">Book A Demo</a>
     </div>
   </section>
@@ -274,12 +274,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 115px;
+    width: 6rem;
     aspect-ratio: 1/1;
     background-color: var(--blue);
     border-radius: 50%;
     border-style: solid;
-    border-width: 15px;
+    border-width: .5rem;
     border-color: var(--lightblue);
   }
 

@@ -7,8 +7,8 @@
 <div>
   <section class="contact-section">
     <div class="hero-container">
-      <h2>This website is under construction</h2>
-      <p>We appreciate your interest in our company and product. While the website is still under construction, please contact us for more information.</p>
+      <h2>Reach out for a demo of FullVue today!</h2>
+      <p>Fill out the form below to talk to our solutions team to see if we are a good fit for your business.</p>
     </div>
 
     <div class="form-container">

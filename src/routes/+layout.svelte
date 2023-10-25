@@ -11,7 +11,7 @@
     <ul>
       <li><a href="/" class:dt-active={$page.url.pathname === '/'}>Home</a></li>
       <li><a href="/fullvue" class:dt-active={$page.url.pathname === '/fullvue'}>FullVue</a></li>
-      <li><a href="/construction" class:dt-active={$page.url.pathname === '/construction'}>About</a></li>
+      <li><a href="/about" class:dt-active={$page.url.pathname === '/about'}>About</a></li>
       <li><a href="/contact" class:dt-active={$page.url.pathname === '/contact'}>Contact</a></li>
     </ul>
   </div>
@@ -53,7 +53,7 @@
     <ul>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/'}><a href="/">Home</a></li>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/fullvue'}><a href="/fullvue">FullVue</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/construction'}><a href="/construction">About</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/about'}><a href="/about">About</a></li>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/contact'}><a href="/contact">Contact</a></li>
     </ul>
   </div>
@@ -75,7 +75,7 @@
   <div class="footer-links-container">
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/construction">About</a></li>
+      <li><a href="/about">About</a></li>
       <li><a href="/privacy-policy">Privacy Policy</a></li>
       <li><a href="/fullvue">FullVue</a></li>
       <li><a href="/contact">Contact</a></li>
