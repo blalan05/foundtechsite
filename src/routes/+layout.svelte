@@ -22,9 +22,17 @@
 
 </nav>
 
-<nav class:open="{isOpen}">
+<nav class:open={isOpen}>
   <div class="mobile-nav">
-    <button class="nav-btn" class:open="{isOpen}" on:click="{toggleNav}" on:keypress={keyboardToggle}>
+    <button 
+      class="nav-btn" 
+      class:open={isOpen} 
+      on:click={toggleNav} 
+      on:keypress={keyboardToggle} 
+      aria-label="navigation menu" 
+      aria-controls="navigation" 
+      aria-expanded={isOpen}
+      >
       <span></span>
       <span></span>
       <span></span>
@@ -35,7 +43,7 @@
     </div>
 
     <div class="call-to-action-btn">
-      <a href="/contact">
+      <a href="/contact" aria-label="contact us">
         <span class="hideDesktop">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon">
             <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -49,7 +57,7 @@
     </div>
   </div>
 
-  <div class="oc-nav-container" class:open="{isOpen}">
+  <div class="oc-nav-container" class:open="{isOpen}" id="navigation" role="navigation">
     <ul>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/'}><a href="/">Home</a></li>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/fullvue'}><a href="/fullvue">FullVue</a></li>
