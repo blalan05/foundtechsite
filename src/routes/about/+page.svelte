@@ -2,7 +2,7 @@
   <section class="intro-section">
     <div class="hero-bg"></div>
     <div class="intro-top">
-      <h2>Our focus is providing value to small businesses through useful and efficent software solutions.</h2>
+      <h2>Our focus is providing value to small businesses through <br>useful and efficent software solutions.</h2>
     </div>
     <div class="intro-bottom">
       <div class="images">
@@ -16,11 +16,11 @@
       <div class="mission">
         <h3>Why we started?</h3>
         <p>
-          While throughout our careers, we saw that small business was forgotten when it came to affordable and approachable software.  Our goal is to serve this deficency in the market with intuitive software solutions.
+          Throughout our careers, we saw that small business was largely forgotten when it came to affordable and approachable software.  Our goal is to serve this deficency in the market with intuitive software solutions.
         </p>
         <h3>How are we achieving this?</h3>
         <p>
-          By building applications with small business needs in mind. From the start of the development cycle we are focused on creating lean and efficent processes that allow us to pass our cost savings to you, our customers.
+          We are able to do this by building applications with small business needs in mind from the very start. We are also focused on creating lean and efficent processes that allow us to pass our cost savings to you, our customers.
         </p>
         <a href="/contact">Reach Out</a>
       </div>
@@ -309,6 +309,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 4px 4px 8px #212121;
   }
 
   .pillar {
@@ -433,6 +434,29 @@
       z-index: 30;
       margin-top: -20%;
       box-shadow: 6px 6px 12px var(--blue);
+      animation: shrink-front-image .1s;
+    }
+
+    .front:hover {
+      animation: grow-front-image .1s forwards;
+    }
+
+    @keyframes grow-front-image {
+      0% {width: 65%;}
+      20% {width: 66%;}
+      40% {width: 67%;}
+      60% {width: 68%;}
+      80% {width: 69%;}
+      100% {width: 70%;}
+    }
+
+    @keyframes shrink-front-image {
+      0% {width: 70%;}
+      20% {width: 69%;}
+      40% {width: 68%;}
+      60% {width: 67%;}
+      80% {width: 66%;}
+      100% {width: 65%;}
     }
 
     .back {
@@ -446,7 +470,32 @@
       margin-bottom: 3rem;
       z-index: 20;
       box-shadow: 6px 6px 12px var(--blue);
+      animation: shrink-back-image .1s ;
     }
+    
+    .back:hover {
+      z-index: 40;
+      animation: grow-back-image .1s forwards;
+    }
+
+    @keyframes grow-back-image {
+      0% {width: 90%;}
+      20% {width: 91%;}
+      40% {width: 92%;}
+      60% {width: 93%;}
+      80% {width: 94%;}
+      100% {width: 95%;}
+    }
+
+    @keyframes shrink-back-image {
+      0% {width: 95%;}
+      20% {width: 94%;}
+      40% {width: 93%;}
+      60% {width: 92%;}
+      80% {width: 91%;}
+      100% {width: 90%;}
+    }
+
 
     .pillar {
       width: 30%;
@@ -460,7 +509,9 @@
 
     @keyframes flip {
       0% {transform: rotateY(0deg);}
-      50% {transform: rotateY(180deg);}
+      50% {transform: rotateY(180deg);
+        box-shadow: -4px 4px 8px #212121;
+      }
       100% {transform: rotateY(360deg);}
     }
 
