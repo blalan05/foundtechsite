@@ -652,6 +652,7 @@
     border-color: var(--lightblue);
     border-style: solid;
     background-color: var(--blue);
+    box-shadow: 4px 4px 8px #212121;
   }
   
   .pillars div:hover .circle {
@@ -662,7 +663,10 @@
 
   @keyframes flip {
     0% {transform: rotateY(0deg);}
-    50% {transform: rotateY(180deg);}
+    50% {
+      transform: rotateY(180deg);
+      box-shadow: -4px 4px 8px #212121;
+    }
     100% {transform: rotateY(360deg);}
   }
 
