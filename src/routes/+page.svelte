@@ -682,6 +682,10 @@
     margin: .5em 0;
   }
 
+  .pillar-text h3 {
+    color: var(--green)
+  }
+
   .call-to-action-section {
     display: flex;
     height: 40em;

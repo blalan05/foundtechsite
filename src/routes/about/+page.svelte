@@ -1,3 +1,8 @@
+<svelte:head>
+  <title>FoundTech | About</title>
+  <meta name="keywords" content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies">
+  <meta name="description" content="Foundational Technologies LLC offers a cloud-based ERP app to help improve profitability and grow small businesses. Contact us about FullVue!">
+</svelte:head>
 <div>
   <section class="intro-section">
     <div class="hero-bg"></div>
@@ -207,6 +212,7 @@
   }
 
   .images {
+    display: none;
     width: 95%;
   }
 
@@ -422,6 +428,7 @@
     }
 
     .images {
+      display: none;
       width: 50%;
     }
 
@@ -535,6 +542,12 @@
 
     .call-to-action-section {
       aspect-ratio: 4/1;
+    }
+  }
+
+  @media screen and (min-width: 1260px) {
+    .images {
+      display: block;
     }
   }
 </style>
