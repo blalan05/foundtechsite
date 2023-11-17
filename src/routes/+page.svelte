@@ -169,7 +169,7 @@
   <section class="cards-callout-bg">
     <div class="preview-cards-container">
       <div class="preview-cards">
-        <h2>Maximize your efficency and profitability</h2>
+        <h2>Maximize your efficiency and profitability</h2>
         <div class="cards">
           <div class="card-bg">
             <div class="circle">
