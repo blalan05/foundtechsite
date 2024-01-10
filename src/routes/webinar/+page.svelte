@@ -1,13 +1,15 @@
 <div>
   <section class="section-one">
-    <h2>Unlock Insights, Drive Growth</h2>
-    <h3>Register for the FullVue Webinar</h3>
-    <p>Thursday 25th January, 2024</p>
-    <p>11:00 AM (CST)</p>
+    <div class="section-one-content">
+      <h2>Unlock Insights,<br/> Drive Growth</h2>
+      <h3>Register for the FullVue Webinar</h3>
+      <p>Thursday 25th January, 2024</p>
+      <p>11:00 AM (CST)</p>
+    </div>
   </section>
   <section class="section-two">
     <div class="section-two-content">
-      <h3>Welcome to Foundational Technologies FullVue Webinar!</h3>
+      <p>Welcome to Foundational Technologies FullVue Webinar!</p>
       <p>Are you ready to revolutionize the way you harness data for business success? Join us for our exclusive webinar designed to empower businesses like yours with actionable insights and strategies.</p>
       <div class="why-attend">
         <p>Why Attend Our Webinar?</p>
@@ -60,9 +62,19 @@ ul {
 }
 
 .section-one {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+}
+
+.section-one-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
+  justify-content: center;
+  width: 95%;
+  gap: 4%;
 }
 
 .section-two {
