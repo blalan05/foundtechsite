@@ -6,7 +6,7 @@
     <p>11:00 AM (CST)</p>
   </section>
   <section class="section-two">
-    <div>
+    <div class="section-two-content">
       <h3>Welcome to Foundational Technologies FullVue Webinar!</h3>
       <p>Are you ready to revolutionize the way you harness data for business success? Join us for our exclusive webinar designed to empower businesses like yours with actionable insights and strategies.</p>
       <div class="why-attend">
@@ -22,14 +22,16 @@
     </div>
   </section>
   <section class="section-three">
-    <p>Webinar Details</p>
-    <ul>
-      <li>Date: January 25, 2024</li>
-      <li>Time: 11:00 AM CST</li>
-      <li>Duration: 30 Minutes</li>
-    </ul>
-    <p>Can't attend live? No worries! Registering guarantees you'll receive the webinar recordings afterward, ensuring you don't miss out on valuable insights.</p>
-    <p>We're excited to have you join us on this journey toward unlocking powerful business insights with FullVue!</p>
+    <div class="section-three-content">
+      <p>Webinar Details</p>
+      <ul>
+        <li>Date: January 25, 2024</li>
+        <li>Time: 11:00 AM CST</li>
+        <li>Duration: 30 Minutes</li>
+      </ul>
+      <p>Can't attend live? No worries! Registering guarantees you'll receive the webinar recordings afterward, ensuring you don't miss out on valuable insights.</p>
+      <p>We're excited to have you join us on this journey toward unlocking powerful business insights with FullVue!</p>
+    </div>  
   </section>
 </div>
 
@@ -52,6 +54,11 @@ h3 {
   letter-spacing: 2%;
 }
 
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
 .section-one {
   display: flex;
   flex-direction: column;
@@ -59,15 +66,27 @@ h3 {
 }
 
 .section-two {
-  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-ul {
-  list-style: disc;
+.section-two-content {
+  flex-direction: column;
+  width: 50%;
 }
 
-.why-attend {
-  padding-left: 30px;
+.section-three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.section-three-content {
+  flex-direction: column;
+  width: 50%;
+}
+
+
 
 </style>
