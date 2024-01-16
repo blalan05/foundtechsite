@@ -13,7 +13,7 @@ const config = {
 		}),
 		prerender: {
 			crawl: false,
-			entries: ['/', '/about', '/construction', '/services', '/fullvue', '/contact', '/privacy-policy']
+			entries: ['/', '/about', '/construction', '/services', '/fullvue', '/contact', '/webinar', '/privacy-policy']
 		}
 	}
 };
