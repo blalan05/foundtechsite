@@ -24,12 +24,12 @@
     </div>
     <div class="sign-up-container">
       <p>Don't miss this opportunity to propel your business forward. Register now to secure your spot for this insightful webinar!</p>
-      <form name="sign-up" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact">
-        <input type="text" class="first-name" name="firstName" placeholder="First Name*">
-        <input type="text" class="last-name" name="lastName" placeholder="Last Name*">
-        <input type="text" class="company" name="company" placeholder="Company*">
-        <input type="email" class="email" name="businessEmail" placeholder="Email*">
+      <form name="webinar" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="webinar">
+        <input type="text" class="first-name" name="firstName" placeholder="First Name*" autocomplete="given-name">
+        <input type="text" class="last-name" name="lastName" placeholder="Last Name*" autocomplete="family-name">
+        <input type="text" class="company" name="company" placeholder="Company*" autocomplete="organization">
+        <input type="email" class="email" name="businessEmail" placeholder="Email*" autocomplete="email">
         <div class="register-btn-container">
           <input class="register-btn" type="submit" value="Register">
         </div>
@@ -108,7 +108,7 @@ li {
     white 5% 
   );
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom;
 }
 
