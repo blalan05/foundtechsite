@@ -13,6 +13,7 @@
       <li><a href="/fullvue" class:dt-active={$page.url.pathname === '/fullvue'}>FullVue</a></li>
       <li><a href="/about" class:dt-active={$page.url.pathname === '/about'}>About</a></li>
       <li><a href="/contact" class:dt-active={$page.url.pathname === '/contact'}>Contact</a></li>
+      <li><a href="/webinar" class:dt-active={$page.url.pathname === '/webinar'}>Webinar</a></li>
     </ul>
   </div>
 
@@ -63,6 +64,7 @@
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/fullvue'}><a href="/fullvue">FullVue</a></li>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/about'}><a href="/about">About</a></li>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/contact'}><a href="/contact">Contact</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/webinar'}><a href="/webinar">Webinar</a></li>
     </ul>
   </div>
 
@@ -87,6 +89,7 @@
       <li><a href="/privacy-policy">Privacy Policy</a></li>
       <li><a href="/fullvue">FullVue</a></li>
       <li><a href="/contact">Contact</a></li>
+      <li><a href="/webinar">Webinar</a></li>
     </ul>
   </div> 
 </footer>
@@ -219,7 +222,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20%;
+    gap: 7%;
   }
 
   .desktop-nav .dt-nav-container li {
