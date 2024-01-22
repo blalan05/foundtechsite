@@ -1,3 +1,9 @@
+<svelte:head>
+  <title>FoundTech | Webinar</title>
+  <meta name="keywords" content="ERP, Business tools, Management, Software, Application, Planning, Webinar, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies">
+  <meta name="description" content="Help improve profitability and grow small businesses with FullVue, cloud-based ERP software. Sign up for our informational webinar to learn more.">
+</svelte:head>
+
 <div>
   <section class="section-one">
     <div class="section-one-content">

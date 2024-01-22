@@ -1,7 +1,7 @@
 <svelte:head>
   <title>FoundTech | FullVue</title>
   <meta name="keywords" content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies">
-  <meta name="description" content="Help improve profitability and grow small businesses with FullVue, cloud-based ERP software for less than a dollar a day per user.">
+  <meta name="description" content="Help improve profitability and grow small businesses with FullVue, cloud-based ERP software.">
 </svelte:head>
 
 <div>
