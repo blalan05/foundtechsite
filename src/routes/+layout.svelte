@@ -10,7 +10,7 @@
   <div class="dt-nav-container">
     <ul>
       <li><a href="/" class:dt-active={$page.url.pathname === '/'}>Home</a></li>
-      <li><a href="https://fulvue.io/" target="_blank">FullVue</a></li>
+      <li><a href="https://fullvue.io/" target="_blank">FullVue</a></li>
       <li><a href="/about" class:dt-active={$page.url.pathname === '/about'}>About</a></li>
       <li><a href="/contact" class:dt-active={$page.url.pathname === '/contact'}>Contact</a></li>
       <li><a href="/webinar" class:dt-active={$page.url.pathname === '/webinar'}>Webinar</a></li>
