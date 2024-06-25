@@ -118,6 +118,7 @@
   h1 {
     font-size: 64px;
     background-image: linear-gradient(to right, var(--green), var(--blue));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
@@ -128,12 +129,6 @@
 
   h2 {
     font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 2%;
-  }
-
-  h3 {
-    font-size: 36px;
     font-weight: bold;
     letter-spacing: 2%;
   }
