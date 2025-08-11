@@ -18,7 +18,7 @@
         Build smarter management pipelines with ERP software for small
         businesses.
       </h2>
-      <a href="fullvue.io">Book A Demo</a>
+      <a href="https://fullvue.io" target="_blank">Visit Product Page</a>
     </div>
   </section>
 
@@ -47,7 +47,7 @@
             set up basic material lists and costs that can then be linked to
             those jobs.
           </p>
-          <a href="/contact">Get A Quote</a>
+          <a href="https://fullvue.io" target="_blank">Visit Product Page</a>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@
             it, you can easily account for travel mileage and do bulk time entry
             for field crews.
           </p>
-          <a href="/contact">Get A Quote</a>
+          <a href="https://fullvue.io" target="_blank">Visit Product Page</a>
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@
             Manage employee punches and leave, create employee schedules then
             export the data to a spreadsheet or pdf.
           </p>
-          <a href="/contact">Get A Quote</a>
+          <a href="https://fullvue.io" target="_blank">Visit Product Page</a>
         </div>
       </div>
     </div>
@@ -130,7 +130,7 @@
             team. Build and send sales quotes and create jobs from them once the
             customer accepts the quote.
           </p>
-          <a href="/contact">Get A Quote</a>
+          <a href="https://fullvue.io" target="_blank">Visit Product Page</a>
         </div>
       </div>
     </div>
@@ -148,7 +148,7 @@
         Bring visibility and increased efficiency to your management and make
         more informed decisions.
       </h2>
-      <a class="cta-btn" href="/contact">Book A Demo</a>
+      <a href="https://fullvue.io" target="_blank">Visit Product Page</a>
     </div>
   </section>
 </div>

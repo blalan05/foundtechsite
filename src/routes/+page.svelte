@@ -177,7 +177,7 @@
         tools that help you track operations, manage production, and make more
         informed decisions for your company.
       </p>
-      <a href="/products">Our Services</a>
+      <a href="/services">Our Services</a>
     </div>
   </section>
 
