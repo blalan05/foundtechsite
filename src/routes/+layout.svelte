@@ -10,7 +10,7 @@
   <div class="dt-nav-container">
     <ul>
       <li><a href="/" class:dt-active={$page.url.pathname === '/'}>Home</a></li>
-      <li><a href="/fullvue" class:dt-active={$page.url.pathname === '/fullvue'}>FullVue</a></li>
+      <li><a href="https://fullvue.io/" target="_blank">FullVue</a></li>
       <li><a href="/about" class:dt-active={$page.url.pathname === '/about'}>About</a></li>
       <li><a href="/contact" class:dt-active={$page.url.pathname === '/contact'}>Contact</a></li>
       <li><a href="/webinar" class:dt-active={$page.url.pathname === '/webinar'}>Webinar</a></li>
@@ -61,7 +61,7 @@
   <div class="oc-nav-container" class:open="{isOpen}" id="navigation" role="navigation">
     <ul>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/'}><a href="/">Home</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/fullvue'}><a href="/fullvue">FullVue</a></li>
+      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="https://fullvue.io" target="_blank">FullVue</a></li>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/about'}><a href="/about">About</a></li>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/contact'}><a href="/contact">Contact</a></li>
       <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/webinar'}><a href="/webinar">Webinar</a></li>
@@ -87,7 +87,7 @@
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/privacy-policy">Privacy Policy</a></li>
-      <li><a href="/fullvue">FullVue</a></li>
+      <li><a href="https://fullvue.io" target="_blank">FullVue</a></li>
       <li><a href="/contact">Contact</a></li>
       <li><a href="/webinar">Webinar</a></li>
     </ul>

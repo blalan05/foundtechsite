@@ -162,7 +162,7 @@
       <p>
         FoundTech recognizes the challenges small businesses face; we build tools that help you track operations, manage production, and make more informed decisions for your company.
       </p>
-      <a href="/fullvue">Our Product</a>
+      <a href="https://fullvue.io" target="_blank">Our Product</a>
     </div>
   </section>
 
@@ -213,7 +213,7 @@
           <p>
             Your ERP toolbox for effective small business management.
           </p>
-          <a href="/fullvue">Learn About FullVue!</a>
+          <a href="https://fullvue.io" target="_blank">Learn About FullVue!</a>
         </div>
         <div class="callout-screenshots">
           <div class="screenshot-back">
