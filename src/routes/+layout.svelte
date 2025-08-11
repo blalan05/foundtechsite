@@ -55,8 +55,16 @@
   <div class="dt-nav-container">
     <ul>
       <li><a href="/" class:dt-active={$page.url.pathname === "/"}>Home</a></li>
-      <li><a href="https://fullvue.io/" target="_blank">FullVue</a></li>
-      <li><a href="/products">Products</a></li>
+      <li>
+        <a href="/services" class:dt-active={$page.url.pathname === "/services"}
+          >Services</a
+        >
+      </li>
+      <li>
+        <a href="/fullvue" class:dt-active={$page.url.pathname === "/fullvue"}
+          >FullVue</a
+        >
+      </li>
       <li>
         <a href="/about" class:dt-active={$page.url.pathname === "/about"}
           >About</a
@@ -135,16 +143,21 @@
       >
         <a href="/">Home</a>
       </li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}>
-        <a href="https://fullvue.io" target="_blank">FullVue</a>
+      <li
+        on:click={isOpen ? toggleNav : null}
+        on:keypress={closeOnKeyPress}
+        class:mobile-active={$page.url.pathname === "/services"}
+      >
+        <a href="/services">Services</a>
       </li>
       <li
         on:click={isOpen ? toggleNav : null}
         on:keypress={closeOnKeyPress}
-        class:mobile-active={$page.url.pathname === "/products"}
+        class:mobile-active={$page.url.pathname === "fullvue"}
       >
-        <a href="/products">Products</a>
+        <a href="/fullvue">FullVue</a>
       </li>
+
       <li
         on:click={isOpen ? toggleNav : null}
         on:keypress={closeOnKeyPress}
@@ -182,9 +195,9 @@
   <div class="footer-links-container">
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/products">Products</a></li>
+      <li><a href="/services">Services</a></li>
       <li><a href="/about">About</a></li>
-      <li><a href="https://fullvue.io" target="_blank">FullVue</a></li>
+      <li><a href="/fullvue">FullVue</a></li>
       <li><a href="/contact">Contact</a></li>
       <li><a href="/privacy-policy">Privacy Policy</a></li>
     </ul>
