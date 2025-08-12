@@ -1,3 +1,16 @@
+<svelte:head>
+  <title>FoundTech | Services</title>
+  <meta
+    name="keywords"
+    content="Custom software, Business tools, Management, Software, Application, Planning, Job, Manufacturing, Inventory, Efficiency, FoundTech, Foundational Technologies"
+  />
+  <meta
+    name="description"
+    content="Discover the power and flexibility of custom software built for your
+        business!"
+  />
+</svelte:head>
+
 <div>
   <section class="intro-section">
     <div class="intro">
@@ -8,11 +21,11 @@
       </h2>
       <a href="/contact">Get a Quote</a>
     </div>
-    <div class="screenshot"></div>
+    <!-- <div class="screenshot"></div>
     <div class="endorsements">
       <div class="endorsement"></div>
       <div class="endorsement"></div>
-    </div>
+    </div> -->
   </section>
 
   <section class="features-section">
@@ -22,10 +35,15 @@
         <div class="text">
           <h2>QuickBooks Inventory Importer</h2>
           <p>
-            The core module is the base software, with it you will be able to
-            record customers, set up employee profiles, track jobs/projects, and
-            set up basic material lists and costs that can then be linked to
-            those jobs.
+            QuickBooks Inventory Importer is a specialized desktop application
+            developed as a custom solution for the need to efficiently manage
+            large-scale inventory uploads to QuickBooks Online.
+          </p>
+          <p>
+            This powerful tool was designed to handle mass quantities of
+            inventory items, automating what would otherwise be a time-consuming
+            manual process of entering hundreds or thousands of products into
+            their accounting system.
           </p>
           <a href="/contact">Find Your Solution</a>
         </div>
