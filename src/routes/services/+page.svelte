@@ -55,10 +55,14 @@
         <div class="text">
           <h2>Inventory Control System</h2>
           <p>
-            The road module adds additional functionality for field work,
-            allowing you to track labor and travel for offsite projects. With
-            it, you can easily account for travel mileage and do bulk time entry
-            for field crews.
+            A comprehensive manufacturing inventory management platform designed
+            for food production and manufacturing operations.
+          </p>
+          <p>
+            The application provides real-time tracking of raw materials,
+            work-in-progress, and finished goods along with advanced features
+            for recipe management, lot tracking, quality control and
+            certification requirements.
           </p>
           <a href="/contact">Find Your Solution</a>
         </div>
@@ -196,8 +200,8 @@
   }
 
   .qb-inv-importer {
-    background-color: darkslateblue;
-    /* background-image: url("$lib/assets/JobSingle.webp"); */
+    /* background-color: darkslateblue; */
+    background-image: url("$lib/assets/importer-1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 41% top;
@@ -208,8 +212,8 @@
   }
 
   .inventory-control {
-    background-color: darkslateblue;
-    /* background-image: url("$lib/assets/RoadDialog.webp"); */
+    /* background-color: darkslateblue; */
+    background-image: url("$lib/assets/InventoryControl-2.webp");
     background-repeat: no-repeat;
     background-size: cover;
   }

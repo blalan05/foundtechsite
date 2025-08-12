@@ -56,22 +56,25 @@
     <ul>
       <li><a href="/" class:dt-active={$page.url.pathname === "/"}>Home</a></li>
       <li>
-        <a href="/services" class:dt-active={$page.url.pathname === "/services"}
-          >Services</a
+        <a
+          href="/services"
+          class:dt-active={$page.url.pathname === "/services/"}
         >
+          Services
+        </a>
       </li>
       <li>
-        <a href="/fullvue" class:dt-active={$page.url.pathname === "/fullvue"}
+        <a href="/fullvue" class:dt-active={$page.url.pathname === "/fullvue/"}
           >FullVue</a
         >
       </li>
       <li>
-        <a href="/about" class:dt-active={$page.url.pathname === "/about"}
+        <a href="/about" class:dt-active={$page.url.pathname === "/about/"}
           >About</a
         >
       </li>
       <li>
-        <a href="/contact" class:dt-active={$page.url.pathname === "/contact"}
+        <a href="/contact" class:dt-active={$page.url.pathname === "/contact/"}
           >Contact</a
         >
       </li>
@@ -146,14 +149,14 @@
       <li
         on:click={isOpen ? toggleNav : null}
         on:keypress={closeOnKeyPress}
-        class:mobile-active={$page.url.pathname === "/services"}
+        class:mobile-active={$page.url.pathname === "/services/"}
       >
         <a href="/services">Services</a>
       </li>
       <li
         on:click={isOpen ? toggleNav : null}
         on:keypress={closeOnKeyPress}
-        class:mobile-active={$page.url.pathname === "fullvue"}
+        class:mobile-active={$page.url.pathname === "/fullvue/"}
       >
         <a href="/fullvue">FullVue</a>
       </li>
@@ -161,14 +164,14 @@
       <li
         on:click={isOpen ? toggleNav : null}
         on:keypress={closeOnKeyPress}
-        class:mobile-active={$page.url.pathname === "/about"}
+        class:mobile-active={$page.url.pathname === "/about/"}
       >
         <a href="/about">About</a>
       </li>
       <li
         on:click={isOpen ? toggleNav : null}
         on:keypress={closeOnKeyPress}
-        class:mobile-active={$page.url.pathname === "/contact"}
+        class:mobile-active={$page.url.pathname === "/contact/"}
       >
         <a href="/contact">Contact</a>
       </li>
