@@ -1,29 +1,64 @@
 <svelte:head>
   <title>FoundTech | Contact</title>
-  <meta name="keywords" content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies">
-  <meta name="description" content="Foundational Technologies LLC offers a cloud-based ERP app to help improve profitability and grow small businesses. Contact us about FullVue!">
+  <meta
+    name="keywords"
+    content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies"
+  />
+  <meta
+    name="description"
+    content="Foundational Technologies LLC offers a cloud-based ERP app to help improve profitability and grow small businesses. Contact us about FullVue!"
+  />
 </svelte:head>
 
 <div>
   <section class="contact-section">
     <div class="hero-container">
-      <h2>Reach out for a demo of FullVue today!</h2>
-      <p>Fill out the form below to talk to our solutions team to see if we are a good fit for your business.</p>
+      <h2>Reach out for your custom software solution</h2>
+      <p>
+        Fill out the form below to talk to our solutions team to see how we can
+        help solve your business problems with software.
+      </p>
     </div>
 
     <div class="form-container">
       <form name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact">
-        <input type="email" class="email" name="businessEmail" placeholder="Email*">
-        <input type="tel" class="phone-number" name="phoneNumber" placeholder="Phone Number*">
-        <input type="text" class="first-name" name="firstName" placeholder="First Name*">
-        <input type="text" class="last-name" name="lastName" placeholder="Last Name*">
+        <input type="hidden" name="form-name" value="contact" />
+        <input
+          type="email"
+          class="email"
+          name="businessEmail"
+          placeholder="Email*"
+        />
+        <input
+          type="tel"
+          class="phone-number"
+          name="phoneNumber"
+          placeholder="Phone Number*"
+        />
+        <input
+          type="text"
+          class="first-name"
+          name="firstName"
+          placeholder="First Name*"
+        />
+        <input
+          type="text"
+          class="last-name"
+          name="lastName"
+          placeholder="Last Name*"
+        />
         <div class="textarea">
           <!--<label for="message">Message</label>-->
-          <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Message"
+          ></textarea>
         </div>
         <div class="submit-btn-container">
-          <input class="submit-btn" type="submit" value="Submit">
+          <input class="submit-btn" type="submit" value="Submit" />
         </div>
       </form>
     </div>
@@ -31,7 +66,6 @@
 </div>
 
 <style>
-
   h2 {
     font-weight: 600;
   }
@@ -43,7 +77,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url('$lib/assets/Homepage-4.webp'), linear-gradient(to bottom, white, var(--lightblue), white 35%);
+    background-image: url("$lib/assets/Homepage-4.webp"),
+      linear-gradient(to bottom, white, var(--lightblue), white 35%);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -68,20 +103,21 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-      grid-template-areas:
-        "email"
-        "phone-number"
-        "first-name"
-        "last-name"
-        "textarea"
-        "btn-container";
+    grid-template-areas:
+      "email"
+      "phone-number"
+      "first-name"
+      "last-name"
+      "textarea"
+      "btn-container";
     text-align: center;
     gap: 2em;
     margin: 0 auto;
     width: 80%;
   }
 
-  form input, form textarea {
+  form input,
+  form textarea {
     padding: 1em;
     width: 100%;
     font-size: 1em;
@@ -91,7 +127,7 @@
   }
 
   /* box-shadow: 4px 4px 7px 1px var(--lightblue); */
-  
+
   .submit-btn-container {
     grid-area: btn-container;
     display: flex;
@@ -105,7 +141,7 @@
     box-shadow: none;
     background-color: var(--green);
     color: white;
-    padding: .5em 0;
+    padding: 0.5em 0;
     font-weight: bold;
     font-size: 1em;
   }
@@ -132,7 +168,8 @@
 
   @media (min-width: 768px) {
     .contact-section {
-      background-image: url('$lib/assets/Homepage-4.webp'), linear-gradient(to bottom, white 5%, var(--lightblue), white 50%);
+      background-image: url("$lib/assets/Homepage-4.webp"),
+        linear-gradient(to bottom, white 5%, var(--lightblue), white 50%);
     }
 
     h2 {
@@ -152,7 +189,7 @@
         "email phone-number"
         "first-name last-name"
         "textarea textarea"
-        "btn-container btn-container"
+        "btn-container btn-container";
     }
 
     .submit-btn {

@@ -1,73 +1,182 @@
+<script>
+  import logo from "$lib/assets/FoundTech Logo.svg";
+  import Analytics from "$lib/analytics.svelte";
+  import { onMount } from "svelte";
+  import { page } from "$app/stores";
+
+  const yearDate = new Date().getFullYear();
+
+  let isOpen = false;
+
+  const toggleNav = () => {
+    isOpen = !isOpen;
+  };
+
+  onMount(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 1000) isOpen = false;
+    });
+  });
+
+  const closeOnKeyPress = (/** @type {{ key: string; }} */ event) => {
+    if (isOpen && (event.key == "Enter" || event.key == "Space")) {
+      isOpen = false;
+    }
+  };
+
+  const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
+    console.log(event.key);
+    if (event.key == "Enter" || event.key == "Space") {
+      isOpen = !isOpen;
+    }
+  };
+</script>
+
 <Analytics />
 
 <nav class="desktop-nav">
-
   <div class="nav-logo-container" style="position: relative">
-    <a href="/"><img class="logo" src="{logo}" alt="Foundational Technologies LLC (FoundTech)" width="250px" height="50px"></a>
-    <h1 style="font-size: 6px; z-index: -1; display: inline; position: absolute; left: 0; top: 0; color: white;">Foundational Technologies LLC (FoundTech)</h1>
+    <a href="/"
+      ><img
+        class="logo"
+        src={logo}
+        alt="Foundational Technologies LLC (FoundTech)"
+        width="250px"
+        height="50px"
+      /></a
+    >
+    <h1
+      style="font-size: 6px; z-index: -1; display: inline; position: absolute; left: 0; top: 0; color: white;"
+    >
+      Foundational Technologies LLC (FoundTech)
+    </h1>
   </div>
 
   <div class="dt-nav-container">
     <ul>
-      <li><a href="/" class:dt-active={$page.url.pathname === '/'}>Home</a></li>
-      <li><a href="https://fullvue.io/" target="_blank">FullVue</a></li>
-      <li><a href="/about" class:dt-active={$page.url.pathname === '/about'}>About</a></li>
-      <li><a href="/contact" class:dt-active={$page.url.pathname === '/contact'}>Contact</a></li>
-      <li><a href="/webinar" class:dt-active={$page.url.pathname === '/webinar'}>Webinar</a></li>
+      <li><a href="/" class:dt-active={$page.url.pathname === "/"}>Home</a></li>
+      <li>
+        <a
+          href="/services"
+          class:dt-active={$page.url.pathname === "/services/"}
+        >
+          Services
+        </a>
+      </li>
+      <li>
+        <a href="/fullvue" class:dt-active={$page.url.pathname === "/fullvue/"}
+          >FullVue</a
+        >
+      </li>
+      <li>
+        <a href="/about" class:dt-active={$page.url.pathname === "/about/"}
+          >About</a
+        >
+      </li>
+      <li>
+        <a href="/contact" class:dt-active={$page.url.pathname === "/contact/"}
+          >Contact</a
+        >
+      </li>
     </ul>
   </div>
 
   <div class="call-to-action-btn-dt">
     <a href="/contact">Contact Us</a>
   </div>
-
 </nav>
 
 <nav class:open={isOpen}>
   <div class="mobile-nav">
-    <button 
-      class="nav-btn" 
-      class:open={isOpen} 
-      on:click={toggleNav} 
-      on:keypress={keyboardToggle} 
-      aria-label="navigation menu" 
-      aria-controls="navigation" 
+    <button
+      class="nav-btn"
+      class:open={isOpen}
+      on:click={toggleNav}
+      on:keypress={keyboardToggle}
+      aria-label="navigation menu"
+      aria-controls="navigation"
       aria-expanded={isOpen}
-      >
+    >
       <span></span>
       <span></span>
       <span></span>
     </button>
 
     <div class="nav-logo-container">
-      <img class="mobile-logo" src={logo} alt="Foundational Technologies LLC (FoundTech)" width="200" height="40"/>
+      <img
+        class="mobile-logo"
+        src={logo}
+        alt="Foundational Technologies LLC (FoundTech)"
+        width="200"
+        height="40"
+      />
     </div>
 
     <div class="call-to-action-btn">
       <a href="/contact" aria-label="contact us">
         <span class="hideDesktop">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="icon"
+          >
             <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path fill="white" d="M0 64H512v80L256 320 0 144V64zM0 448V182.8L237.9 346.4 256 358.8l18.1-12.5L512 182.8V448H0z"/>
+            <path
+              fill="white"
+              d="M0 64H512v80L256 320 0 144V64zM0 448V182.8L237.9 346.4 256 358.8l18.1-12.5L512 182.8V448H0z"
+            />
           </svg>
         </span>
-        <span class="hideMobile">
-          Contact Us
-        </span>
+        <span class="hideMobile"> Contact Us </span>
       </a>
     </div>
   </div>
 
-  <div class="oc-nav-container" class:open="{isOpen}" id="navigation" role="navigation">
+  <div
+    class="oc-nav-container"
+    class:open={isOpen}
+    id="navigation"
+    role="navigation"
+  >
     <ul>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/'}><a href="/">Home</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress}><a href="https://fullvue.io" target="_blank">FullVue</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/about'}><a href="/about">About</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/contact'}><a href="/contact">Contact</a></li>
-      <li on:click={isOpen ? toggleNav : null} on:keypress={closeOnKeyPress} class:mobile-active={$page.url.pathname === '/webinar'}><a href="/webinar">Webinar</a></li>
+      <li
+        on:click={isOpen ? toggleNav : null}
+        on:keypress={closeOnKeyPress}
+        class:mobile-active={$page.url.pathname === "/"}
+      >
+        <a href="/">Home</a>
+      </li>
+      <li
+        on:click={isOpen ? toggleNav : null}
+        on:keypress={closeOnKeyPress}
+        class:mobile-active={$page.url.pathname === "/services/"}
+      >
+        <a href="/services">Services</a>
+      </li>
+      <li
+        on:click={isOpen ? toggleNav : null}
+        on:keypress={closeOnKeyPress}
+        class:mobile-active={$page.url.pathname === "/fullvue/"}
+      >
+        <a href="/fullvue">FullVue</a>
+      </li>
+
+      <li
+        on:click={isOpen ? toggleNav : null}
+        on:keypress={closeOnKeyPress}
+        class:mobile-active={$page.url.pathname === "/about/"}
+      >
+        <a href="/about">About</a>
+      </li>
+      <li
+        on:click={isOpen ? toggleNav : null}
+        on:keypress={closeOnKeyPress}
+        class:mobile-active={$page.url.pathname === "/contact/"}
+      >
+        <a href="/contact">Contact</a>
+      </li>
     </ul>
   </div>
-
 </nav>
 
 <div>
@@ -78,50 +187,26 @@
 
 <footer>
   <div class="footer-logo-container">
-    <img class="logo" src={logo} alt="Foundational Technologies LLC (FoundTech)" />
-    <p>Copyright Foundational Technologies { yearDate }, all rights reserved.</p>
+    <img
+      class="logo"
+      src={logo}
+      alt="Foundational Technologies LLC (FoundTech)"
+    />
+    <p>Copyright Foundational Technologies {yearDate}, all rights reserved.</p>
   </div>
 
   <div class="footer-links-container">
     <ul>
       <li><a href="/">Home</a></li>
+      <li><a href="/services">Services</a></li>
       <li><a href="/about">About</a></li>
-      <li><a href="/privacy-policy">Privacy Policy</a></li>
-      <li><a href="https://fullvue.io" target="_blank">FullVue</a></li>
+      <li><a href="/fullvue">FullVue</a></li>
       <li><a href="/contact">Contact</a></li>
-      <li><a href="/webinar">Webinar</a></li>
+      <li><a href="/privacy-policy">Privacy Policy</a></li>
     </ul>
-  </div> 
+  </div>
 </footer>
-<script>
-import logo from '$lib/assets/FoundTech Logo.svg'
-import Analytics from '$lib/analytics.svelte';
-import { onMount } from 'svelte';
-import { page } from '$app/stores';
 
-const yearDate = (new Date()).getFullYear()
-
-let isOpen = false
-
-const toggleNav = () => { isOpen = !isOpen }
-
-onMount(() => {		
-  window.addEventListener('resize', () => { if (window.innerWidth >= 1000) isOpen = false });
-});
-
-const closeOnKeyPress = (/** @type {{ key: string; }} */ event) => {
-  if (isOpen && (event.key == 'Enter' || event.key == 'Space')) {
-    isOpen = false
-  }
-}
-
-const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
-  console.log(event.key)
-  if (event.key == 'Enter' || event.key == 'Space') {
-    isOpen = !isOpen
-  } 
-}
-</script>
 <style>
   .dt-active {
     border-bottom-style: solid;
@@ -141,9 +226,9 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
   .icon {
     width: 1.7em;
     height: 1.7em;
-    vertical-align: -.125em;
+    vertical-align: -0.125em;
   }
-  
+
   footer {
     display: flex;
     flex-direction: column-reverse;
@@ -175,7 +260,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     color: var(--blue);
     text-decoration: none;
   }
-  
+
   .nav-logo-container {
     max-width: 250px;
     margin: 7px 7px;
@@ -191,7 +276,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     width: 200px;
     height: 40px;
   }
-  
+
   .footer-logo-container {
     display: flex;
     flex-direction: column;
@@ -217,7 +302,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     width: 100%;
     padding: 1rem;
   }
-  
+
   .desktop-nav .dt-nav-container ul {
     display: flex;
     justify-content: center;
@@ -234,7 +319,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
 
   .desktop-nav ul li a {
     display: block;
-    padding: .5rem;
+    padding: 0.5rem;
     position: relative;
   }
 
@@ -245,7 +330,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     right: 0;
     margin: auto;
     width: 0%;
-    content: '.';
+    content: ".";
     color: transparent;
     background: #aaa;
     height: 1px;
@@ -257,7 +342,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
 
   .desktop-nav ul li a:after {
     text-align: left;
-    content: '.';
+    content: ".";
     margin: 0;
     opacity: 0;
   }
@@ -283,14 +368,14 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
       height: 1px;
     }
     100% {
-      border-top-left-radius: .5rem;
-      border-top-right-radius: .5rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
       width: 100%;
       height: 100%;
       background: var(--blue);
     }
   }
-  
+
   .desktop-nav .dt-nav-container li a {
     text-decoration: none;
     color: var(--blue);
@@ -304,13 +389,13 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     margin: 0 5% 0 5%;
     z-index: 200;
   }
-  
+
   .oc-nav-container {
     display: flex;
     max-height: 0;
     height: 0;
     overflow: hidden;
-    transition: max-height .5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
     position: fixed;
     width: 100%;
     text-align: center;
@@ -323,7 +408,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     color: black;
     opacity: 93%;
   }
-  
+
   .oc-nav-container.open {
     max-height: 600px;
     height: auto;
@@ -338,7 +423,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     opacity: 1;
     text-decoration: none;
   }
-  
+
   .nav-btn {
     background-color: transparent;
     border-style: none;
@@ -353,32 +438,32 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     background-color: var(--blue);
     position: absolute;
     border-radius: 2px;
-    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
-    width:100%;
+    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    width: 100%;
     height: 4px;
-    transition-duration: 500ms
+    transition-duration: 500ms;
   }
-  .nav-btn span:nth-child(1){
-    top:3px;
+  .nav-btn span:nth-child(1) {
+    top: 3px;
     left: 0px;
   }
-  .nav-btn span:nth-child(2){
+  .nav-btn span:nth-child(2) {
     top: 12px;
     left: 0px;
     opacity: 1;
   }
-  .nav-btn span:nth-child(3){
+  .nav-btn span:nth-child(3) {
     bottom: 7px;
     left: 0px;
   }
-  .nav-btn.open span:nth-child(1){
+  .nav-btn.open span:nth-child(1) {
     transform: rotate(45deg);
     top: 8px;
   }
-  .nav-btn.open span:nth-child(2){
-    opacity:0;
+  .nav-btn.open span:nth-child(2) {
+    opacity: 0;
   }
-  .nav-btn.open span:nth-child(3){
+  .nav-btn.open span:nth-child(3) {
     transform: rotate(-45deg);
     top: 8px;
   }
@@ -405,11 +490,11 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     margin: auto 1.5em auto auto;
     color: white;
     background-color: var(--blue);
-    animation: reverse .2s;
+    animation: reverse 0.2s;
   }
 
   .call-to-action-btn-dt:hover {
-    animation: button .2s forwards;
+    animation: button 0.2s forwards;
   }
 
   @keyframes reverse {
@@ -417,31 +502,67 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
       background-image: linear-gradient(to right, var(--blue), var(--green));
     }
     10% {
-      background-image: linear-gradient(to right, var(--blue) 10%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 10%,
+        var(--green)
+      );
     }
     20% {
-      background-image: linear-gradient(to right, var(--blue) 20%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 20%,
+        var(--green)
+      );
     }
     30% {
-      background-image: linear-gradient(to right, var(--blue) 30%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 30%,
+        var(--green)
+      );
     }
     40% {
-      background-image: linear-gradient(to right, var(--blue) 40%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 40%,
+        var(--green)
+      );
     }
     50% {
-      background-image: linear-gradient(to right, var(--blue) 50%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 50%,
+        var(--green)
+      );
     }
     60% {
-      background-image: linear-gradient(to right, var(--blue) 60%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 60%,
+        var(--green)
+      );
     }
     70% {
-      background-image: linear-gradient(to right, var(--blue) 70%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 70%,
+        var(--green)
+      );
     }
     80% {
-      background-image: linear-gradient(to right, var(--blue) 80%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 80%,
+        var(--green)
+      );
     }
     90% {
-      background-image: linear-gradient(to right, var(--blue) 90%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 90%,
+        var(--green)
+      );
     }
     100% {
       background: var(--blue);
@@ -453,42 +574,78 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
       background: var(--blue);
     }
     10% {
-      background-image: linear-gradient(to right, var(--blue) 90%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 90%,
+        var(--green)
+      );
     }
     20% {
-      background-image: linear-gradient(to right, var(--blue) 80%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 80%,
+        var(--green)
+      );
     }
     30% {
-      background-image: linear-gradient(to right, var(--blue) 70%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 70%,
+        var(--green)
+      );
     }
     40% {
-      background-image: linear-gradient(to right, var(--blue) 60%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 60%,
+        var(--green)
+      );
     }
     50% {
-      background-image: linear-gradient(to right, var(--blue) 50%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 50%,
+        var(--green)
+      );
     }
     60% {
-      background-image: linear-gradient(to right, var(--blue) 40%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 40%,
+        var(--green)
+      );
     }
     70% {
-      background-image: linear-gradient(to right, var(--blue) 30%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 30%,
+        var(--green)
+      );
     }
     80% {
-      background-image: linear-gradient(to right, var(--blue) 20%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 20%,
+        var(--green)
+      );
     }
     90% {
-      background-image: linear-gradient(to right, var(--blue) 10%, var(--green));
+      background-image: linear-gradient(
+        to right,
+        var(--blue) 10%,
+        var(--green)
+      );
     }
     100% {
       background-image: linear-gradient(to right, var(--blue), var(--green));
     }
   }
-  
+
   .call-to-action-btn-dt a {
     text-decoration: none;
     color: white;
   }
-  
+
   @media (min-width: 1000px) {
     .desktop-nav {
       display: flex;
@@ -515,6 +672,5 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     .footer-logo-container p {
       padding-left: 1.5em;
     }
-    
   }
 </style>
