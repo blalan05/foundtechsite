@@ -1,8 +1,8 @@
-<svelte:head>
-  <title>FoundTech | About</title>
-  <meta name="keywords" content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies">
-  <meta name="description" content="Foundational Technologies LLC offers a cloud-based ERP app to help improve profitability and grow small businesses. Contact us about FullVue!">
-</svelte:head>
+<SEOHead
+  title="About FoundTech | Veteran-Owned Software Company in Appleton, WI"
+  description="Foundational Technologies builds practical software for small businesses—custom tools and the FullVue ERP—with lean processes that keep it affordable."
+  path="/about"
+/>
 <div>
   <section class="intro-section">
     <div class="hero-bg"></div>
@@ -110,6 +110,7 @@
 <script>
   import logo from '$lib/assets/FoundTech Logo.svg'
   import fullvuelogo from '$lib/assets/horizontal-logo-text-tagline-dark.svg'
+  import SEOHead from '$lib/SEOHead.svelte'
 </script>
 
 <style>

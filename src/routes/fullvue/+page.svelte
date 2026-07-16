@@ -1,14 +1,12 @@
-<svelte:head>
-  <title>FoundTech | FullVue</title>
-  <meta
-    name="keywords"
-    content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies"
-  />
-  <meta
-    name="description"
-    content="Help improve profitability and grow small businesses with FullVue, cloud-based ERP software."
-  />
-</svelte:head>
+<script>
+  import SEOHead from "$lib/SEOHead.svelte";
+</script>
+
+<SEOHead
+  title="FullVue ERP by FoundTech | Small Business Operations Software"
+  description="FullVue connects quotes, jobs, invoicing, purchasing, and attendance in one system for small businesses. Built and supported by FoundTech."
+  path="/fullvue"
+/>
 
 <div>
   <section class="intro-section">

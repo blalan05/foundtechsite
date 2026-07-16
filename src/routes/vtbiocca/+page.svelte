@@ -1,3 +1,8 @@
+<svelte:head>
+  <title>FoundTech | Demo Video</title>
+  <meta name="robots" content="noindex" />
+</svelte:head>
+
 <div>
   <div class="vid_container">
     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nG3_eaMSI2w?si=ea4L59q9br_RGRGq" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

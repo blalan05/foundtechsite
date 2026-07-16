@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /construction
+Disallow: /vtbiocca
+Disallow: /thank-you
+
+Sitemap: https://foundtechsolutions.com/sitemap.xml

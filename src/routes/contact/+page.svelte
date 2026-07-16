@@ -1,14 +1,12 @@
-<svelte:head>
-  <title>FoundTech | Contact</title>
-  <meta
-    name="keywords"
-    content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies"
-  />
-  <meta
-    name="description"
-    content="Foundational Technologies LLC offers a cloud-based ERP app to help improve profitability and grow small businesses. Contact us about FullVue!"
-  />
-</svelte:head>
+<script>
+  import SEOHead from "$lib/SEOHead.svelte";
+</script>
+
+<SEOHead
+  title="Contact FoundTech | Start Your Custom Software Project"
+  description="Tell us about your project—custom software, integrations, or FullVue ERP. A real person replies within one business day."
+  path="/contact"
+/>
 
 <div>
   <section class="contact-section">

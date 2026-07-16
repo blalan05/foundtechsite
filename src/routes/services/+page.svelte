@@ -1,15 +1,12 @@
-<svelte:head>
-  <title>FoundTech | Services</title>
-  <meta
-    name="keywords"
-    content="Custom software, Business tools, Management, Software, Application, Planning, Job, Manufacturing, Inventory, Efficiency, FoundTech, Foundational Technologies"
-  />
-  <meta
-    name="description"
-    content="Discover the power and flexibility of custom software built for your
-        business!"
-  />
-</svelte:head>
+<script>
+  import SEOHead from "$lib/SEOHead.svelte";
+</script>
+
+<SEOHead
+  title="Custom Software Solutions & App Development | FoundTech"
+  description="Custom inventory, job-tracking, and QuickBooks-integrated software for small manufacturers and operations-heavy businesses. See recent projects."
+  path="/services"
+/>
 
 <div>
   <section class="intro-section">

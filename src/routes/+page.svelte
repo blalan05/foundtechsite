@@ -9,6 +9,7 @@
   } from "three";
   import { onMount } from "svelte";
   import spriteDot from "$lib/assets/Dot.webp";
+  import SEOHead from "$lib/SEOHead.svelte";
 
   onMount(async () => {
     var SEPARATION = 150,
@@ -152,26 +153,20 @@
   });
 </script>
 
-<svelte:head>
-  <title>FoundTech | Home</title>
-  <meta
-    name="keywords"
-    content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies"
-  />
-  <meta
-    name="description"
-    content="Foundational Technologies LLC offers a cloud-based ERP app to help improve profitability and grow small businesses. Scale your business with FullVue."
-  />
-</svelte:head>
+<SEOHead
+  title="Custom Software Development for Small Businesses | FoundTech"
+  description="Veteran-owned custom software firm in Appleton, WI building inventory, job-tracking, and QuickBooks-integrated tools for small manufacturers and operations-heavy businesses."
+  path="/"
+/>
 
 <div>
   <section class="hero-container">
     <div class="hero-container-bg" style="overflow: hidden"></div>
     <div class="hero-content">
-      <h2>
+      <h1>
         <span>Affordable and intuitive</span> software tools reinforcing the foundations
         of your business.
-      </h2>
+      </h1>
       <p>
         FoundTech recognizes the challenges small businesses face; we build
         tools that help you track operations, manage production, and make more
@@ -244,8 +239,8 @@
     <div class="fullvue-callout-container">
       <div class="fullvue-callout">
         <div class="callout-ad">
-          <h2>Introducing</h2>
-          <h1>FullVue</h1>
+          <p class="callout-eyebrow">Our product</p>
+          <h2 class="callout-brand">FullVue</h2>
           <p>Your ERP toolbox for effective small business management.</p>
           <a href="https://fullvue.io" target="_blank">Learn About FullVue!</a>
         </div>
@@ -370,14 +365,27 @@
     -moz-text-fill-color: transparent;
   }
 
-  h1 {
-    font-size: 64px;
+  h2 {
+    font-size: 32px;
     font-weight: bold;
     letter-spacing: 2%;
   }
 
-  h2 {
+  .hero-content h1 {
     font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2%;
+  }
+
+  .callout-eyebrow {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2%;
+    margin: 0;
+  }
+
+  .callout-brand {
+    font-size: 64px;
     font-weight: bold;
     letter-spacing: 2%;
   }
@@ -962,7 +970,7 @@
   }
 
   @media (min-width: 1300px) {
-    .hero-content h2 {
+    .hero-content h1 {
       font-size: 40px;
     }
 

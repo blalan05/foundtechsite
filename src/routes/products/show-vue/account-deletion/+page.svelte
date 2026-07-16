@@ -1,3 +1,8 @@
+<svelte:head>
+  <title>ShowVue Account Deletion Guide | FoundTech</title>
+  <meta name="robots" content="noindex" />
+</svelte:head>
+
 <article>
   <h1>Account Deletion Guide</h1>
   

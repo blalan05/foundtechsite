@@ -1,5 +1,15 @@
+<script>
+  import SEOHead from "$lib/SEOHead.svelte";
+</script>
+
+<SEOHead
+  title="Privacy Policy | FoundTech"
+  description="How Foundational Technologies LLC collects and handles data across our website and products."
+  path="/privacy-policy"
+/>
+
 <div>
-  <h2>FoundTech Privacy Policy</h2>
+  <h1>FoundTech Privacy Policy</h1>
   <p>Updated: May 24th, 2023</p>
 
   <h3>Personal Data we Collect</h3>

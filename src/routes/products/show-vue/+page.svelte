@@ -1,6 +1,22 @@
+<script>
+  import SEOHead from "$lib/SEOHead.svelte";
+</script>
+
+<SEOHead
+  title="ShowVue Theater Management Software — Coming Soon | FoundTech"
+  description="ShowVue centralizes production management, box office, concessions, and rentals for small theaters. In active development—coming soon."
+  path="/products/show-vue"
+/>
+
 <div>
-  <h1>Show-Vue</h1>
-  
+  <h1>ShowVue <span class="coming-soon-badge">Coming soon</span></h1>
+
+  <p class="dev-note">
+    ShowVue is in active development. The overview below reflects what's being
+    built—reach out via our <a href="/contact">contact page</a> if you'd like
+    early access when it launches.
+  </p>
+
   <p>
     Show-Vue is a comprehensive theater management application designed specifically for small theaters to streamline their entire production workflow. This powerful web-based platform centralizes all aspects of theater operations, from initial proposal development through final performance execution, providing theater companies with the tools they need to manage complex productions efficiently and professionally.
   </p>
@@ -51,3 +67,26 @@
     By centralizing all theater operations in one platform, Show-Vue helps small theaters operate more professionally, reduce administrative overhead, and focus on what they do best - creating exceptional theatrical experiences for their communities.
   </p>
 </div>
+
+<style>
+  .coming-soon-badge {
+    display: inline-block;
+    font-size: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+    background-color: var(--blue);
+    border-radius: 999px;
+    padding: 0.3em 1em;
+    vertical-align: middle;
+    margin-left: 0.5em;
+  }
+
+  .dev-note {
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    padding: 1em 1.25em;
+    background-color: #eef4fb;
+  }
+</style>
