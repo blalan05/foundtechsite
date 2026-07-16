@@ -11,7 +11,7 @@
 <div>
   <section class="contact-section">
     <div class="hero-container">
-      <h2>Reach out for your custom software solution</h2>
+      <h1>Reach out for your custom software solution</h1>
       <p>
         Fill out the form below to talk to our solutions team to see how we can
         help solve your business problems with software.
@@ -28,7 +28,7 @@
       >
         <input type="hidden" name="form-name" value="contact" />
         <p class="hidden-field" aria-hidden="true">
-          <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+          <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
         </p>
         <input
           type="email"
@@ -36,6 +36,7 @@
           name="businessEmail"
           placeholder="Email*"
           aria-label="Email"
+          autocomplete="email"
           required
         />
         <input
@@ -44,6 +45,7 @@
           name="phoneNumber"
           placeholder="Phone Number (optional)"
           aria-label="Phone number (optional)"
+          autocomplete="tel"
         />
         <input
           type="text"
@@ -51,6 +53,7 @@
           name="firstName"
           placeholder="First Name*"
           aria-label="First name"
+          autocomplete="given-name"
           required
         />
         <input
@@ -59,6 +62,7 @@
           name="lastName"
           placeholder="Last Name*"
           aria-label="Last name"
+          autocomplete="family-name"
           required
         />
         <div class="textarea">
@@ -81,7 +85,8 @@
 </div>
 
 <style>
-  h2 {
+  h1 {
+    font-size: 1.5em;
     font-weight: 600;
   }
 
@@ -195,7 +200,7 @@
         linear-gradient(to bottom, white 5%, var(--lightblue), white 50%);
     }
 
-    h2 {
+    h1 {
       font-size: 2.5rem;
       font-weight: 600;
     }

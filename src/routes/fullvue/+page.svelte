@@ -135,12 +135,6 @@
     </div>
   </section>
 
-  <section class="pricing-section" style="display: none;">
-    <div class="pricing">
-      <h2>PRICING</h2>
-    </div>
-  </section>
-
   <section class="call-to-action-section">
     <div class="call-to-action">
       <h2>

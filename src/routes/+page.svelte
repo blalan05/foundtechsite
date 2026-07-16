@@ -377,7 +377,7 @@
     letter-spacing: 2%;
   }
 
-  .callout-eyebrow {
+  .callout-ad p.callout-eyebrow {
     font-size: 32px;
     font-weight: bold;
     letter-spacing: 2%;

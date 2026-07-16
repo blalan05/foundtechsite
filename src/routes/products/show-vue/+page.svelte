@@ -18,7 +18,7 @@
   </p>
 
   <p>
-    Show-Vue is a comprehensive theater management application designed specifically for small theaters to streamline their entire production workflow. This powerful web-based platform centralizes all aspects of theater operations, from initial proposal development through final performance execution, providing theater companies with the tools they need to manage complex productions efficiently and professionally.
+    ShowVue is a comprehensive theater management application designed specifically for small theaters to streamline their entire production workflow. This powerful web-based platform centralizes all aspects of theater operations, from initial proposal development through final performance execution, providing theater companies with the tools they need to manage complex productions efficiently and professionally.
   </p>
   
   <h2>Core Features</h2>
@@ -55,16 +55,16 @@
   
   <h2>Rental System</h2>
   <p>
-    Show-Vue includes a comprehensive rental management system for costumes, props, and equipment. Track rental items, manage availability, process rental agreements, and monitor returns to ensure your valuable theater assets are properly managed and monetized.
+    ShowVue includes a comprehensive rental management system for costumes, props, and equipment. Track rental items, manage availability, process rental agreements, and monitor returns to ensure your valuable theater assets are properly managed and monetized.
   </p>
   
   <h2>Benefits for Small Theaters</h2>
   <p>
-    Designed with small theaters in mind, Show-Vue provides enterprise-level functionality at an affordable price point. The intuitive interface ensures that even volunteer-run theaters can effectively manage complex productions, while the comprehensive feature set eliminates the need for multiple separate systems and spreadsheets.
+    Designed with small theaters in mind, ShowVue provides enterprise-level functionality at an affordable price point. The intuitive interface ensures that even volunteer-run theaters can effectively manage complex productions, while the comprehensive feature set eliminates the need for multiple separate systems and spreadsheets.
   </p>
   
   <p>
-    By centralizing all theater operations in one platform, Show-Vue helps small theaters operate more professionally, reduce administrative overhead, and focus on what they do best - creating exceptional theatrical experiences for their communities.
+    By centralizing all theater operations in one platform, ShowVue helps small theaters operate more professionally, reduce administrative overhead, and focus on what they do best - creating exceptional theatrical experiences for their communities.
   </p>
 </div>
 

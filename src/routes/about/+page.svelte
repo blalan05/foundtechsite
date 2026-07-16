@@ -7,7 +7,7 @@
   <section class="intro-section">
     <div class="hero-bg"></div>
     <div class="intro-top">
-      <h2>Our focus is providing value to small businesses through <br>useful and efficient software solutions.</h2>
+      <h1>Our focus is providing value to small businesses through <br>useful and efficient software solutions.</h1>
     </div>
     <div class="intro-bottom">
       <div class="images">
@@ -201,6 +201,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .intro-top h1 {
+    font-size: 1.5em;
+    font-weight: 600;
   }
 
   .intro-bottom {
