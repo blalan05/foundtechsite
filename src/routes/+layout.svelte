@@ -186,6 +186,11 @@
       src={logo}
       alt="Foundational Technologies LLC (FoundTech)"
     />
+    <p class="footer-nap">
+      Foundational Technologies LLC — veteran-owned<br />
+      1020 Hartzheim Dr. Appleton, WI 54913<br />
+      <a href="mailto:sales@foundtechsolutions.com">sales@foundtechsolutions.com</a>
+    </p>
     <p>Copyright Foundational Technologies {yearDate}, all rights reserved.</p>
   </div>
 
@@ -284,6 +289,17 @@
     margin: 0.8rem;
     width: 67%;
     max-width: 30em;
+  }
+
+  .footer-nap {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
+  }
+
+  .footer-nap a {
+    color: inherit;
   }
 
   .mobile-nav {
