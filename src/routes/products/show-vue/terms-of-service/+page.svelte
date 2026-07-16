@@ -1,3 +1,8 @@
+<svelte:head>
+  <title>ShowVue Terms of Service | FoundTech</title>
+  <meta name="robots" content="noindex" />
+</svelte:head>
+
 <article>
   <section>
 

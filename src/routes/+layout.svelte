@@ -25,7 +25,6 @@
   };
 
   const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
-    console.log(event.key);
     if (event.key == "Enter" || event.key == "Space") {
       isOpen = !isOpen;
     }
@@ -45,11 +44,6 @@
         height="50px"
       /></a
     >
-    <h1
-      style="font-size: 6px; z-index: -1; display: inline; position: absolute; left: 0; top: 0; color: white;"
-    >
-      Foundational Technologies LLC (FoundTech)
-    </h1>
   </div>
 
   <div class="dt-nav-container">
@@ -192,6 +186,11 @@
       src={logo}
       alt="Foundational Technologies LLC (FoundTech)"
     />
+    <p class="footer-nap">
+      Foundational Technologies LLC — veteran-owned<br />
+      1020 Hartzheim Dr. Appleton, WI 54913<br />
+      <a href="mailto:sales@foundtechsolutions.com">sales@foundtechsolutions.com</a>
+    </p>
     <p>Copyright Foundational Technologies {yearDate}, all rights reserved.</p>
   </div>
 
@@ -201,6 +200,7 @@
       <li><a href="/services">Services</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/fullvue">FullVue</a></li>
+      <li><a href="/products">Products</a></li>
       <li><a href="/contact">Contact</a></li>
       <li><a href="/privacy-policy">Privacy Policy</a></li>
     </ul>
@@ -289,6 +289,17 @@
     margin: 0.8rem;
     width: 67%;
     max-width: 30em;
+  }
+
+  .footer-nap {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
+  }
+
+  .footer-nap a {
+    color: inherit;
   }
 
   .mobile-nav {

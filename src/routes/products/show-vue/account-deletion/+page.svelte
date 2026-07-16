@@ -1,3 +1,8 @@
+<svelte:head>
+  <title>ShowVue Account Deletion Guide | FoundTech</title>
+  <meta name="robots" content="noindex" />
+</svelte:head>
+
 <article>
   <h1>Account Deletion Guide</h1>
   
@@ -133,8 +138,8 @@
 
   <h2>Quick Access</h2>
   <ul>
-    <li><strong>Delete Account</strong>: Go to <a href="/settings/account">Account Settings</a></li>
-    <li><strong>Help Center</strong>: Visit our <a href="/help">Help Center</a></li>
+    <li><strong>Delete Account</strong>: Go to Account Settings inside the ShowVue app</li>
+    <li><strong>Help Center</strong>: Browse the FAQ and support articles inside the ShowVue app</li>
     <li><strong>Contact Support</strong>: Email support@showvue.io</li>
   </ul>
 

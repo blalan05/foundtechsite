@@ -1,19 +1,17 @@
-<svelte:head>
-  <title>FoundTech | Contact</title>
-  <meta
-    name="keywords"
-    content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies"
-  />
-  <meta
-    name="description"
-    content="Foundational Technologies LLC offers a cloud-based ERP app to help improve profitability and grow small businesses. Contact us about FullVue!"
-  />
-</svelte:head>
+<script>
+  import SEOHead from "$lib/SEOHead.svelte";
+</script>
+
+<SEOHead
+  title="Contact FoundTech | Start Your Custom Software Project"
+  description="Tell us about your project—custom software, integrations, or FullVue ERP. A real person replies within one business day."
+  path="/contact"
+/>
 
 <div>
   <section class="contact-section">
     <div class="hero-container">
-      <h2>Reach out for your custom software solution</h2>
+      <h1>Reach out for your custom software solution</h1>
       <p>
         Fill out the form below to talk to our solutions team to see how we can
         help solve your business problems with software.
@@ -21,31 +19,51 @@
     </div>
 
     <div class="form-container">
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        action="/thank-you"
+      >
         <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden-field" aria-hidden="true">
+          <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
         <input
           type="email"
           class="email"
           name="businessEmail"
           placeholder="Email*"
+          aria-label="Email"
+          autocomplete="email"
+          required
         />
         <input
           type="tel"
           class="phone-number"
           name="phoneNumber"
-          placeholder="Phone Number*"
+          placeholder="Phone Number (optional)"
+          aria-label="Phone number (optional)"
+          autocomplete="tel"
         />
         <input
           type="text"
           class="first-name"
           name="firstName"
           placeholder="First Name*"
+          aria-label="First name"
+          autocomplete="given-name"
+          required
         />
         <input
           type="text"
           class="last-name"
           name="lastName"
           placeholder="Last Name*"
+          aria-label="Last name"
+          autocomplete="family-name"
+          required
         />
         <div class="textarea">
           <!--<label for="message">Message</label>-->
@@ -55,6 +73,7 @@
             cols="30"
             rows="5"
             placeholder="Message"
+            aria-label="Message"
           ></textarea>
         </div>
         <div class="submit-btn-container">
@@ -66,7 +85,8 @@
 </div>
 
 <style>
-  h2 {
+  h1 {
+    font-size: 1.5em;
     font-weight: 600;
   }
 
@@ -97,6 +117,14 @@
   .form-container {
     width: 100%;
     padding: 0 0 7em 0;
+  }
+
+  .hidden-field {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    width: 0;
+    overflow: hidden;
   }
 
   form {
@@ -172,7 +200,7 @@
         linear-gradient(to bottom, white 5%, var(--lightblue), white 50%);
     }
 
-    h2 {
+    h1 {
       font-size: 2.5rem;
       font-weight: 600;
     }

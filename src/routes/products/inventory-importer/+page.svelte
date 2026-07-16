@@ -1,3 +1,13 @@
+<script>
+  import SEOHead from "$lib/SEOHead.svelte";
+</script>
+
+<SEOHead
+  title="QuickBooks Inventory Importer | FoundTech Products"
+  description="A desktop tool that bulk-imports thousands of inventory items into QuickBooks Online—built by FoundTech as a custom client solution."
+  path="/products/inventory-importer"
+/>
+
 <div>
   <h1>Inventory Importer</h1>
 

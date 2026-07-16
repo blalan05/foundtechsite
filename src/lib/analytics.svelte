@@ -24,6 +24,6 @@
     }
 
     gtag('js', new Date())
-    gtag('config', 'G-MV3HHZNCFM')
+    gtag('config', 'G-MV3HHZNCFM', { send_page_view: false })
   </script>
 </svelte:head>
