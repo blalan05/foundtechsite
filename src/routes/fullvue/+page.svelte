@@ -1,14 +1,12 @@
-<svelte:head>
-  <title>FoundTech | FullVue</title>
-  <meta
-    name="keywords"
-    content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies"
-  />
-  <meta
-    name="description"
-    content="Help improve profitability and grow small businesses with FullVue, cloud-based ERP software."
-  />
-</svelte:head>
+<script>
+  import SEOHead from "$lib/SEOHead.svelte";
+</script>
+
+<SEOHead
+  title="FullVue ERP by FoundTech | Small Business Operations Software"
+  description="FullVue connects quotes, jobs, invoicing, purchasing, and attendance in one system for small businesses. Built and supported by FoundTech."
+  path="/fullvue"
+/>
 
 <div>
   <section class="intro-section">
@@ -68,9 +66,9 @@
           </svg>
         </div>
         <div class="text">
-          <h2>Road Module</h2>
+          <h2>Field Module</h2>
           <p>
-            The road module adds additional functionality for field work,
+            The field module adds additional functionality for field work,
             allowing you to track labor and travel for offsite projects. With
             it, you can easily account for travel mileage and do bulk time entry
             for field crews.
@@ -96,11 +94,12 @@
           </svg>
         </div>
         <div class="text">
-          <h2>Payroll Module</h2>
+          <h2>Attendance Module</h2>
           <p>
-            Payroll has the functionality you need to track employee hours.
-            Manage employee punches and leave, create employee schedules then
-            export the data to a spreadsheet or pdf.
+            Attendance has the functionality you need to track employee hours.
+            Manage employee punches and leave, create employee schedules, then
+            export payroll-ready reports for your bookkeeper or payroll
+            provider.
           </p>
           <a href="https://fullvue.io" target="_blank">Visit Product Page</a>
         </div>
@@ -133,12 +132,6 @@
           <a href="https://fullvue.io" target="_blank">Visit Product Page</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="pricing-section" style="display: none;">
-    <div class="pricing">
-      <h2>PRICING</h2>
     </div>
   </section>
 

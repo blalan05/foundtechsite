@@ -1,15 +1,12 @@
-<svelte:head>
-  <title>FoundTech | Services</title>
-  <meta
-    name="keywords"
-    content="Custom software, Business tools, Management, Software, Application, Planning, Job, Manufacturing, Inventory, Efficiency, FoundTech, Foundational Technologies"
-  />
-  <meta
-    name="description"
-    content="Discover the power and flexibility of custom software built for your
-        business!"
-  />
-</svelte:head>
+<script>
+  import SEOHead from "$lib/SEOHead.svelte";
+</script>
+
+<SEOHead
+  title="Custom Software Solutions & App Development | FoundTech"
+  description="Custom inventory, job-tracking, and QuickBooks-integrated software for small manufacturers and operations-heavy businesses. See recent projects."
+  path="/services"
+/>
 
 <div>
   <section class="intro-section">
@@ -67,12 +64,6 @@
           <a href="/contact">Find Your Solution</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="pricing-section" style="display: none;">
-    <div class="pricing">
-      <h2>PRICING</h2>
     </div>
   </section>
 
@@ -222,20 +213,6 @@
     width: 2.9rem;
     position: relative;
     left: 0.1rem;
-  }
-
-  .payroll {
-    background-image: url("$lib/assets/PayrollSingle.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -130px top;
-  }
-
-  .payroll-icon {
-    width: 3rem;
-    position: relative;
-    left: 0.2rem;
-    top: -0.1rem;
   }
 
   .sales {

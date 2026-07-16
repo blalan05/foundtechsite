@@ -1,13 +1,13 @@
-<svelte:head>
-  <title>FoundTech | About</title>
-  <meta name="keywords" content="ERP, Business tools, Management, Software, Application, Planning, CRM, Job, Management, Manufacturing, Profitability, Inventory, Efficiency, FullVue, FoundTech, Foundational Technologies">
-  <meta name="description" content="Foundational Technologies LLC offers a cloud-based ERP app to help improve profitability and grow small businesses. Contact us about FullVue!">
-</svelte:head>
+<SEOHead
+  title="About FoundTech | Veteran-Owned Software Company in Appleton, WI"
+  description="Foundational Technologies builds practical software for small businesses—custom tools and the FullVue ERP—with lean processes that keep it affordable."
+  path="/about"
+/>
 <div>
   <section class="intro-section">
     <div class="hero-bg"></div>
     <div class="intro-top">
-      <h2>Our focus is providing value to small businesses through <br>useful and efficent software solutions.</h2>
+      <h1>Our focus is providing value to small businesses through <br>useful and efficient software solutions.</h1>
     </div>
     <div class="intro-bottom">
       <div class="images">
@@ -21,11 +21,11 @@
       <div class="mission">
         <h3>Why we started?</h3>
         <p>
-          Throughout our careers, we saw that small business was largely forgotten when it came to affordable and approachable software.  Our goal is to serve this deficency in the market with intuitive software solutions.
+          Throughout our careers, we saw that small business was largely forgotten when it came to affordable and approachable software.  Our goal is to serve this deficiency in the market with intuitive software solutions.
         </p>
         <h3>How are we achieving this?</h3>
         <p>
-          We are able to do this by building applications with small business needs in mind from the very start. We are also focused on creating lean and efficent processes that allow us to pass our cost savings to you, our customers.
+          We are able to do this by building applications with small business needs in mind from the very start. We are also focused on creating lean and efficient processes that allow us to pass our cost savings to you, our customers.
         </p>
         <a href="/contact">Reach Out</a>
       </div>
@@ -110,6 +110,7 @@
 <script>
   import logo from '$lib/assets/FoundTech Logo.svg'
   import fullvuelogo from '$lib/assets/horizontal-logo-text-tagline-dark.svg'
+  import SEOHead from '$lib/SEOHead.svelte'
 </script>
 
 <style>
@@ -200,6 +201,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .intro-top h1 {
+    font-size: 1.5em;
+    font-weight: 600;
   }
 
   .intro-bottom {
