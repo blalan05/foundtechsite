@@ -155,7 +155,7 @@
 
 <SEOHead
   title="Custom Software Development for Small Businesses | FoundTech"
-  description="Veteran-owned custom software firm in Appleton, WI building inventory, job-tracking, and QuickBooks-integrated tools for small manufacturers and operations-heavy businesses."
+  description="Veteran-owned custom software firm in Appleton, WI — inventory, job-tracking, and QuickBooks-integrated tools for small manufacturers."
   path="/"
 />
 

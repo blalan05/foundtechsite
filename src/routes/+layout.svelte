@@ -188,7 +188,7 @@
     />
     <p class="footer-nap">
       Foundational Technologies LLC — veteran-owned<br />
-      1020 Hartzheim Dr. Appleton, WI 54913<br />
+      Appleton, WI<br />
       <a href="mailto:sales@foundtechsolutions.com">sales@foundtechsolutions.com</a>
     </p>
     <p>Copyright Foundational Technologies {yearDate}, all rights reserved.</p>
