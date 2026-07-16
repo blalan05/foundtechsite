@@ -1,5 +1,5 @@
 <SEOHead
-  title="About FoundTech | Veteran-Owned Software Company in Appleton, WI"
+  title="About FoundTech | Veteran-Owned Software, Appleton WI"
   description="Foundational Technologies builds practical software for small businesses—custom tools and the FullVue ERP—with lean processes that keep it affordable."
   path="/about"
 />

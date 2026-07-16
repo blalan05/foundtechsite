@@ -3,7 +3,7 @@
 </script>
 
 <SEOHead
-  title="Products | FoundTech — FullVue ERP, Inventory Importer & ShowVue"
+  title="FoundTech Products — FullVue ERP, Importer & ShowVue"
   description="Software built by FoundTech: FullVue ERP for small business operations, the QuickBooks Inventory Importer, and ShowVue theater management (coming soon)."
   path="/products"
 />
