@@ -12,63 +12,94 @@
   <h1>ShowVue <span class="coming-soon-badge">Coming soon</span></h1>
 
   <p class="dev-note">
-    ShowVue is in active development. The overview below reflects what's being
-    built—reach out via our <a href="/contact">contact page</a> if you'd like
-    early access when it launches.
+    ShowVue is in active development and not yet available. The features below are built and in internal testing; items marked in progress are still being finished. Reach out via our contact page if you'd like early access when it launches.
   </p>
 
+  <p>ShowVue is a web-based management app for community and small professional theaters. It pulls the work that usually lives in spreadsheets, email threads, and a half-dozen separate tools into one place: picking your season, casting and scheduling, selling tickets, running concessions, renting out costumes and props, and keeping the books. It is built around how volunteer-run theaters actually operate — board votes on show proposals, one shared member roster, and a treasurer who is not an accountant.</p>
+
+  <h2>Season planning, from proposal to opening night</h2>
+  <p>Directors submit show proposals with scripts, budgets, and proposed schedules. The board reviews and votes, and an approved proposal becomes a show with its schedule and staff carried over. A shared catalog of scripts, authors, and publishers keeps titles consistent, and theaters that pick their season board-first can post open directing slots instead.</p>
+  <ul>
+    <li>Proposal wizard with scripts, budget, and performance schedule</li>
+    <li>Board review and voting, with an approve-and-promote step</li>
+    <li>Script, author, and publisher catalog</li>
+    <li>Supports director-led or board-led season selection, including festival programs of short pieces</li>
+  </ul>
+
+  <h2>Cast, crew, and schedules</h2>
+  <p>Keep one roster for your whole company. Assign cast and crew per show, track conflict dates, and build rehearsal and performance schedules with call lists so people only get called when they're needed. Audition signups and volunteer shifts run through the same system, and rehearsal reports keep everyone on the same page.</p>
+  <ul>
+    <li>Cast and crew assignments with roles and contact info</li>
+    <li>Availability and conflict tracking</li>
+    <li>Rehearsal schedules, call lists, and rehearsal reports</li>
+    <li>Online audition signups and volunteer shift scheduling</li>
+  </ul>
+
+  <h2>Box office and ticketing</h2>
+  <p>Set up ticket types with advance and at-the-door pricing, sell online through your theater's own Square account, and handle box office sales, comps, and consignment tickets in the same place. Flex passes, order confirmation emails, and check-in at the door are included, with sales reports broken out by outlet and payment method. Reserved seating charts are in progress; general admission works today.</p>
+  <ul>
+    <li>Online, box office, and consignment sales channels</li>
+    <li>Advance and door pricing, comps, presale codes, flex passes</li>
+    <li>Door check-in and order confirmation emails</li>
+    <li>Sales reporting by outlet and payment method</li>
+    <li>In progress: assigned seating charts</li>
+  </ul>
+
+  <h2>Concessions</h2>
+  <p>Track your concession items and stock, record sales by performance, and see per-show summaries and top sellers so you know what to stock for the next run.</p>
+
+  <h2>Costumes, props, and rentals</h2>
+  <p>Catalog your costumes, props, and equipment. Track what each show is using, take rental requests from other theaters through your public page, and log checkouts and returns so things come back. In-house build and sourcing lists for costumes, props, and set pieces — plus a paint inventory — live alongside each show.</p>
+
+  <h2>Money management</h2>
+  <p>Every show gets a budget with expense and revenue tracking. Behind that sits a full set of books: a double-entry ledger designed for volunteer treasurers, with plain-language entry wizards, bank accounts and a check register, donation tracking, and reports on a cash or accrual basis. Ticket, concession, and rental activity posts to the ledger automatically.</p>
+
+  <h2>Your patrons and your public page</h2>
+  <p>Each theater gets a public page with its shows, tickets, auditions, volunteer opportunities, and rentals. Patrons can look up orders, print tickets, and request refunds; members sign in with email or a Google or Facebook account, and families can manage accounts for kids in the cast.</p>
+
+  <h2>In progress</h2>
+  <p>A few pieces are built but still being finished and tested: email newsletters and contact lists for patron outreach, assigned seating charts, and a public board-of-directors page. We'll update this page as they land.</p>
+
   <p>
-    ShowVue is a comprehensive theater management application designed specifically for small theaters to streamline their entire production workflow. This powerful web-based platform centralizes all aspects of theater operations, from initial proposal development through final performance execution, providing theater companies with the tools they need to manage complex productions efficiently and professionally.
-  </p>
-  
-  <h2>Core Features</h2>
-  
-  <h3>Production Management</h3>
-  <p>
-    Track every aspect of your productions with integrated modules for proposals, scripts, authors, and publishers. Manage your creative pipeline from initial concept through final performance, ensuring all stakeholders have access to the latest information and documentation.
-  </p>
-  
-  <h3>Financial Management</h3>
-  <p>
-    Keep your productions on budget with comprehensive budget tracking and financial planning tools. Monitor expenses, track revenue, and generate detailed financial reports to ensure your theater's financial health and production viability.
-  </p>
-  
-  <h3>Cast & Crew Management</h3>
-  <p>
-    Organize your entire production team with detailed cast and crew management features. Track contact information, schedules, availability, and roles for every member of your production team, ensuring smooth coordination and communication.
-  </p>
-  
-  <h3>Schedule Coordination</h3>
-  <p>
-    Master complex rehearsal and performance schedules with integrated calendar and scheduling tools. Coordinate rehearsals, tech weeks, performances, and special events while managing conflicts and ensuring all team members are properly informed.
-  </p>
-  
-  <h3>Ticket Sales & Box Office</h3>
-  <p>
-    Manage your box office operations with built-in ticketing and sales tracking. Monitor ticket sales, manage seating arrangements, handle special pricing, and generate sales reports to optimize your revenue streams.
-  </p>
-  
-  <h3>Concessions Management</h3>
-  <p>
-    Track concession sales and inventory to maximize your theater's revenue potential. Monitor popular items, manage inventory levels, and analyze sales patterns to optimize your concessions offerings.
-  </p>
-  
-  <h2>Rental System</h2>
-  <p>
-    ShowVue includes a comprehensive rental management system for costumes, props, and equipment. Track rental items, manage availability, process rental agreements, and monitor returns to ensure your valuable theater assets are properly managed and monetized.
-  </p>
-  
-  <h2>Benefits for Small Theaters</h2>
-  <p>
-    Designed with small theaters in mind, ShowVue provides enterprise-level functionality at an affordable price point. The intuitive interface ensures that even volunteer-run theaters can effectively manage complex productions, while the comprehensive feature set eliminates the need for multiple separate systems and spreadsheets.
-  </p>
-  
-  <p>
-    By centralizing all theater operations in one platform, ShowVue helps small theaters operate more professionally, reduce administrative overhead, and focus on what they do best - creating exceptional theatrical experiences for their communities.
+    Interested in early access when ShowVue launches? <a href="/contact">Reach out</a> and tell us about your
+    theater.
   </p>
 </div>
 
 <style>
+  div {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2em 1.5em 4em;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 1.6em;
+  }
+
+  p {
+    margin: 0.8em 0;
+    line-height: 1.6;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 1.4em;
+    margin: 0.6em 0;
+  }
+
+  li {
+    margin: 0.3em 0;
+    line-height: 1.5;
+  }
+
   .coming-soon-badge {
     display: inline-block;
     font-size: 0.5em;
