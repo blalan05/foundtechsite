@@ -1,6 +1,7 @@
-<head:svelte>
+<svelte:head>
   <title>FoundTech | Under Construction</title>
-</head:svelte>
+  <meta name="robots" content="noindex" />
+</svelte:head>
 
 <div>
   <section class="under-construction-container">

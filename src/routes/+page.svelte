@@ -270,7 +270,6 @@
           principles guide how we interact with and serve our customers and each
           other.
         </p>
-        <a href="/construction" style="display: none;">About Us</a>
       </div>
       <div class="pillars">
         <div>

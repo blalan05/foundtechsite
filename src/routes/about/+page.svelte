@@ -7,7 +7,7 @@
   <section class="intro-section">
     <div class="hero-bg"></div>
     <div class="intro-top">
-      <h2>Our focus is providing value to small businesses through <br>useful and efficent software solutions.</h2>
+      <h2>Our focus is providing value to small businesses through <br>useful and efficient software solutions.</h2>
     </div>
     <div class="intro-bottom">
       <div class="images">
@@ -21,11 +21,11 @@
       <div class="mission">
         <h3>Why we started?</h3>
         <p>
-          Throughout our careers, we saw that small business was largely forgotten when it came to affordable and approachable software.  Our goal is to serve this deficency in the market with intuitive software solutions.
+          Throughout our careers, we saw that small business was largely forgotten when it came to affordable and approachable software.  Our goal is to serve this deficiency in the market with intuitive software solutions.
         </p>
         <h3>How are we achieving this?</h3>
         <p>
-          We are able to do this by building applications with small business needs in mind from the very start. We are also focused on creating lean and efficent processes that allow us to pass our cost savings to you, our customers.
+          We are able to do this by building applications with small business needs in mind from the very start. We are also focused on creating lean and efficient processes that allow us to pass our cost savings to you, our customers.
         </p>
         <a href="/contact">Reach Out</a>
       </div>

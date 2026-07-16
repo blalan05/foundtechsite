@@ -1,0 +1,415 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "imports": [
+      "_internal.js"
+    ],
+    "isEntry": true,
+    "src": ".svelte-kit/generated/server/internal.js"
+  },
+  "_FoundTech Logo.js": {
+    "assets": [
+      "_app/immutable/assets/FoundTech Logo.1fc2bc84.svg"
+    ],
+    "file": "chunks/FoundTech Logo.js"
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js"
+  },
+  "_stores.js": {
+    "file": "chunks/stores.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_stores.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "imports": [
+      "_internal.js",
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js"
+  },
+  "src/lib/assets/FoundTech Logo.svg": {
+    "file": "_app/immutable/assets/FoundTech Logo.1fc2bc84.svg",
+    "src": "src/lib/assets/FoundTech Logo.svg"
+  },
+  "src/lib/assets/FullVue-bg-1.webp": {
+    "file": "_app/immutable/assets/FullVue-bg-1.84f6c630.webp",
+    "src": "src/lib/assets/FullVue-bg-1.webp"
+  },
+  "src/lib/assets/FullVue-bg-2.webp": {
+    "file": "_app/immutable/assets/FullVue-bg-2.b2c5901c.webp",
+    "src": "src/lib/assets/FullVue-bg-2.webp"
+  },
+  "src/lib/assets/Homepage-2-fixed.webp": {
+    "file": "_app/immutable/assets/Homepage-2-fixed.c702a882.webp",
+    "src": "src/lib/assets/Homepage-2-fixed.webp"
+  },
+  "src/lib/assets/Homepage-4.webp": {
+    "file": "_app/immutable/assets/Homepage-4.a297cdf3.webp",
+    "src": "src/lib/assets/Homepage-4.webp"
+  },
+  "src/lib/assets/InventoryControl-2.webp": {
+    "file": "_app/immutable/assets/InventoryControl-2.f9dec519.webp",
+    "src": "src/lib/assets/InventoryControl-2.webp"
+  },
+  "src/lib/assets/JobSingle.webp": {
+    "file": "_app/immutable/assets/JobSingle.ba7fdea7.webp",
+    "src": "src/lib/assets/JobSingle.webp"
+  },
+  "src/lib/assets/JobsDashboard.webp": {
+    "file": "_app/immutable/assets/JobsDashboard.0f87192c.webp",
+    "src": "src/lib/assets/JobsDashboard.webp"
+  },
+  "src/lib/assets/PayrollSingle.webp": {
+    "file": "_app/immutable/assets/PayrollSingle.586a98b7.webp",
+    "src": "src/lib/assets/PayrollSingle.webp"
+  },
+  "src/lib/assets/QuoteSingle.webp": {
+    "file": "_app/immutable/assets/QuoteSingle.4ec49bf9.webp",
+    "src": "src/lib/assets/QuoteSingle.webp"
+  },
+  "src/lib/assets/RoadDialog.webp": {
+    "file": "_app/immutable/assets/RoadDialog.0a6ef48d.webp",
+    "src": "src/lib/assets/RoadDialog.webp"
+  },
+  "src/lib/assets/Software-Maintenance-and-Support.webp": {
+    "file": "_app/immutable/assets/Software-Maintenance-and-Support.f50f59a3.webp",
+    "src": "src/lib/assets/Software-Maintenance-and-Support.webp"
+  },
+  "src/lib/assets/about-dark-bg-3.webp": {
+    "file": "_app/immutable/assets/about-dark-bg-3.3e9f3fd1.webp",
+    "src": "src/lib/assets/about-dark-bg-3.webp"
+  },
+  "src/lib/assets/app-dev-light.webp": {
+    "file": "_app/immutable/assets/app-dev-light.c11c8e3e.webp",
+    "src": "src/lib/assets/app-dev-light.webp"
+  },
+  "src/lib/assets/horizontal-logo-text-tagline-dark.svg": {
+    "file": "_app/immutable/assets/horizontal-logo-text-tagline-dark.ccecfa8b.svg",
+    "src": "src/lib/assets/horizontal-logo-text-tagline-dark.svg"
+  },
+  "src/lib/assets/importer-1.webp": {
+    "file": "_app/immutable/assets/importer-1.a5f3ff94.webp",
+    "src": "src/lib/assets/importer-1.webp"
+  },
+  "src/lib/assets/integration-edited.webp": {
+    "file": "_app/immutable/assets/integration-edited.a0aea519.webp",
+    "src": "src/lib/assets/integration-edited.webp"
+  },
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout.278278de.css",
+    "src": "src/routes/+layout.css"
+  },
+  "src/routes/+layout.js": {
+    "file": "entries/pages/_layout.js",
+    "isEntry": true,
+    "src": "src/routes/+layout.js"
+  },
+  "src/routes/+layout.svelte": {
+    "css": [
+      "_app/immutable/assets/_layout.278278de.css"
+    ],
+    "file": "entries/pages/_layout.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_FoundTech Logo.js",
+      "_stores.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+layout.svelte"
+  },
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page.0383174a.css",
+    "src": "src/routes/+page.css"
+  },
+  "src/routes/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/Homepage-2-fixed.c702a882.webp",
+      "_app/immutable/assets/app-dev-light.c11c8e3e.webp",
+      "_app/immutable/assets/integration-edited.a0aea519.webp",
+      "_app/immutable/assets/Software-Maintenance-and-Support.f50f59a3.webp",
+      "_app/immutable/assets/JobsDashboard.0f87192c.webp",
+      "_app/immutable/assets/JobSingle.ba7fdea7.webp",
+      "_app/immutable/assets/Homepage-4.a297cdf3.webp"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.0383174a.css"
+    ],
+    "file": "entries/pages/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+page.svelte"
+  },
+  "src/routes/about/+page.css": {
+    "file": "_app/immutable/assets/_page.4284faf9.css",
+    "src": "src/routes/about/+page.css"
+  },
+  "src/routes/about/+page.js": {
+    "file": "entries/pages/about/_page.js",
+    "isEntry": true,
+    "src": "src/routes/about/+page.js"
+  },
+  "src/routes/about/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/horizontal-logo-text-tagline-dark.ccecfa8b.svg",
+      "_app/immutable/assets/Homepage-4.a297cdf3.webp",
+      "_app/immutable/assets/about-dark-bg-3.3e9f3fd1.webp"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.4284faf9.css"
+    ],
+    "file": "entries/pages/about/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_FoundTech Logo.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/about/+page.svelte"
+  },
+  "src/routes/construction/+page.css": {
+    "file": "_app/immutable/assets/_page.97cc8e4c.css",
+    "src": "src/routes/construction/+page.css"
+  },
+  "src/routes/construction/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.97cc8e4c.css"
+    ],
+    "file": "entries/pages/construction/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/construction/+page.svelte"
+  },
+  "src/routes/contact/+page.css": {
+    "file": "_app/immutable/assets/_page.19da8e23.css",
+    "src": "src/routes/contact/+page.css"
+  },
+  "src/routes/contact/+page.js": {
+    "file": "entries/pages/contact/_page.js",
+    "isEntry": true,
+    "src": "src/routes/contact/+page.js"
+  },
+  "src/routes/contact/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/Homepage-4.a297cdf3.webp"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.19da8e23.css"
+    ],
+    "file": "entries/pages/contact/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/contact/+page.svelte"
+  },
+  "src/routes/fullvue/+page.css": {
+    "file": "_app/immutable/assets/_page.5af2ca46.css",
+    "src": "src/routes/fullvue/+page.css"
+  },
+  "src/routes/fullvue/+page.js": {
+    "file": "entries/pages/fullvue/_page.js",
+    "isEntry": true,
+    "src": "src/routes/fullvue/+page.js"
+  },
+  "src/routes/fullvue/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/FullVue-bg-1.84f6c630.webp",
+      "_app/immutable/assets/JobSingle.ba7fdea7.webp",
+      "_app/immutable/assets/RoadDialog.0a6ef48d.webp",
+      "_app/immutable/assets/PayrollSingle.586a98b7.webp",
+      "_app/immutable/assets/QuoteSingle.4ec49bf9.webp",
+      "_app/immutable/assets/FullVue-bg-2.b2c5901c.webp"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.5af2ca46.css"
+    ],
+    "file": "entries/pages/fullvue/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/fullvue/+page.svelte"
+  },
+  "src/routes/privacy-policy/+page.css": {
+    "file": "_app/immutable/assets/_page.d624aec4.css",
+    "src": "src/routes/privacy-policy/+page.css"
+  },
+  "src/routes/privacy-policy/+page.js": {
+    "file": "entries/pages/privacy-policy/_page.js",
+    "isEntry": true,
+    "src": "src/routes/privacy-policy/+page.js"
+  },
+  "src/routes/privacy-policy/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.d624aec4.css"
+    ],
+    "file": "entries/pages/privacy-policy/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/privacy-policy/+page.svelte"
+  },
+  "src/routes/products/+page.js": {
+    "file": "entries/pages/products/_page.js",
+    "isEntry": true,
+    "src": "src/routes/products/+page.js"
+  },
+  "src/routes/products/+page.svelte": {
+    "file": "entries/pages/products/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/products/+page.svelte"
+  },
+  "src/routes/products/inventory-importer/+page.js": {
+    "file": "entries/pages/products/inventory-importer/_page.js",
+    "isEntry": true,
+    "src": "src/routes/products/inventory-importer/+page.js"
+  },
+  "src/routes/products/inventory-importer/+page.svelte": {
+    "file": "entries/pages/products/inventory-importer/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/products/inventory-importer/+page.svelte"
+  },
+  "src/routes/products/show-vue/+page.js": {
+    "file": "entries/pages/products/show-vue/_page.js",
+    "isEntry": true,
+    "src": "src/routes/products/show-vue/+page.js"
+  },
+  "src/routes/products/show-vue/+page.svelte": {
+    "file": "entries/pages/products/show-vue/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/products/show-vue/+page.svelte"
+  },
+  "src/routes/products/show-vue/account-deletion/+page.css": {
+    "file": "_app/immutable/assets/_page.b90d2cfa.css",
+    "src": "src/routes/products/show-vue/account-deletion/+page.css"
+  },
+  "src/routes/products/show-vue/account-deletion/+page.js": {
+    "file": "entries/pages/products/show-vue/account-deletion/_page.js",
+    "isEntry": true,
+    "src": "src/routes/products/show-vue/account-deletion/+page.js"
+  },
+  "src/routes/products/show-vue/account-deletion/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.b90d2cfa.css"
+    ],
+    "file": "entries/pages/products/show-vue/account-deletion/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/products/show-vue/account-deletion/+page.svelte"
+  },
+  "src/routes/products/show-vue/terms-of-service/+page.css": {
+    "file": "_app/immutable/assets/_page.384d2f37.css",
+    "src": "src/routes/products/show-vue/terms-of-service/+page.css"
+  },
+  "src/routes/products/show-vue/terms-of-service/+page.js": {
+    "file": "entries/pages/products/show-vue/terms-of-service/_page.js",
+    "isEntry": true,
+    "src": "src/routes/products/show-vue/terms-of-service/+page.js"
+  },
+  "src/routes/products/show-vue/terms-of-service/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.384d2f37.css"
+    ],
+    "file": "entries/pages/products/show-vue/terms-of-service/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/products/show-vue/terms-of-service/+page.svelte"
+  },
+  "src/routes/services/+page.css": {
+    "file": "_app/immutable/assets/_page.2a147923.css",
+    "src": "src/routes/services/+page.css"
+  },
+  "src/routes/services/+page.js": {
+    "file": "entries/pages/services/_page.js",
+    "isEntry": true,
+    "src": "src/routes/services/+page.js"
+  },
+  "src/routes/services/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/FullVue-bg-1.84f6c630.webp",
+      "_app/immutable/assets/importer-1.a5f3ff94.webp",
+      "_app/immutable/assets/InventoryControl-2.f9dec519.webp",
+      "_app/immutable/assets/FullVue-bg-2.b2c5901c.webp"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.2a147923.css"
+    ],
+    "file": "entries/pages/services/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/services/+page.svelte"
+  },
+  "src/routes/thank-you/+page.css": {
+    "file": "_app/immutable/assets/_page.c80c4d3a.css",
+    "src": "src/routes/thank-you/+page.css"
+  },
+  "src/routes/thank-you/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.c80c4d3a.css"
+    ],
+    "file": "entries/pages/thank-you/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/thank-you/+page.svelte"
+  },
+  "src/routes/vtbiocca/+page.css": {
+    "file": "_app/immutable/assets/_page.a0ee3bda.css",
+    "src": "src/routes/vtbiocca/+page.css"
+  },
+  "src/routes/vtbiocca/+page.js": {
+    "file": "entries/pages/vtbiocca/_page.js",
+    "isEntry": true,
+    "src": "src/routes/vtbiocca/+page.js"
+  },
+  "src/routes/vtbiocca/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.a0ee3bda.css"
+    ],
+    "file": "entries/pages/vtbiocca/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/vtbiocca/+page.svelte"
+  }
+}

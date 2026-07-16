@@ -12,8 +12,11 @@ const config = {
 			edge: false
 		}),
 		prerender: {
-			crawl: false,
-			entries: ['/', '/about', '/construction', '/services', '/contact', '/webinar', '/privacy-policy', '/products', '/products/inventory-importer', '/products/show-vue', '/products/show-vue/terms-of-service', '/products/show-vue/account-deletion', '/fullvue']
+			// crawl:true discovers linked pages automatically; the entries list
+			// covers routes nothing links to yet (crawl:false silently skipped
+			// forgotten routes twice before).
+			crawl: true,
+			entries: ['/', '/about', '/construction', '/services', '/contact', '/thank-you', '/privacy-policy', '/products', '/products/inventory-importer', '/products/show-vue', '/products/show-vue/terms-of-service', '/products/show-vue/account-deletion', '/fullvue']
 		}
 	}
 };

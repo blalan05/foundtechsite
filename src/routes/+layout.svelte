@@ -25,7 +25,6 @@
   };
 
   const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
-    console.log(event.key);
     if (event.key == "Enter" || event.key == "Space") {
       isOpen = !isOpen;
     }
@@ -45,11 +44,6 @@
         height="50px"
       /></a
     >
-    <h1
-      style="font-size: 6px; z-index: -1; display: inline; position: absolute; left: 0; top: 0; color: white;"
-    >
-      Foundational Technologies LLC (FoundTech)
-    </h1>
   </div>
 
   <div class="dt-nav-container">

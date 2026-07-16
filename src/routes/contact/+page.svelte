@@ -21,31 +21,47 @@
     </div>
 
     <div class="form-container">
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        action="/thank-you"
+      >
         <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden-field" aria-hidden="true">
+          <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        </p>
         <input
           type="email"
           class="email"
           name="businessEmail"
           placeholder="Email*"
+          aria-label="Email"
+          required
         />
         <input
           type="tel"
           class="phone-number"
           name="phoneNumber"
-          placeholder="Phone Number*"
+          placeholder="Phone Number (optional)"
+          aria-label="Phone number (optional)"
         />
         <input
           type="text"
           class="first-name"
           name="firstName"
           placeholder="First Name*"
+          aria-label="First name"
+          required
         />
         <input
           type="text"
           class="last-name"
           name="lastName"
           placeholder="Last Name*"
+          aria-label="Last name"
+          required
         />
         <div class="textarea">
           <!--<label for="message">Message</label>-->
@@ -55,6 +71,7 @@
             cols="30"
             rows="5"
             placeholder="Message"
+            aria-label="Message"
           ></textarea>
         </div>
         <div class="submit-btn-container">
@@ -97,6 +114,14 @@
   .form-container {
     width: 100%;
     padding: 0 0 7em 0;
+  }
+
+  .hidden-field {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    width: 0;
+    overflow: hidden;
   }
 
   form {
