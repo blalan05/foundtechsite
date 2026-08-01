@@ -1,210 +1,205 @@
 <script>
   import SEOHead from "$lib/SEOHead.svelte";
+  import { LEGAL } from "$lib/legal.js";
 </script>
 
 <SEOHead
   title="Privacy Policy | FoundTech"
-  description="How Foundational Technologies LLC collects and handles data across our website and products."
+  description="How Foundational Technologies LLC collects and handles personal data across foundtechsolutions.com and our products, including ShowVue. No data sales, no ad targeting."
   path="/privacy-policy"
 />
 
 <div>
   <h1>FoundTech Privacy Policy</h1>
-  <p>Updated: May 24th, 2023</p>
+  <p class="doc-meta">
+    <em>Version {LEGAL.privacyPolicy.version} &mdash; Effective {LEGAL.privacyPolicy.effective}</em>
+  </p>
 
-  <h3>Personal Data we Collect</h3>
+  <p>
+    This policy describes how Foundational Technologies, LLC, a Wisconsin limited liability company
+    based in Appleton, Wisconsin (&ldquo;FoundTech,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;),
+    handles personal data in connection with our websites, including foundtechsolutions.com, our
+    custom software services, and our products, including ShowVue. We build software for small
+    organizations, not an advertising business: we do not sell personal data, we do not use it for
+    targeted advertising, and we do not buy data about you from data brokers.
+  </p>
+  <p>
+    Our FullVue product has its own privacy policy, published at
+    <a href="https://fullvue.io/privacypolicy" rel="external">fullvue.io/privacypolicy</a>. The two
+    policies describe the same company practices; the FullVue policy adds product-specific detail,
+    including its text-messaging program.
+  </p>
 
-  <p>FoundTech collects data from you, through our interactions with you and through our products.
-  You provide some of this data directly, and we get some of it by collecting data about your
-  interactions, use, and experiences with our products. The data we collect depends on the
-  context of your interactions with FoundTech and the choices you make, including your privacy
-  settings and the products and features you use. We also obtain data about you from third
-  parties.</p>
-  
-  <p>You have choices when it comes to the technology you use and the data you share. When we
-  ask you to provide personal data, you can decline. Many of our products require some personal
-  data to provide you with a service. If you choose not to provide data required to provide you with
-  a product or feature, you cannot use that product or feature. Likewise, where we need to collect
-  personal data by law or to enter into or carry out a contract with you, and you do not provide the
-  data, we will not be able to enter into the contract; or if this relates to an existing product you’re
-  using, we may have to suspend or cancel it. We will notify you if this is the case at the time.
-  Where providing the data is optional, and you choose not to share personal data, features like
-  personalization that use such data will not work for you.</p>
+  <h3>Two Different Roles</h3>
+  <p>We handle data in two distinct roles, and your rights differ between them:</p>
+  <p>
+    <strong>Data we collect for ourselves.</strong> When you visit our websites, ask about our
+    services, or do business with us, we decide how the resulting data is used, and this policy
+    governs it directly.
+  </p>
+  <p>
+    <strong>Data our customers put into our products.</strong> When an organization uses a FoundTech
+    product &mdash; for example, a theater running ShowVue &mdash; the information it manages there
+    (its productions, members, patrons, finances, and records) belongs to that organization and
+    remains under its control. We process that data on the organization&rsquo;s behalf and
+    instructions, and we never use it for advertising or sell it. If your data is in another
+    organization&rsquo;s workspace &mdash; for example, a theater you perform with or buy tickets
+    from &mdash; that organization controls it, and privacy requests about it should go to that
+    organization; we will forward any request we receive to them promptly.
+  </p>
 
-  <p>When you subscribe to a FoundTech Cloud service and create your own database, any
-  information or content you submit or upload into your database is your own, and you control it
-  fully. This data will often include personal information, for example: your list of employees, your
-  contacts and customers, your messages, pictures, videos, etc. We only ever collect this
-  information on your behalf, and you always retain ownership and full control on this data.</p>
-  
-  <h3>How we Use Personal Data</h3>
+  <h3>Personal Data We Collect</h3>
+  <p><strong>Data you provide to us:</strong></p>
+  <p style="padding-left: 1em;">
+    a) <strong>Contact and quote requests:</strong> name, company, email, phone (optional), and your
+    message.
+  </p>
+  <p style="padding-left: 1em;">
+    b) <strong>ShowVue accounts:</strong> when you create a ShowVue account (or one is created for
+    you by your theater or family), we collect the account details needed to run it &mdash; name,
+    email, sign-in credentials, and profile information you add. If you sign in with a Google or
+    Facebook account, we receive basic profile information (such as your name and email) from that
+    provider, as permitted by your settings there.
+  </p>
+  <p style="padding-left: 1em;">
+    c) <strong>Billing and engagement details:</strong> the contact and billing information needed
+    to administer a services engagement or subscription.
+  </p>
+  <p style="padding-left: 1em;">
+    d) <strong>Support and correspondence:</strong> the contents of messages you send us.
+  </p>
+  <p><strong>Data collected automatically:</strong></p>
+  <p style="padding-left: 1em;">
+    e) <strong>Server logs:</strong> IP address, request details, and timestamps, used for security
+    and troubleshooting.
+  </p>
+  <p style="padding-left: 1em;">
+    f) <strong>Analytics:</strong> we use Google Analytics to understand, in aggregate, how our
+    websites are used (pages visited, approximate location, device type). See Cookies below.
+  </p>
 
-  <p>FoundTech uses the data we collect to provide you with rich, interactive experiences. In
-  particular, we use data to:</p>
-  <p style="padding-left: 1em;">a) Provide our products, which includes updating, securing, and troubleshooting, as well as
-  providing support. It also includes sharing data, when it is required to provide the service
-  or carry out the transactions you request</p>
-  <p style="padding-left: 1em;">b) Improve and develop our products</p>
-  <p style="padding-left: 1em;">c) Personalize our products and make recommendations</p>
-  <p style="padding-left: 1em;">d) Advertise and market to you, which includes sending promotional communications,
-  targeting advertising, and presenting you with relevant offers</p>
-  <p style="padding-left: 1em;">e) We use your contact information in order to provide our services, to answer your
-  requests, and for billing and account management reasons</p>
+  <h3>How We Use Personal Data</h3>
+  <p>We use the data above to:</p>
+  <p style="padding-left: 1em;">a) provide, secure, and troubleshoot our websites, services, and
+  products, including operating ShowVue workspaces and accounts;</p>
+  <p style="padding-left: 1em;">b) respond to your requests and provide support;</p>
+  <p style="padding-left: 1em;">c) administer engagements, accounts, and billing;</p>
+  <p style="padding-left: 1em;">d) send service and account communications, and &mdash; if you have
+  inquired about or use our products &mdash; occasional product news, which you can opt out of at
+  any time via the link in the email or by contacting us;</p>
+  <p style="padding-left: 1em;">e) understand aggregate website usage to improve our products and
+  content; and</p>
+  <p style="padding-left: 1em;">f) comply with legal obligations and enforce our agreements.</p>
+  <p>
+    We do not use your personal data for targeted advertising, we do not sell it, and we do not
+    combine it with data purchased from third parties.
+  </p>
 
-  <p>We also use the data to operate our business, which includes analyzing our performance,
-  meeting our legal obligations, developing our workforce, and doing research.</p>
-  
-  <p>In carrying out these purposes, we combine data we collect from different contexts or obtain
-  from third parties to give you a more seamless, consistent, and personalized experience, to
-  make informed business decisions, and for other legitimate purposes.</p>
-  
-  <p>Our processing of personal data for these purposes includes both automated and manual
-  (human) methods of processing. Our automated methods often are related to and supported by
-  our manual methods. For example, our automated methods include artificial intelligence (AI),
-  which we think of as a set of technologies that enable computers to perceive, learn, reason, and
-  assist in decision-making to solve problems in ways that are similar to what people do. To build,
-  train, and improve the accuracy of our automated methods of processing (including AI), we
-  manually review some of the predictions and inferences produced by the automated methods
-  against the underlying data from which the predictions and inferences were made.</p>
-  
-  <h3>Accessing, Updating or Deleting Your Personal Information</h3>
-  
-  <p>You have the right to access and update personal data you have previously provided to us. You
-  can do so at any time by connecting to your personal account. If you wish to permanently delete
-  your account or personal information for a legitimate purpose, please contact our Helpdesk to
-  request so. We will take all reasonable steps to permanently delete your personal information,
-  except when we are required to keep it for legal reasons (typically, for administration, billing and
-  tax reporting reasons).</p>
+  <h3>When We Share Personal Data</h3>
+  <p>
+    We share personal data only with: service providers who process it on our behalf under contract,
+    limited to what their role requires &mdash; website hosting and form processing (Netlify),
+    analytics (Google), cloud infrastructure that hosts our products, and email delivery;
+    professional advisors such as accountants and attorneys under confidentiality obligations;
+    authorities when required by law or valid legal process, or to protect the rights, safety, or
+    property of FoundTech, our customers, or others; and a successor in a merger, acquisition, or
+    sale of assets, in which case this policy continues to apply. A current list of our service
+    providers is available on request.
+  </p>
+  <p>
+    Payments in ShowVue &mdash; tickets, concessions, donations &mdash; are processed through the
+    theater&rsquo;s own payment account (such as its Square account). The theater is the merchant;
+    FoundTech does not receive or store payment card numbers.
+  </p>
 
-  <p>Customer Database: You can manage any data collected in your databases hosted on
-  FoundTech at any time, using your administration credentials, including modifying or deleting
-  any personal data stored therein. You may also request the deletion of your entire database via
-  your control panel, at any time.</p>
-  
-  <h3>Reasons we Share Personal Data</h3>
-  
-  <p>We share your personal data with your consent or to complete any transaction or provide any
-  product you have requested or authorized. We also share data with FoundTech-controlled
-  affiliates and subsidiaries; with vendors working on our behalf; when required by law or to
-  respond to legal process; to protect our customers; to protect lives; to maintain the security of
-  our products; and to protect the rights and property of FoundTech and its customers.</p>
-  
-  <p>Please note that, as defined under certain U.S. state data privacy laws, “sharing” also relates to
-  providing personal data to third parties for personalized advertising purposes.</p>
-  
-  <h3>How to Access and Control Your Personal Data</h3>
-  
-  <p>You can also make choices about the collection and use of your data by FoundTech. You can
-  control your personal data that FoundTech has obtained, and exercise your data protection
-  rights, by contacting FoundTech or using various tools we provide. In some cases, your ability to
-  access or control your personal data will be limited, as required or permitted by applicable law.
-  How you can access or control your personal data will also depend on which products you use.</p>
-  
-  <h3>Cookies and Similar Technologies</h3>
-  
-  <p>Cookies are small text files placed on your device to store data that can be recalled by a web
-  server in the domain that placed the cookie. We use cookies and similar technologies for storing
-  and honoring your preferences and settings, enabling you to sign in, providing interest-based
-  advertising, combating fraud, analyzing how our products perform, and fulfilling other legitimate
-  purposes.</p>
-  
-  <p>You have a variety of tools to control the data collected by cookies, and similar technologies. For
-  example, you can use controls in your internet browser to limit how the websites you visit are
-  able to use cookies and to withdraw your consent by clearing or blocking cookies.</p>
-  
-  <p>Cookies are also used to help us understand your preferences based on previous or current
-  activity on our website (the pages you have visited), your language and country, which enables
-  us to provide you with improved services. We also use cookies to help us compile aggregate
-  data about site traffic and site interaction so that we can offer better site experiences and tools
-  in the future.</p>
-  
-  <h3>Products Provided By Your Organization—Notice to End Users</h3>
-  
-  <p>If you use a FoundTech product with an account provided by an organization you are affiliated
-  with, such as your work account, that organization can:</p>
-  
-  <p>Control and administer your FoundTech product and product account, including controlling
-  privacy-related settings of the product or product account.
-  Access and process your data, including the interaction data, diagnostic data, and the contents
-  of your communications and files associated with your FoundTech product and product
-  accounts.</p>
-  
-  <p>If you lose access to your work account (in event of change of employment, for example), you
-  may lose access to products and the content associated with those products, including those
-  you acquired on your own behalf, if you used your work account to sign in to such products.</p>
-  
-  <p>Many FoundTech products are intended for use by organizations, such businesses. If your
-  organization provides you with access to FoundTech products, your use of the FoundTech
-  products is subject to your organization's policies, if any. You should direct your privacy
-  inquiries, including any requests to exercise your data protection rights, to your organization’s
-  administrator. When you use social features in FoundTech products, other users in your network
-  may see some of your activity. To learn more about the social features and other functionality,
-  please review documentation or help content specific to the FoundTech product. FoundTech is
-  not responsible for the privacy or security practices of our customers, which may differ from
-  those set forth in this privacy statement.</p>
-  
-  <p>When you use a FoundTech product provided by your organization, FoundTech’s processing of
-  your personal data in connection with that product is governed by a contract between
-  FoundTech and your organization. FoundTech processes your personal data to provide the
-  product to your organization and you. As mentioned above, if you have questions about
-  FoundTech’s processing of your personal data in connection with providing products to your
-  organization, please contact your organization.</p>
-  
-  <h3>FoundTech Account</h3>
-  
-  <p>With a FoundTech account, you can sign in to FoundTech products, as well as those of select
-  FoundTech partners. Personal data associated with your FoundTech account includes
-  credentials, name and contact data, payment data, device and usage data, your contacts,
-  information about your activities, and your interests and favorites. Signing in to your FoundTech
-  account enables personalization and consistent experiences across products and devices,
-  permits you to use cloud data storage, allows you to make payments using payment
-  instruments stored in your FoundTech account, and enables other features.</p>
-  
-  <h3>Enterprise and Developer Products</h3>
-  
-  <p>General. When a customer tries, purchases, uses, or subscribes to Enterprise and Developer
-  Products, or obtains support for or professional services with such products, FoundTech
-  receives data from you and collects and generates data to provide the service (including
-  improving, securing, and updating the service), conduct our business operations, and
-  communicate with the customer. For example:</p>
-  
-  <p style="padding-left: 1em;">a) When a customer engages with a FoundTech sales representative, we collect the
-  customer’s name and contact data, along with information about the customer’s
-  organization, to support that engagement.</p>
+  <h3>ShowVue Accounts, Patrons, and Families</h3>
+  <p>
+    ShowVue is used by theaters to run their operations, and by their members and patrons to
+    participate, volunteer, and buy tickets. Your relationship for shows, tickets, refunds, and
+    donations is with the theater; direct questions about them to the theater. Show-related
+    information a theater keeps about you (casting, schedules, orders) is that theater&rsquo;s data,
+    handled as described in Two Different Roles above.
+  </p>
+  <p>
+    You can delete your own ShowVue account at any time by following the
+    <a href="/products/show-vue/account-deletion">Account Deletion Guide</a>. Deletion permanently
+    removes your profile, credentials, and uploaded files; show-participation history is retained in
+    anonymized form (your name is replaced) so theaters&rsquo; production records stay intact.
+  </p>
 
-  <p style="padding-left: 1em;">b) When a customer interacts with a FoundTech support professional, we collect device
-  and usage data or error reports to diagnose and resolve problems.</p>
-  
-  <p style="padding-left: 1em;">c) When a customer pays for products, we collect contact and payment data to process the
-  payment.</p>
-  
-  <p style="padding-left: 1em;">d) When FoundTech sends communications to a customer, we use data to personalize the
-  content of the communication.</p>
-  
-  <p style="padding-left: 1em;">e) When a customer engages with FoundTech for professional services, we collect the
-  name and contact data of the customer’s designated point of contact and use
-  information provided by the customer to perform the services that the customer has
-  requested.</p>
-  
-  <p>The Enterprise and Developer Products enable you to purchase, subscribe to, or use other
-  products and online services from FoundTech or third parties with different privacy practices,
-  and those other products and online services are governed by their respective privacy
-  statements and policies.</p>
-  
-  <h3>How we Protect Your Privacy</h3>
-  
-  <p>We realize how important and sensitive your personal data is, and we take a great number of
-  measures to ensure that this information is securely processed, stored and preserved from data
-  loss and unauthorized access.</p>
+  <h3>Children</h3>
+  <p>
+    Our websites are intended for businesses and organizations and are not directed to children. In
+    ShowVue, a parent or guardian can create and manage accounts for children in a cast through
+    family-managed accounts; the parent or guardian controls that account and its information. We do
+    not knowingly collect personal data directly from children under 13 outside parent- or
+    guardian-managed accounts. Parents and guardians can review, update, or delete a managed
+    account&rsquo;s information at any time through the family account or by contacting us; if you
+    believe a child has provided us personal data without parental involvement, contact us and we
+    will delete it.
+  </p>
+
+  <h3>Cookies and Analytics</h3>
+  <p>
+    Our websites use a small number of cookies and similar technologies: Google Analytics cookies
+    that help us understand aggregate site usage, and any cookies strictly necessary for a page to
+    function (such as keeping you signed in to ShowVue). We do not use advertising or cross-site
+    tracking cookies. You can block or clear cookies using your browser settings, and you can opt
+    out of Google Analytics with Google&rsquo;s browser add-on. Because some browsers&rsquo;
+    &ldquo;Do Not Track&rdquo; signals have no common standard, our sites do not respond to them
+    &mdash; but since we do not sell personal data or track you across other sites, there is nothing
+    such a signal would need to switch off.
+  </p>
+
+  <h3>Accessing, Updating, or Deleting Your Personal Information</h3>
+  <p>
+    You may request access to, correction of, or deletion of the personal data we hold about you, or
+    a copy of it in a portable format, by emailing
+    <a href="mailto:sales@foundtechsolutions.com">sales@foundtechsolutions.com</a> or using our
+    <a href="/contact">contact form</a>. We extend these choices to everyone regardless of where you
+    live, we will respond within 45 days, and we will never treat you differently for exercising
+    them. We may need to verify your identity (typically via the email address on file) and may
+    retain what the law requires us to keep &mdash; typically records needed for administration,
+    billing, and tax reporting.
+  </p>
+
+  <h3>Data Retention</h3>
+  <p>
+    We keep personal data only as long as it is reasonably needed for the purposes above: inquiry
+    and prospect data until you ask us to delete it or it is no longer useful; ShowVue account data
+    until you delete your account (with anonymized show-history retention as described above); and
+    organization workspace data as governed by our agreement with that organization, except records
+    we are legally required to keep.
+  </p>
+
+  <h3>How We Protect Personal Data</h3>
+  <p>
+    We take security seriously and apply measures appropriate to the sensitivity of the data,
+    including encryption of data in transit, access controls limiting who at FoundTech can reach
+    personal data, and confidentiality commitments from everyone at FoundTech who processes it. No
+    method of transmission or storage is 100% secure, but if we confirm a breach affecting your
+    personal data, we will notify affected customers promptly, consistent with our agreements and
+    applicable law.
+  </p>
 
   <h3>Policy Updates</h3>
-  
-  <p>We may update this Privacy Policy from time to time, in order to clarify it, to reflect any changes
-  to our website, or to comply with legal obligations. The "Last Updated" mention at the top of the
-  policy indicates the last revision, which is also the effective date of those changes. We give you
-  access to archived versions of this policy, so you can review the changes.</p>
-  
+  <p>
+    We may update this Privacy Policy from time to time to clarify it, to reflect changes to our
+    practices, or to comply with legal obligations. The version and effective date at the top of
+    this page identify the current policy. If we make a material change, we will give notice before
+    it takes effect &mdash; on our website, in the product, or by email &mdash; and archived copies
+    of prior versions are available on request.
+  </p>
+
+  <h3>Contact Us</h3>
+  <p>
+    For privacy questions or requests, email
+    <a href="mailto:sales@foundtechsolutions.com">sales@foundtechsolutions.com</a> or use our
+    <a href="/contact">contact form</a>. Foundational Technologies, LLC is based in Appleton,
+    Wisconsin.
+  </p>
 </div>
+
 <style>
   div {
     margin: 0 auto;
@@ -212,11 +207,14 @@
   }
   p {
     font-size: 18px;
-    margin: .8em 0;
+    margin: 0.8em 0;
   }
   h3 {
     font-size: 22px;
     margin: 1em 0;
+  }
+  .doc-meta {
+    margin-top: -0.4em;
   }
   @media (min-width: 1000px) {
     div {
