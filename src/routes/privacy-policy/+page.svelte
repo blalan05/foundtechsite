@@ -99,7 +99,8 @@
   <p>
     We share personal data only with: service providers who process it on our behalf under contract,
     limited to what their role requires &mdash; website hosting and form processing (Netlify),
-    analytics (Google), cloud infrastructure that hosts our products, and email delivery;
+    analytics (Google), cloud infrastructure that hosts our products, email delivery, and SMS
+    delivery (used by ShowVue to send theater notifications);
     professional advisors such as accountants and attorneys under confidentiality obligations;
     authorities when required by law or valid legal process, or to protect the rights, safety, or
     property of FoundTech, our customers, or others; and a successor in a merger, acquisition, or
@@ -119,6 +120,12 @@
     donations is with the theater; direct questions about them to the theater. Show-related
     information a theater keeps about you (casting, schedules, orders) is that theater&rsquo;s data,
     handled as described in Two Different Roles above.
+  </p>
+  <p>
+    ShowVue can also send SMS notifications on a theater&rsquo;s behalf &mdash; for example casting
+    role offers &mdash; where recipients have opted in; the in-app ShowVue Terms of Use and Privacy
+    Policy describe that program, including STOP/HELP instructions. Text messaging originator
+    opt-in data and consent will not be shared with any third parties.
   </p>
   <p>
     You can delete your own ShowVue account at any time by following the

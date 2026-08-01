@@ -141,7 +141,9 @@
       compliance with applicable laws. Customer is solely responsible for its events, productions,
       and licensing (including performance rights), its ticket sales, pricing, refund and exchange
       policies, donation receipting, taxes, and its relationships and communications with its
-      Patrons, members, volunteers, and staff.
+      Patrons, members, volunteers, and staff. This includes obtaining legally sufficient consent
+      before sending SMS messages through the Service, honoring opt-outs promptly, and complying
+      with applicable messaging laws and carrier rules.
     </p>
     <p>
       3.5 <strong>Suspension.</strong> We may suspend access to all or part of the Service, to the
@@ -267,7 +269,8 @@
     <p>
       7.3 <strong>Subprocessors.</strong> Customer authorizes us to use third-party service
       providers (subprocessors) to help provide the Service &mdash; for example, cloud
-      infrastructure and email delivery providers &mdash; provided each subprocessor is bound by
+      infrastructure, email delivery, and SMS delivery providers &mdash; provided each subprocessor
+      is bound by
       written terms no less protective than this Section 7. Our
       <a href="/privacy-policy">Privacy Policy</a> describes the categories of subprocessors we use,
       and a current list is available on request. We remain responsible for our
