@@ -262,7 +262,7 @@
     background-image: url("$lib/assets/JobSingle.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 41% top;
+    background-position: center top;
   }
 
   .core-icon {
@@ -285,7 +285,7 @@
     background-image: url("$lib/assets/PayrollSingle.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -130px top;
+    background-position: center top;
   }
 
   .payroll-icon {

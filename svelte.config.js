@@ -16,7 +16,7 @@ const config = {
 			// covers routes nothing links to yet (crawl:false silently skipped
 			// forgotten routes twice before).
 			crawl: true,
-			entries: ['/', '/about', '/construction', '/services', '/contact', '/thank-you', '/privacy-policy', '/products', '/products/inventory-importer', '/products/show-vue', '/products/show-vue/terms-of-service', '/products/show-vue/account-deletion', '/fullvue']
+			entries: ['/', '/about', '/construction', '/services', '/services/hardware', '/contact', '/thank-you', '/privacy-policy', '/products', '/products/inventory-importer', '/products/show-vue', '/products/show-vue/terms-of-service', '/products/show-vue/account-deletion', '/fullvue']
 		}
 	}
 };
