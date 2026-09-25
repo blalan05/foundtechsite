@@ -9,6 +9,8 @@
   } from "three";
   import { onMount } from "svelte";
   import spriteDot from "$lib/assets/Dot.webp";
+  import jobsDashboard from "$lib/assets/JobsDashboard.webp";
+  import jobSingle from "$lib/assets/JobSingle.webp";
   import SEOHead from "$lib/SEOHead.svelte";
 
   onMount(async () => {
@@ -245,9 +247,16 @@
           <a href="https://fullvue.io" target="_blank">Learn About FullVue!</a>
         </div>
         <div class="callout-screenshots">
-          <div class="screenshot-back">
-            <div class="screenshot-front"></div>
-          </div>
+          <img
+            class="screenshot-back"
+            src={jobsDashboard}
+            alt="FullVue jobs dashboard"
+          />
+          <img
+            class="screenshot-front"
+            src={jobSingle}
+            alt="FullVue job detail view"
+          />
         </div>
       </div>
     </div>
@@ -750,33 +759,31 @@
   }
 
   .callout-screenshots {
-    display: flex;
-    height: 25em;
-    align-items: flex-end;
+    position: relative;
     width: 95%;
+    max-width: 36rem;
+    aspect-ratio: 16 / 11;
+    align-self: center;
+  }
+
+  .callout-screenshots img {
+    position: absolute;
+    width: 78%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.35);
   }
 
   .callout-screenshots .screenshot-back {
-    background-image: url("$lib/assets/JobsDashboard.webp");
-    background-size: cover;
-    width: 75%;
-    height: 85%;
-    position: relative;
-    left: 20%;
-    display: flex;
-    align-items: flex-end;
-    border-radius: 35px 35px 0 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
   }
 
   .callout-screenshots .screenshot-front {
-    background-image: url("$lib/assets/JobSingle.webp");
-    background-size: cover;
-    width: 75%;
-    height: 75%;
-    position: relative;
-    left: -20%;
-    border-radius: 35px 35px 0 0;
-    box-shadow: 4px 0px 6px -2px var(--blue);
+    left: 0;
+    bottom: 8%;
+    z-index: 2;
   }
 
   .quote-container {
@@ -954,10 +961,9 @@
     }
 
     .callout-screenshots {
-      display: flex;
-      width: 65%;
-      height: 100%;
-      align-items: flex-end;
+      width: 55%;
+      max-width: none;
+      align-self: flex-end;
     }
 
     .call-to-action h2 {

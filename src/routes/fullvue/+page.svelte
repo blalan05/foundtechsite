@@ -1,5 +1,9 @@
 <script>
   import SEOHead from "$lib/SEOHead.svelte";
+  import coreScreenshot from "$lib/assets/JobSingle.webp";
+  import fieldScreenshot from "$lib/assets/RoadDialog.webp";
+  import attendanceScreenshot from "$lib/assets/PayrollSingle.webp";
+  import salesScreenshot from "$lib/assets/QuoteSingle.webp";
 </script>
 
 <SEOHead
@@ -22,7 +26,12 @@
 
   <section class="features-section">
     <div class="feature">
-      <div class="feature-image core"></div>
+      <figure class="feature-image">
+        <img
+          src={coreScreenshot}
+          alt="FullVue job view with tasks, tabs, and notes"
+        />
+      </figure>
       <div class="feature-text">
         <div class="circle">
           <svg
@@ -50,7 +59,12 @@
       </div>
     </div>
     <div class="feature">
-      <div class="feature-image road"></div>
+      <figure class="feature-image">
+        <img
+          src={fieldScreenshot}
+          alt="FullVue field module with times, materials, and mileage"
+        />
+      </figure>
       <div class="feature-text">
         <div class="circle">
           <svg
@@ -78,7 +92,12 @@
       </div>
     </div>
     <div class="feature">
-      <div class="feature-image payroll"></div>
+      <figure class="feature-image">
+        <img
+          src={attendanceScreenshot}
+          alt="FullVue attendance punches and absences"
+        />
+      </figure>
       <div class="feature-text">
         <div class="circle">
           <svg
@@ -106,7 +125,12 @@
       </div>
     </div>
     <div class="feature">
-      <div class="feature-image sales"></div>
+      <figure class="feature-image">
+        <img
+          src={salesScreenshot}
+          alt="FullVue quotes list with customers and estimates"
+        />
+      </figure>
       <div class="feature-text">
         <div class="circle">
           <svg
@@ -245,34 +269,27 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    gap: 10%;
-    margin: 3rem 0;
+    gap: 2rem;
+    margin: 4rem 0;
   }
 
   .feature-image {
-    margin-top: 4rem;
-    width: 80%;
-    aspect-ratio: 7/8;
-    background-color: #c0c0c0;
-    border-radius: 30px;
-    box-shadow: 10px 15px 45px 10px #777777;
+    width: min(100%, 42rem);
+    margin: 0;
+    border-radius: 16px;
+    box-shadow: 10px 15px 45px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    line-height: 0;
   }
 
-  .core {
-    background-image: url("$lib/assets/JobSingle.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
+  .feature-image img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .core-icon {
     width: 2.7rem;
-  }
-
-  .road {
-    background-image: url("$lib/assets/RoadDialog.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .road-icon {
@@ -281,24 +298,11 @@
     left: 0.1rem;
   }
 
-  .payroll {
-    background-image: url("$lib/assets/PayrollSingle.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-  }
-
   .payroll-icon {
     width: 3rem;
     position: relative;
     left: 0.2rem;
     top: -0.1rem;
-  }
-
-  .sales {
-    background-image: url("$lib/assets/QuoteSingle.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .sales-icon {
@@ -562,13 +566,13 @@
     }
 
     .feature {
-      width: 80%;
+      width: min(90%, 72rem);
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
-      gap: 10%;
-      margin-bottom: 2%;
+      justify-content: space-between;
+      gap: 3rem;
+      margin: 5rem auto;
     }
 
     .feature:nth-child(even) {
@@ -576,11 +580,13 @@
     }
 
     .feature-image {
-      width: 45%;
+      width: 58%;
+      flex-shrink: 0;
     }
 
     .feature-text {
-      width: 55%;
+      width: 38%;
+      flex-shrink: 1;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
