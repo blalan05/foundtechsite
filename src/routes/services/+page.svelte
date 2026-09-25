@@ -65,6 +65,25 @@
         </div>
       </div>
     </div>
+    <div class="feature">
+      <div class="feature-image hardware-solutions"></div>
+      <div class="feature-text">
+        <div class="text">
+          <h2>Hardware &amp; Embedded Solutions</h2>
+          <p>
+            Custom Raspberry Pi builds for museums and theaters — presence
+            sensing, livestream and recording systems, designed and 3D-printed
+            cases, and on-site installation.
+          </p>
+          <p>
+            From interactive gallery displays to theater camera boxes that
+            stream to multiple monitors while recording, we handle software,
+            hardware, and the physical build.
+          </p>
+          <a href="/services/hardware">See Hardware Projects</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="call-to-action-section">
@@ -207,6 +226,13 @@
     background-image: url("$lib/assets/InventoryControl-2.webp");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .hardware-solutions {
+    background-image: url("$lib/assets/PXL_20260723_030742880.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .road-icon {
